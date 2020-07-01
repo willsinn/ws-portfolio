@@ -50,6 +50,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .pg-section {
   display: flex;
@@ -79,7 +80,7 @@ li {
 .slogan-text {
 }
 .summary-cont {
-  width: 70%;
+  width: 65%;
 }
 .contacts-cont {
   width: 125px;
@@ -118,4 +119,16 @@ li {
 .prj-desc {
   line-height: 28px;
   margin-top: 20px;
+}
+.contact-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+}
+.icon {
+  height: 32px;
+  width: 32px;
+  margin-right: 4px;
+  background-color: hotpink;
 }

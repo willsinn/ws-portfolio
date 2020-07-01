@@ -20,10 +20,8 @@ const AboutPage = () => {
             <p className="summary-text">{abtSummary()}</p>
           </div>
           <div className="contacts-cont">
-            <div className="contacts-header">
-              <ContactList />
-            </div>
-            <ul className="contacts-list"></ul>
+            <div className="contacts-header">Contacts</div>
+            <ContactList />
           </div>
         </div>
       </div>
