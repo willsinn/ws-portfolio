@@ -3,13 +3,13 @@ body {
   font-size: 18px;
   color: #000;
 }
-/* ul {
+ul {
   display: flex;
 }
 li {
   list-style: none;
   text-decoration: none;
-} */
+}
 .app {
   height: 100%;
   width: 100%;
@@ -39,10 +39,10 @@ li {
   text-decoration: none;
   color: #000;
 }
-.abt-top {
+.row-1 {
   background-color: #e3eaef;
 }
-.abt-bottom {
+.row-2 {
   max-width: 36em;
 }
 .pg-section {
