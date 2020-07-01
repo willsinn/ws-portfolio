@@ -11,6 +11,11 @@ const Navbar = () => {
       </div>
       <div className="horz-wrap">
         <div className="navbar-btn">
+          <a href="resume-link" className="active-link">
+            resume
+          </a>
+        </div>
+        <div className="navbar-btn">
           <Link className="active-link" to="/about">
             about
           </Link>
