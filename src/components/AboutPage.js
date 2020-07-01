@@ -1,5 +1,7 @@
 import React from "react";
-import { abtBrand, abtSummary } from "../utils/static";
+import ContactList from "./ContactList";
+import { abtBrand, abtSummary } from "../utils/txt";
+
 
 const AboutPage = () => {
   return (
@@ -19,7 +21,9 @@ const AboutPage = () => {
             <p className="summary-text">{abtSummary()}</p>
           </div>
           <div className="contacts-cont">
-            <div className="contacts-header">Contacts</div>
+            <div className="contacts-header">
+              <ContactList />
+            </div>
             <ul className="contacts-list"></ul>
           </div>
         </div>
