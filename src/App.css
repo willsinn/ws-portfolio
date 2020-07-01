@@ -43,7 +43,7 @@ li {
   background-color: #e3eaef;
 }
 .row-2 {
-  max-width: 36em;
+  max-width: 38em;
 }
 .col-1 {
   display: flex;
@@ -101,10 +101,21 @@ li {
   min-width: 100px;
   width: 30%;
   margin: 0.5em;
+  justify-content: flex-start;
 }
 .prj-i-right {
   min-width: 250px;
   width: 60%;
   align-items: flex-start;
   margin: 0.5em;
+}
+.prj-title {
+  font-size: 32px;
+}
+.prj-link {
+  font-size: 14px;
+}
+.prj-desc {
+  line-height: 28px;
+  margin-top: 20px;
 }

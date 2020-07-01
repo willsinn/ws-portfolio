@@ -20,9 +20,11 @@ const ProjectsPage = () => {
           <div className="horz-wrap">
             <div className="prj-i-left col-1">{project.img}</div>
             <div className="prj-i-right col-1">
-              <div>{project.title}</div>
-              <a href="/link">{project.link}</a>
-              <div>{project.desc}</div>
+              <div className="prj-title">{project.title}</div>
+              <a href="/link" className="prj-link">
+                {project.link}
+              </a>
+              <div className="prj-desc">{project.desc}</div>
             </div>
           </div>
         </li>
