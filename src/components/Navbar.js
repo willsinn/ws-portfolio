@@ -7,18 +7,14 @@ const Navbar = () => {
       <div className="navbar-btn">
         <span className="navbar-name">William Sinn</span>
       </div>
-      <ul>
-        <li>
-          <div className="navbar-btn">
-            <Link to="/about">about</Link>
-          </div>
-        </li>
-        <li>
-          <div className="navbar-btn">
-            <Link to="/projects">projects</Link>
-          </div>
-        </li>
-      </ul>
+      <div className="horz-wrap">
+        <div className="navbar-btn">
+          <Link to="/about">about</Link>
+        </div>
+        <div className="navbar-btn">
+          <Link to="/projects">projects</Link>
+        </div>
+      </div>
     </div>
   );
 };
