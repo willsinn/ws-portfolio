@@ -3,13 +3,13 @@ body {
   font-size: 18px;
   color: #000;
 }
-/* ul {
+ul {
   display: flex;
 }
 li {
   list-style: none;
   text-decoration: none;
-} */
+}
 .app {
   height: 100%;
   width: 100%;
@@ -39,11 +39,17 @@ li {
   text-decoration: none;
   color: #000;
 }
-.abt-top {
+.row-1 {
   background-color: #e3eaef;
 }
-.abt-bottom {
-  max-width: 36em;
+.row-2 {
+  max-width: 38em;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .pg-section {
   display: flex;
@@ -77,4 +83,39 @@ li {
 }
 .contacts-cont {
   width: 125px;
+}
+.tech-skills-cont {
+  margin: 24px 0;
+}
+.stack-list-item {
+  transform: rotate(-60deg);
+  width: 125px;
+  height: 100px;
+  margin-right: -75px;
+}
+.project-item {
+  height: 325px;
+  width: 100%;
+}
+.prj-i-left {
+  min-width: 100px;
+  width: 30%;
+  margin: 0.5em;
+  justify-content: flex-start;
+}
+.prj-i-right {
+  min-width: 250px;
+  width: 60%;
+  align-items: flex-start;
+  margin: 0.5em;
+}
+.prj-title {
+  font-size: 32px;
+}
+.prj-link {
+  font-size: 14px;
+}
+.prj-desc {
+  line-height: 28px;
+  margin-top: 20px;
 }
