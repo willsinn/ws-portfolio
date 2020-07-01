@@ -11,7 +11,7 @@ li {
   text-decoration: none;
 }
 .app {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 .navbar {
@@ -131,4 +131,19 @@ li {
   width: 32px;
   margin-right: 4px;
   background-color: hotpink;
+  cursor: pointer;
+}
+.footer {
+  height: 40px;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-shadow: 0 6px 12px -3px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
