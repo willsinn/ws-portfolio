@@ -33,7 +33,6 @@ export const projectList = () => {
       title: "Zombie Diner",
       link: "filler-website.com",
       img: "snapshot.img",
-
       desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
@@ -41,10 +40,19 @@ export const projectList = () => {
       title: "Bus Stuff",
       link: "filler-website.com",
       img: "snapshot.img",
-
       desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
+  ];
+  return arr;
+};
+
+export const contactMethods = () => {
+  const arr = [
+    { method: "email", img_link: "svg ref", link: "add-link-here" },
+    { method: "phone", img_link: "svg ref", link: "add-link-here" },
+    { method: "linkd-in", img_link: "svg ref", link: "add-link-here" },
+    { method: "instagram", img_link: "svg ref", link: "add-link-here" },
   ];
   return arr;
 };

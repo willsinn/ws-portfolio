@@ -1,7 +1,6 @@
 import React from "react";
 import ContactList from "./ContactList";
-import { abtBrand, abtSummary } from "../utils/txt";
-
+import { abtBrand, abtSummary } from "../utils/static";
 
 const AboutPage = () => {
   return (
