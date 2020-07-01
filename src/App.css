@@ -93,3 +93,18 @@ li {
   height: 100px;
   margin-right: -75px;
 }
+.project-item {
+  height: 325px;
+  width: 100%;
+}
+.prj-i-left {
+  min-width: 100px;
+  width: 30%;
+  margin: 0.5em;
+}
+.prj-i-right {
+  min-width: 250px;
+  width: 60%;
+  align-items: flex-start;
+  margin: 0.5em;
+}
