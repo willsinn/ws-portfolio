@@ -1,5 +1,5 @@
 import React from "react";
-import { stackList } from "../utils/static";
+import { stackList, projectList } from "../utils/static";
 
 const ProjectsPage = () => {
   const renderSkills = () => {
@@ -12,11 +12,22 @@ const ProjectsPage = () => {
       ));
     }
   };
+  const renderProjects = () => {
+    const projects = projectList();
+    if (projects && projects.length > 0) {
+    }
+  };
+
   return (
     <div className="projects">
       <div className="row-1 pg-section">
         <div className="tech-skills-cont">
-          <ul className="stack-list">{renderSkills()}</ul>
+          <ul>{renderSkills()}</ul>
+        </div>
+      </div>
+      <div className="">
+        <div className="projects-cont">
+          <ul className="col-1">{renderProjects()}</ul>
         </div>
       </div>
     </div>
