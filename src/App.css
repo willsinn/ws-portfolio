@@ -39,3 +39,10 @@ li {
   text-decoration: none;
   color: #000;
 }
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8fa;
+  width: 100%;
+}
