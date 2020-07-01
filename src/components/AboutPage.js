@@ -2,10 +2,11 @@ import React from "react";
 import ContactList from "./ContactList";
 import { abtBrand, abtSummary } from "../utils/txt";
 
+
 const AboutPage = () => {
   return (
     <div className="about">
-      <div className="abt-top pg-section">
+      <div className="row-1 pg-section">
         <div className="picture-cont">
           <div className="picture-img"></div>
         </div>
@@ -15,7 +16,7 @@ const AboutPage = () => {
       </div>
 
       <div className="pg-section">
-        <div className="abt-bottom horz-wrap">
+        <div className="row-2 horz-wrap">
           <div className="summary-cont">
             <p className="summary-text">{abtSummary()}</p>
           </div>
