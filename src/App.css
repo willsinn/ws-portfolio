@@ -42,7 +42,22 @@ li {
 .top-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #f5f8fa;
+  align-items: flex-end;
+  background-color: #e3eaef;
   width: 100%;
+}
+.picture-cont {
+  height: 175px;
+  min-height: 175px;
+  width: 175px;
+  min-width: 175px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 8em;
+  margin: 60px 12px 36px;
+}
+.summary-cont {
+  height: 100px;
+  width: 275px;
+  margin: 0 0 48px 36px;
 }
