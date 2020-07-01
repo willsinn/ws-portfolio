@@ -1,4 +1,5 @@
 import React from "react";
+import ContactList from "./ContactList";
 import { abtBrand, abtSummary } from "../utils/txt";
 
 const AboutPage = () => {
@@ -19,7 +20,9 @@ const AboutPage = () => {
             <p className="summary-text">{abtSummary()}</p>
           </div>
           <div className="contacts-cont">
-            <div className="contacts-header">Contacts</div>
+            <div className="contacts-header">
+              <ContactList />
+            </div>
             <ul className="contacts-list"></ul>
           </div>
         </div>
