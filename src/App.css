@@ -39,3 +39,42 @@ li {
   text-decoration: none;
   color: #000;
 }
+.abt-top {
+  background-color: #e3eaef;
+}
+.abt-bottom {
+  max-width: 36em;
+}
+.pg-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+.picture-cont {
+  height: 175px;
+  min-height: 175px;
+  width: 175px;
+  min-width: 175px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 8em;
+  margin: 60px 12px 36px;
+}
+.picture-img {
+}
+.slogan-cont {
+  height: 100px;
+  width: 275px;
+  margin: 0 0 48px 36px;
+  display: flex;
+  align-items: flex-end;
+}
+.slogan-text {
+}
+.summary-cont {
+  width: 70%;
+}
+.contacts-cont {
+  width: 125px;
+}
