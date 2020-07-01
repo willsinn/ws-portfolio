@@ -21,7 +21,7 @@ const AboutPage = () => {
           </div>
           <div className="contacts-cont col-1">
             <div className="contacts-header">Contacts</div>
-            <ContactList />
+            <ContactList orient={"vertical"} />
           </div>
         </div>
       </div>
