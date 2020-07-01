@@ -78,3 +78,12 @@ li {
 .contacts-cont {
   width: 125px;
 }
+.tech-skills-cont {
+  margin: 24px 0;
+}
+.stack-list-item {
+  transform: rotate(-60deg);
+  width: 125px;
+  height: 100px;
+  margin-right: -75px;
+}

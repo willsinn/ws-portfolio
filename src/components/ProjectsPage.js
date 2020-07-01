@@ -6,8 +6,8 @@ const ProjectsPage = () => {
     const skills = stackList();
     if (skills && skills.length > 0) {
       return skills.map((skill) => (
-        <li key={`${skill.name}-id`}>
-          <div className="stack-list-item">{skill.name}</div>
+        <li key={`${skill.name}-id`} className="stack-list-item">
+          <div className="horz-wrap">{skill.name}</div>
         </li>
       ));
     }
@@ -18,9 +18,7 @@ const ProjectsPage = () => {
         <div className="tech-skills-cont">
           <ul className="stack-list">{renderSkills()}</ul>
         </div>
-        <div className="slogan-cont"></div>
       </div>
-      projects pgs
     </div>
   );
 };
