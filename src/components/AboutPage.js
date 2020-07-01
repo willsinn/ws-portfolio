@@ -1,6 +1,9 @@
 import React from "react";
+import { abtBrand } from "../utils/staticText";
 
 const AboutPage = () => {
+  console.log(abtBrand);
+
   const brand = "Short slogan, brand.";
   const summary =
     "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.";
@@ -11,7 +14,7 @@ const AboutPage = () => {
           <div className="picture-img"></div>
         </div>
         <div className="slogan-cont">
-          <p className="slogan-text">{brand}</p>
+          <p className="slogan-text">{abtBrand()}</p>
         </div>
       </div>
 
