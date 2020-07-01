@@ -15,6 +15,17 @@ const ProjectsPage = () => {
   const renderProjects = () => {
     const projects = projectList();
     if (projects && projects.length > 0) {
+      return projects.map((project) => (
+        <li key={`${project.title}-id`}>
+          <div className="horz-wrap">
+            <div>{project.img}</div>
+            <div className="col-1">
+              <div>{project.title}</div>
+              <div>{project.desc}</div>
+            </div>
+          </div>
+        </li>
+      ));
     }
   };
 
@@ -25,8 +36,8 @@ const ProjectsPage = () => {
           <ul>{renderSkills()}</ul>
         </div>
       </div>
-      <div className="">
-        <div className="projects-cont">
+      <div className="pg-section">
+        <div className="row-2">
           <ul className="col-1">{renderProjects()}</ul>
         </div>
       </div>
