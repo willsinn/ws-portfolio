@@ -1,5 +1,6 @@
 import React from "react";
 import { stackList, projectList } from "../utils/static";
+import Footer from "./Footer";
 
 const ProjectsPage = () => {
   const renderSkills = () => {
@@ -44,6 +45,7 @@ const ProjectsPage = () => {
           <ul className="col-1">{renderProjects()}</ul>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

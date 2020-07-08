@@ -5,14 +5,14 @@ const Contact = ({ contact, orient }) => {
       {orient === "vertical" ? (
         <li className="contact-item">
           <div className="icon">
-            <a href={`${contact.img_link}`}></a>
+            <span></span>
           </div>
           <span>{contact.method}</span>
         </li>
       ) : (
         <li className="contact-item" style={{ margin: "0 4px" }}>
           <div className="icon">
-            <a href={`${contact.img_link}`}></a>
+            <span></span>
           </div>
         </li>
       )}

@@ -11,8 +11,9 @@ li {
   text-decoration: none;
 }
 .app {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
@@ -95,18 +96,19 @@ li {
   margin-right: -75px;
 }
 .project-item {
-  height: 325px;
+  height: 100%;
   width: 100%;
+  min-height: 350px;
 }
 .prj-i-left {
-  min-width: 100px;
-  width: 30%;
-  margin: 0.5em;
+  min-width: 75px;
+  width: 20%;
+  margin-right: 2em;
   justify-content: flex-start;
 }
 .prj-i-right {
-  min-width: 250px;
-  width: 60%;
+  min-width: 200px;
+  width: 55%;
   align-items: flex-start;
   margin: 0.5em;
 }
@@ -142,7 +144,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
