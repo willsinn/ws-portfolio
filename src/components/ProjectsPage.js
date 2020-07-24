@@ -1,4 +1,5 @@
 import React from "react";
+import ContactList from "./ContactList";
 import { stackList, projectList } from "../utils/static";
 import Footer from "./Footer";
 
@@ -35,6 +36,11 @@ const ProjectsPage = () => {
 
   return (
     <div className="projects">
+      <div className="name-cont">
+        <h1>William Sinn</h1>
+        <h3>Fullstack Software Engineer</h3>
+      </div>
+      <ContactList />
       <div className="row-1 pg-section">
         <div className="tech-skills-cont">
           <ul>{renderSkills()}</ul>

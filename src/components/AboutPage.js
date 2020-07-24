@@ -1,5 +1,4 @@
 import React from "react";
-import ContactList from "./ContactList";
 import { abtBrand, abtSummary } from "../utils/static";
 
 const AboutPage = () => {
@@ -18,10 +17,6 @@ const AboutPage = () => {
         <div className="row-2 horz-wrap">
           <div className="summary-cont">
             <p className="summary-text">{abtSummary()}</p>
-          </div>
-          <div className="contacts-cont col-1">
-            <div className="contacts-header">Contacts</div>
-            <ContactList orient={"vertical"} />
           </div>
         </div>
       </div>

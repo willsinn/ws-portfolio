@@ -14,6 +14,14 @@ li {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  display: flex;
+}
+.about {
+  width: 30%;
+  background-color: darkgray;
+}
+.projects {
+  width: 70%;
 }
 .navbar {
   display: flex;
@@ -82,9 +90,6 @@ li {
 }
 .summary-cont {
   width: 65%;
-}
-.contacts-cont {
-  width: 125px;
 }
 .tech-skills-cont {
   margin: 24px 0;

@@ -8,14 +8,7 @@ import { Route, Switch } from "react-router-dom";
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
-      {/* <Switch>
-        <Route exact path="/" component={AboutPage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/projects" component={ProjectsPage} />
-      </Switch> */}
       <AboutPage />
-
       <ProjectsPage />
     </div>
   );
