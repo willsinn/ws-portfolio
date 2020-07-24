@@ -4,7 +4,7 @@ import ContactList from "./ContactList";
 const Footer = () => {
   return (
     <div className="footer">
-      <ContactList orient={"horizontal"} />
+      <ContactList />
     </div>
   );
 };

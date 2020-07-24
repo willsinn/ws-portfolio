@@ -14,6 +14,18 @@ li {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  display: flex;
+}
+.about {
+  width: 30%;
+  background-color: darkgray;
+}
+.projects {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .navbar {
   display: flex;
@@ -40,9 +52,6 @@ li {
   text-decoration: none;
   color: #000;
 }
-.row-1 {
-  background-color: #e3eaef;
-}
 .row-2 {
   max-width: 38em;
 }
@@ -53,11 +62,13 @@ li {
   align-items: center;
   width: 100%;
 }
-.pg-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.content-cont {
   width: 100%;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 8px 32px;
 }
 .picture-cont {
   height: 175px;
@@ -72,28 +83,20 @@ li {
 .picture-img {
 }
 .slogan-cont {
-  height: 100px;
-  width: 275px;
-  margin: 0 0 48px 36px;
-  display: flex;
-  align-items: flex-end;
+  width: 60%;
 }
 .slogan-text {
 }
 .summary-cont {
   width: 65%;
 }
-.contacts-cont {
-  width: 125px;
-}
 .tech-skills-cont {
   margin: 24px 0;
+  width: 100%;
 }
 .stack-list-item {
-  transform: rotate(-60deg);
-  width: 125px;
-  height: 100px;
-  margin-right: -75px;
+  width: fit-content;
+  height: 28px;
 }
 .project-item {
   height: 100%;
@@ -148,4 +151,46 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
+}
+.section-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 16px;
+  line-height: 40px;
+}
+.section-header-cont {
+  width: 300px;
+  background-color: #3895de;
+  height: fit-content;
+  border-radius: 2px;
+}
+.section-horz-line {
+  width: 35%;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  justify-self: flex-start;
+}
+.section-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 72px;
+}
+.project-section {
+  width: 90%;
+  height: fit-content;
+}
+.name-cont {
+  width: 40%;
+  margin: 0;
+}
+.profile-header-cont {
+  margin-top: 52px;
+  display: flex;
+  width: 80%;
+  margin-bottom: 16px;
+  align-items: flex-end;
 }
