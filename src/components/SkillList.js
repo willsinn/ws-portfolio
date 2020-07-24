@@ -11,7 +11,7 @@ const SkillList = () => {
   };
   return (
     <div className="tech-skills-cont">
-      <ul>{renderSkills()}</ul>
+      <ul className="skill-list">{renderSkills()}</ul>
     </div>
   );
 };

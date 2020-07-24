@@ -102,8 +102,9 @@ li {
   width: 100%;
 }
 .stack-list-item {
-  width: fit-content;
-  height: 28px;
+  width: 48px;
+  height: 48px;
+  background-color: blue;
 }
 .project-item {
   height: 100%;
@@ -192,7 +193,6 @@ li {
   height: fit-content;
 }
 .name-cont {
-  /* width: 40%; */
   margin: 0;
 }
 .profile-header-cont {
@@ -201,4 +201,12 @@ li {
   width: 80%;
   margin-bottom: 16px;
   align-items: flex-end;
+}
+.skill-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-cont {
 }
