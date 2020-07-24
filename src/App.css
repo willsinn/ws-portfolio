@@ -210,7 +210,7 @@ li {
 .skill-cont {
 }
 .skill-icon {
-  background-size: contain;
+  background-size: cover;
   height: 48px;
   width: 48px;
   background-repeat: no-repeat;
