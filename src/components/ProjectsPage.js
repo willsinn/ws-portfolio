@@ -41,11 +41,21 @@ const ProjectsPage = () => {
         <h3>Fullstack Software Engineer</h3>
       </div>
       <ContactList />
-      <div className="row-1 pg-section">
-        <div className="tech-skills-cont">
-          <ul>{renderSkills()}</ul>
+
+      <div className="section-divider">
+        <div className="section-header">
+          <div className="section-header-cont">
+            <span className="section-title">Technical Stack</span>
+          </div>
+          <div className="section-horz-line"></div>
+        </div>
+        <div className="row-1 pg-section">
+          <div className="tech-skills-cont">
+            <ul>{renderSkills()}</ul>
+          </div>
         </div>
       </div>
+
       <div className="pg-section">
         <div className="row-2">
           <ul className="col-1">{renderProjects()}</ul>

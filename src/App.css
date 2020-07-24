@@ -154,3 +154,30 @@ li {
   right: 0;
   left: 0;
 }
+.section-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 16px;
+  line-height: 40px;
+}
+.section-header-cont {
+  width: 300px;
+  background-color: #3895de;
+  height: fit-content;
+}
+.section-horz-line {
+  width: 32%;
+  height: 4px;
+  background-color: black;
+  border-radius: 3.5px;
+  justify-self: flex-start;
+  margin-left: 48px;
+}
+.section-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 72px;
+}
