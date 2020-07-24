@@ -38,7 +38,7 @@ const ProjectsPage = () => {
     <div className="projects">
       <div className="profile-header-cont">
         <div className="name-cont">
-          <h1 style={{ margin: "0" }}>William Sinn</h1>
+          <div className="name">William Sinn</div>
           <span>Fullstack Software Engineer</span>
         </div>
         <div className="slogan-cont">

@@ -62,6 +62,9 @@ li {
   align-items: center;
   width: 100%;
 }
+.name {
+  font-size: 48px;
+}
 .content-cont {
   width: 100%;
 }
