@@ -1,6 +1,6 @@
 import React from "react";
 import ContactList from "./ContactList";
-import { stackList, projectList } from "../utils/static";
+import { stackList, projectList, abtBrand } from "../utils/static";
 import Footer from "./Footer";
 
 const ProjectsPage = () => {
@@ -36,32 +36,40 @@ const ProjectsPage = () => {
 
   return (
     <div className="projects">
-      <div className="name-cont">
-        <h1>William Sinn</h1>
-        <h3>Fullstack Software Engineer</h3>
+      <div className="profile-header-cont">
+        <div className="name-cont">
+          <h1 style={{ margin: "0" }}>William Sinn</h1>
+          <span>Fullstack Software Engineer</span>
+        </div>
+        <div className="slogan-cont">
+          <span className="slogan-text">{abtBrand()}</span>
+        </div>
       </div>
-      <ContactList />
 
-      <div className="section-divider">
+      <div className="project-section">
+        <div className="section-header">
+          <div className="section-header-cont">
+            <span className="section-title">Projects</span>
+          </div>
+          <div className="section-horz-line" />
+        </div>
+        <div className="pg-section">
+          <div className="row-2">
+            <ul className="col-1">{renderProjects()}</ul>
+          </div>
+        </div>
+      </div>
+      <div className="project-section">
         <div className="section-header">
           <div className="section-header-cont">
             <span className="section-title">Technical Stack</span>
           </div>
-          <div className="section-horz-line"></div>
+          <div className="section-horz-line" />
         </div>
-        <div className="row-1 pg-section">
-          <div className="tech-skills-cont">
-            <ul>{renderSkills()}</ul>
-          </div>
+        <div className="tech-skills-cont">
+          <ul>{renderSkills()}</ul>
         </div>
       </div>
-
-      <div className="pg-section">
-        <div className="row-2">
-          <ul className="col-1">{renderProjects()}</ul>
-        </div>
-      </div>
-      <Footer />
     </div>
   );
 };
