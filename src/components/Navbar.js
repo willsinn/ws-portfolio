@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="horz-wrap">
         <div className="navbar-btn">
-          <a href="resume-link" className="active-link">
+          <a href="resume" className="active-link">
             resume
           </a>
         </div>
