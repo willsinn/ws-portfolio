@@ -11,8 +11,8 @@ export const abtSummary = () => {
 
 export const stackList = () => {
   const arr = [
-    { name: "Javascript" },
-    { name: "Ruby" },
+    { name: "javascript" },
+    { name: "ruby" },
     { name: "React JS" },
     { name: "Ruby on Rails" },
     { name: "SQLite3" },
@@ -20,7 +20,7 @@ export const stackList = () => {
     { name: "React-Redux" },
     { name: "SQL" },
     { name: "AWS" },
-    { name: "SQLite3" },
+    { name: "sqlite" },
   ];
   return arr;
 };
