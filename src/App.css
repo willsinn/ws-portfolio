@@ -102,8 +102,8 @@ li {
   width: 100%;
 }
 .stack-list-item {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   background-color: blue;
 }
 .project-item {
@@ -209,4 +209,10 @@ li {
   justify-content: space-evenly;
 }
 .skill-cont {
+}
+.skill-icon {
+  background-size: contain;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
 }
