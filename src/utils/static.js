@@ -15,10 +15,11 @@ export const stackList = () => {
     { name: "ruby" },
     { name: "reactjs" },
     { name: "rails" },
-    { name: "Redux" },
-    { name: "React-Redux" },
-    { name: "SQL" },
-    { name: "AWS" },
+    { name: "redux" },
+    { name: "reactredux" },
+    { name: "sql" },
+    { name: "postgresql" },
+    { name: "aws" },
     { name: "sqlite" },
   ];
   return arr;
