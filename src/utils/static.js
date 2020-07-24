@@ -16,6 +16,11 @@ export const stackList = () => {
     { name: "React JS" },
     { name: "Ruby on Rails" },
     { name: "SQLite3" },
+    { name: "Redux" },
+    { name: "React-Redux" },
+    { name: "SQL" },
+    { name: "AWS" },
+    { name: "SQLite3" },
   ];
   return arr;
 };
