@@ -111,17 +111,8 @@ li {
   display: flex;
   flex-direction: row-reverse;
 }
-.prj-i-left {
-  min-width: 75px;
-  width: 20%;
-  margin-right: 2em;
-  justify-content: flex-start;
-}
 .prj-i-right {
-  min-width: 200px;
-  width: 55%;
   align-items: flex-start;
-  margin: 0.5em;
 }
 .prj-title {
   font-size: 32px;
@@ -217,4 +208,11 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 24px;
+}
+.project-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40em;
+  height: 20em;
 }

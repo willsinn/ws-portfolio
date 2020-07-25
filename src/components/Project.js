@@ -1,9 +1,23 @@
 import React from "react";
+import Mywellotask from "../images/mywellotask.png";
 
 const Project = ({ project }) => {
+  const renderImgs = () => {
+    if (project.img) {
+      switch (project.title) {
+        case "Wello":
+          return Mywellotask;
+        default:
+          return;
+      }
+    }
+  };
   return (
     <li className="project-item">
-      <div className="prj-i-left col-1">{project.img}</div>
+      <div
+        className="project-img"
+        style={{ backgroundImage: `url(${renderImgs()})` }}
+      />
       <div className="prj-i-right col-1">
         <div className="prj-title">{project.title}</div>
         <a href="/link" className="prj-link">

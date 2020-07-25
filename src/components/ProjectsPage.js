@@ -1,7 +1,7 @@
 import React from "react";
 import SkillList from "./SkillList";
 import ProjectList from "./ProjectList";
-import { abtBrand } from "../utils/static";
+import { projectList, abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
   return (
