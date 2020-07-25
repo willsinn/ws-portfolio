@@ -18,10 +18,10 @@ li {
 }
 .sider {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 0;
   bottom: 50%;
-  height: 300px;
+  height: 450px;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -86,6 +86,7 @@ li {
 }
 .content-cont {
   width: 100%;
+  margin-top: 24px;
 }
 .about-section {
   display: flex;
@@ -263,7 +264,9 @@ li {
   width: 66%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   align-items: center;
+  margin-top: 80px;
 }
 .projects-cont {
   width: 80%;
@@ -272,7 +275,7 @@ li {
 }
 .sider-vert-line {
   height: 100%;
-  width: 2.25px;
+  width: 1.5px;
   background-color: black;
 }
 .contact-links {
@@ -281,22 +284,22 @@ li {
 .email-sider {
   right: 0;
   position: fixed;
-  top: 50%;
+  top: 30%;
   bottom: 50%;
-  height: 300px;
+  height: 450px;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 8px;
 }
 .email-wrap {
-  height: 300px;
-  width: 200px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .fixed-email {
   transform: rotate(90deg);
