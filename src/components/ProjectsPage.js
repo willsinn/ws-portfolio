@@ -1,28 +1,9 @@
 import React from "react";
 import SkillList from "./SkillList";
-import { projectList, abtBrand } from "../utils/static";
+import ProjectList from "./ProjectList";
+import { abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
-  const renderProjects = () => {
-    const projects = projectList();
-    if (projects && projects.length > 0) {
-      return projects.map((project) => (
-        <li key={`${project.title}-id`} className="project-item">
-          <div className="horz-wrap">
-            <div className="prj-i-left col-1">{project.img}</div>
-            <div className="prj-i-right col-1">
-              <div className="prj-title">{project.title}</div>
-              <a href="/link" className="prj-link">
-                {project.link}
-              </a>
-              <div className="prj-desc">{project.desc}</div>
-            </div>
-          </div>
-        </li>
-      ));
-    }
-  };
-
   return (
     <div className="projects">
       <div className="profile-header-cont">
@@ -42,11 +23,7 @@ const ProjectsPage = () => {
           </div>
           <div className="section-horz-line" />
         </div>
-        <div className="pg-section">
-          <div className="row-2">
-            <ul className="col-1">{renderProjects()}</ul>
-          </div>
-        </div>
+        <ProjectList />
       </div>
 
       <div className="project-section">

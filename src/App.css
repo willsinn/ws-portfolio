@@ -1,6 +1,6 @@
 body {
   font-family: "Hind Madurai", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 }
 ul {
@@ -60,7 +60,6 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .name {
   font-size: 42px;
@@ -91,6 +90,8 @@ li {
 }
 .slogan-cont {
   width: 60%;
+  display: flex;
+  justify-content: flex-end;
 }
 .slogan-text {
 }
@@ -104,29 +105,41 @@ li {
 .project-item {
   height: 100%;
   width: 100%;
-  min-height: 350px;
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.prj-i-left {
-  min-width: 75px;
-  width: 20%;
-  margin-right: 2em;
-  justify-content: flex-start;
+.project-item:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.project-item:nth-child(odd) div.prj-i-right {
+  align-items: flex-start;
+}
+.project-item:nth-child(odd) div.prj-i-right a.prj-title {
+  margin-left: 16px;
+}
+.project-item:nth-child(even) div.prj-i-right a.prj-title {
+  margin-right: 24px;
 }
 .prj-i-right {
-  min-width: 200px;
-  width: 55%;
-  align-items: flex-start;
-  margin: 0.5em;
+  width: 33.5%;
+  align-items: flex-end;
 }
 .prj-title {
   font-size: 32px;
+  text-decoration: none;
+  color: black;
+}
+.prj-title:hover {
+  color: #3895de;
 }
 .prj-link {
   font-size: 14px;
 }
 .prj-desc {
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 20px;
 }
 .contact-item {
   width: 100%;
@@ -161,7 +174,7 @@ li {
   color: #fff;
   padding-left: 16px;
   line-height: 40px;
-  font-family: "Exo", serif;
+  font-family: "Quattrocento", sans-serif;
 }
 .section-header-cont {
   width: 300px;
@@ -171,7 +184,7 @@ li {
 }
 .section-horz-line {
   width: 35%;
-  height: 3px;
+  height: 2.75px;
   background-color: black;
   border-radius: 3px;
   justify-self: flex-start;
@@ -212,4 +225,12 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 24px;
+}
+.project-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 34em;
+  min-height: 20em;
+  width: 100%;
 }
