@@ -1,7 +1,7 @@
 import React from "react";
 import SkillList from "./SkillList";
 import ProjectList from "./ProjectList";
-import { projectList, abtBrand } from "../utils/static";
+import { abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
   return (
@@ -23,9 +23,7 @@ const ProjectsPage = () => {
           </div>
           <div className="section-horz-line" />
         </div>
-        <div className="pg-section">
-          <ProjectList />
-        </div>
+        <ProjectList />
       </div>
 
       <div className="project-section">

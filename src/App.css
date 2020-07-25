@@ -113,6 +113,7 @@ li {
 }
 .prj-i-right {
   align-items: flex-start;
+  width: 33.5%;
 }
 .prj-title {
   font-size: 32px;
