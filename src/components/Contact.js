@@ -7,7 +7,6 @@ const Contact = ({ contact, orient }) => {
           <div className="icon">
             <span></span>
           </div>
-          <span>{contact.method}</span>
         </li>
       ) : (
         <li className="contact-item" style={{ margin: "0 4px" }}>

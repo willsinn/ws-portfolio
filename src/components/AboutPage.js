@@ -5,6 +5,11 @@ import { abtSummary } from "../utils/static";
 const AboutPage = () => {
   return (
     <div className="about">
+      <div className="sider contact-links">
+        <div className="sider-vert-line" />
+        <ContactList orient={"vertical"} />
+        <div className="sider-vert-line" />
+      </div>
       <div className="about-cont">
         <div className="profile-cont">
           <div className="profile-img" />
@@ -16,7 +21,6 @@ const AboutPage = () => {
             <p className="summary-text">{abtSummary()}</p>
           </div>
         </div>
-        <ContactList />
       </div>
     </div>
   );

@@ -35,6 +35,11 @@ const ProjectsPage = () => {
           <ProjectList />
         </div>
       </div>
+      <div className="email-sider">
+        <div className="sider-vert-line" />
+        <div className="fixed-email">w.h.sinn@gmail.com</div>
+        <div className="sider-vert-line" />
+      </div>
     </div>
   );
 };

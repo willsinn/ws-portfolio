@@ -16,6 +16,19 @@ li {
   overflow: hidden;
   display: flex;
 }
+.sider {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  bottom: 50%;
+  height: 300px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
 .about {
   width: 35%;
   background-color: darkgray;
@@ -62,6 +75,7 @@ li {
   flex-direction: column;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 .name {
   font-size: 42px;
@@ -249,9 +263,31 @@ li {
   width: 66%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .projects-cont {
   width: 80%;
   display: flex;
   flex-direction: column;
+}
+.sider-vert-line {
+  height: 100%;
+  width: 2.25px;
+  background-color: black;
+}
+.contact-links {
+  margin-left: 8px;
+}
+.email-sider {
+  right: 0;
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  height: 300px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
