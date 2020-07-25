@@ -14,15 +14,19 @@ const Project = ({ project }) => {
   };
   return (
     <li className="project-item">
-      <div
-        className="project-img"
-        style={{ backgroundImage: `url(${renderImgs()})` }}
-      />
+      <a href={project.link} target="_blank">
+        <div
+          className="project-img"
+          style={{ backgroundImage: `url(${renderImgs()})` }}
+          onClick={project.link}
+        />
+      </a>
       <div className="prj-i-right col-1">
-        <div className="prj-title">{project.title}</div>
-        <a href="/link" className="prj-link">
-          {project.link}
-        </a>
+        <div className="prj-title">
+          <a href={`${project.link}`} target="_blank" className="prj-title">
+            {project.title}
+          </a>
+        </div>
         <div className="prj-desc">{project.desc}</div>
       </div>
     </li>
