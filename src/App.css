@@ -30,13 +30,13 @@ li {
   justify-content: flex-end;
 }
 .about {
-  width: 35%;
+  width: 50%;
   background-color: #3e474c;
-  justify-content: flex-end;
   display: flex;
+  flex-direction: column;
 }
 .projects {
-  width: 70%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,17 +81,19 @@ li {
   font-size: 42px;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
-  width: 400px;
-  margin: 4px 0;
+  width: 300px;
+  margin: 4px 0 0 40px;
 }
 .content-cont {
-  width: 100%;
+  width: 70%;
   margin-top: 24px;
 }
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 24px 8px 40px;
+  margin: 0 0 8px 40px;
+  align-items: center;
+  width: fit-content;
 }
 .profile-cont {
   height: fit-content;
@@ -123,7 +125,6 @@ li {
   color: #fff;
 }
 .tech-skills-cont {
-  width: 100%;
 }
 .project-item {
   height: 100%;
@@ -239,6 +240,11 @@ li {
 }
 .name-cont {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
 .profile-header-cont {
   margin-top: 52px;
@@ -247,21 +253,24 @@ li {
   margin-bottom: 16px;
   align-items: flex-end;
 }
+.profile-wrap {
+  display: flex;
+  width: fit-content;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
 }
-.skill-cont {
-  margin: 0 20px;
-}
+
 .skill-icon {
   background-size: contain;
   height: 50px;
   width: 75px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 24px;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin: 20px 10px;
 }
 .project-img {
   background-size: contain;

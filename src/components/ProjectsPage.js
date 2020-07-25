@@ -1,5 +1,4 @@
 import React from "react";
-import SkillList from "./SkillList";
 import ProjectList from "./ProjectList";
 import { abtBrand } from "../utils/static";
 
@@ -8,10 +7,6 @@ const ProjectsPage = () => {
     <div className="projects">
       <div className="projects-cont">
         <div className="profile-header-cont">
-          <div className="name-cont">
-            <div className="name">William Sinn</div>
-            <span>Fullstack Software Engineer</span>
-          </div>
           <div className="slogan-cont">
             <span className="slogan-text">{abtBrand()}</span>
           </div>
@@ -23,7 +18,6 @@ const ProjectsPage = () => {
             </div>
             <div className="section-horz-line" />
           </div>
-          <SkillList />
         </div>
         <div className="project-section">
           <div className="section-header">
