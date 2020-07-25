@@ -101,11 +101,11 @@ li {
   display: flex;
 }
 .profile-img {
-  background-color: blue;
-  min-height: 175px;
-  min-width: 175px;
+  background-color: #fff;
+  min-height: 200px;
+  min-width: 200px;
   border-radius: 8em;
-  width: 175px;
+  width: 200px;
 }
 .slogan-cont {
   width: 60%;
