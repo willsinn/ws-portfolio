@@ -119,6 +119,7 @@ li {
 }
 .summary-text {
   margin: 0;
+  padding-bottom: 12px;
 }
 .tech-skills-cont {
   width: 100%;
@@ -193,7 +194,7 @@ li {
   left: 0;
 }
 .section-title {
-  font-size: 1.2em;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   padding-left: 16px;

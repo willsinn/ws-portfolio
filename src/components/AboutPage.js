@@ -1,6 +1,6 @@
 import React from "react";
 import ContactList from "./ContactList";
-import { abtSummary } from "../utils/static";
+import { abtSummary, abtMission } from "../utils/static";
 
 const AboutPage = () => {
   return (
@@ -19,6 +19,7 @@ const AboutPage = () => {
           <div className="content-cont">
             <span className="section-title">About Me</span>
             <p className="summary-text">{abtSummary()}</p>
+            <p className="summary-text">{abtMission()}</p>
           </div>
         </div>
       </div>

@@ -5,10 +5,14 @@ export const abtBrand = () => {
 
 export const abtSummary = () => {
   const txt =
-    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.";
+    "Welcome! I'm Will, a software engineer based in NYC. As someone who enjoys self-optimization, I fell in love with the idea that a solution in code can always be made better.";
   return txt;
 };
-
+export const abtMission = () => {
+  const txt =
+    "My mission is to improve user experience through simplicity and intuitive design while optimizing the product codebase. Using data points to precisely upgrade weakpoints has always been a strong suit of mine and I intend to build on it!";
+  return txt;
+};
 export const stackList = () => {
   const arr = [
     { name: "javascript" },
