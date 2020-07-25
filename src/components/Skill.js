@@ -1,5 +1,5 @@
 import React from "react";
-import Sqlite from "../images/Sqlite.png";
+import Sqlite from "../images/Sqlite3.png";
 import Javascript from "../images/Javascript.png";
 import Ruby from "../images/Ruby.png";
 import ReactJS from "../images/ReactJS.png";
