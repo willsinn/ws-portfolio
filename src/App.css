@@ -39,6 +39,7 @@ li {
 .projects {
   width: 52.5%;
   right: 6em;
+  min-width: 700px;
   top: 102px;
   min-height: 65%;
   position: fixed;
@@ -183,20 +184,6 @@ li {
 .icon:hover a {
   margin-top: 2.5px;
 }
-.footer {
-  height: 40px;
-  background-color: #f5f5f5;
-  width: 100%;
-  box-shadow: 0 6px 12px -3px rgba(9, 30, 66, 0.25),
-    0 0 0 1px rgba(9, 30, 66, 0.08);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
 .section-title {
   font-size: 22px;
   font-weight: 700;
@@ -287,7 +274,7 @@ li {
   margin-top: 80px;
 }
 .projects-cont {
-  width: 93%;
+  width: 97%;
   display: flex;
   flex-direction: column;
 }
