@@ -107,6 +107,11 @@ li {
   height: 100%;
   width: 100%;
   min-height: 350px;
+  display: flex;
+}
+.project-item:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .prj-i-left {
   min-width: 75px;
