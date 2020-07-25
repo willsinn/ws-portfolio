@@ -3,7 +3,8 @@ import Mywellotask from "../images/mywellotask.png";
 import Busstuff from "../images/busstuff.png";
 import Zombiediner from "../images/zombiediner.png";
 
-const Project = ({ project }) => {
+const Project = ({ project, active, handleRenderActive }) => {
+  console.log(project, active);
   const renderImgs = () => {
     if (project.img) {
       switch (project.title) {
@@ -22,29 +23,39 @@ const Project = ({ project }) => {
     <li className="project-item">
       <div className="col-1">
         <div className="row">
-          <a
-            href={`${project.link}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="prj-title"
+            onClick={(e) => handleRenderActive(project.title)}
           >
             {project.title}
-          </a>
+          </div>
           <div className="prj-desc">{project.desc}</div>
         </div>
       </div>
-      {/* <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ marginRight: "24px" }}
-      >
-        <div
-          className="project-img"
-          style={{ backgroundImage: `url(${renderImgs()})` }}
-        />
-      </a> */}
+      {active === project.title ? (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ marginRight: "24px" }}
+        >
+          <div
+            className="project-img"
+            style={{ backgroundImage: `url(${renderImgs()})` }}
+          />
+        </a>
+      ) : null}
     </li>
   );
 };
 export default Project;
+{
+  /* <a
+href={`${project.link}`}
+target="_blank"
+rel="noopener noreferrer"
+className="prj-title"
+>
+{project.title}
+</a> */
+}
