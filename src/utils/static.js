@@ -58,10 +58,18 @@ export const projectList = () => {
 
 export const contactMethods = () => {
   const arr = [
-    { method: "email", img_link: "svg ref", link: "add-link-here" },
-    { method: "phone", img_link: "svg ref", link: "add-link-here" },
-    { method: "linkd-in", img_link: "svg ref", link: "add-link-here" },
-    { method: "instagram", img_link: "svg ref", link: "add-link-here" },
+    {
+      method: "github",
+      link: "https://github.com/willsinn",
+    },
+    {
+      method: "linkedin",
+      link: "https://www.linkedin.com/in/will-sinn",
+    },
+    {
+      method: "instagram",
+      link: "https://www.instagram.com/advansinnnn",
+    },
   ];
   return arr;
 };
