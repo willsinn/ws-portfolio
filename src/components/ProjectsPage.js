@@ -1,8 +1,10 @@
 import React from "react";
 import ProjectList from "./ProjectList";
+import { projectList } from "../utils/static";
 import { abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
+  const projects = projectList();
   return (
     <div className="projects">
       <div className="projects-cont">
@@ -13,7 +15,9 @@ const ProjectsPage = () => {
             </span>
             <div className="section-horz-line" />
           </div>
-          <ProjectList />
+          <div className="section-body">
+            <ProjectList projects={projects} />
+          </div>
         </div>
       </div>
       <div className="email-sider">
