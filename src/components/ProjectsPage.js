@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectList from "./ProjectList";
-import { abtBrand } from "../utils/static";
+import { projectList } from "../utils/static";
 
 const ProjectsPage = () => {
+  const projects = projectList();
+  const [active, setActive] = useState("Wello");
+  const handleRenderActive = (e, targ) => {
+    if (e) {
+      setActive(targ);
+    }
+  };
   return (
     <div className="projects">
       <div className="projects-cont">
@@ -13,7 +20,11 @@ const ProjectsPage = () => {
             </span>
             <div className="section-horz-line" />
           </div>
-          <ProjectList />
+          <ProjectList
+            projects={projects}
+            active={active}
+            handleRenderActive={handleRenderActive}
+          />
         </div>
       </div>
       <div className="email-sider">

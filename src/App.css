@@ -1,6 +1,6 @@
 body {
   font-family: "Hind Madurai", sans-serif;
-  font-size: 16px;
+  font-size: 15.5px;
   color: #000;
 }
 ul {
@@ -37,12 +37,10 @@ li {
   flex-direction: column;
 }
 .projects {
-  min-width: 850px;
-  width: 55%;
-  min-height: 700px;
-  height: 70%;
-  right: 24px;
-  top: 12.5%;
+  width: 52.5%;
+  right: 6em;
+  top: 102px;
+  min-height: 65%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -136,25 +134,32 @@ li {
   margin: 0;
   padding-bottom: 12px;
   color: #fff;
+  font-size: 0.95em;
 }
 .project-item {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   max-width: 250px;
+  position: relative;
 }
 .prj-title {
   font-size: 22px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: black;
+  padding: 6px 12px;
+  border-radius: 2px;
 }
 .prj-title:hover {
-  color: #3895de;
+  background: rgba(9, 30, 66, 0.04);
 }
 .prj-link {
   font-size: 14px;
 }
 .prj-desc {
-  line-height: 20px;
+  line-height: 18px;
+  font-size: 0.85em;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 13.5px;
 }
 .contact-item {
   width: 100%;
@@ -268,7 +273,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 34em;
+  min-width: 28em;
   min-height: 20em;
   width: 100%;
 }
@@ -282,14 +287,14 @@ li {
   margin-top: 80px;
 }
 .projects-cont {
-  width: 80%;
+  width: 93%;
   display: flex;
   flex-direction: column;
 }
 .project-sider-vert-line {
   height: 100%;
-  width: 1.5px;
-  background-color: #3e474c;
+  width: 1.75px;
+  background-color: #fff;
 }
 .about-sider-vert-line {
   height: 100%;
@@ -301,10 +306,9 @@ li {
 }
 .email-sider {
   right: 0;
-  position: absolute;
-  top: 70%;
-  bottom: 50%;
-  height: 300px;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
   width: -moz-fit-content;
   width: 36px;
   display: flex;
@@ -314,7 +318,7 @@ li {
   margin-right: 8px;
 }
 .email-wrap {
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,9 +326,15 @@ li {
 .fixed-email {
   transform: rotate(90deg);
   font-size: 14px;
-  color: #3e474c;
+  color: #fff;
 }
 .fa {
   font-size: 32px;
   color: #fff;
+}
+.active-project-cont {
+  width: fit-content;
+  position: fixed;
+  right: 8%;
+  top: 205px;
 }
