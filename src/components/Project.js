@@ -20,7 +20,12 @@ const Project = ({ project }) => {
   };
   return (
     <li className="project-item">
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginRight: "8px" }}
+      >
         <div
           className="project-img"
           style={{ backgroundImage: `url(${renderImgs()})` }}

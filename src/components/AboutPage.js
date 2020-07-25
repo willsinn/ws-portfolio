@@ -5,19 +5,19 @@ import { abtSummary } from "../utils/static";
 const AboutPage = () => {
   return (
     <div className="about">
-      <div className="row-1 pg-section">
-        <div className="picture-cont">
-          <div className="picture-img"></div>
+      <div className="about-cont">
+        <div className="profile-cont">
+          <div className="profile-img" />
         </div>
-      </div>
 
-      <div className="about-section">
-        <div className="content-cont">
-          <span className="section-title">About</span>
-          <p className="summary-text">{abtSummary()}</p>
+        <div className="about-section">
+          <div className="content-cont">
+            <span className="section-title">About Me</span>
+            <p className="summary-text">{abtSummary()}</p>
+          </div>
         </div>
+        <ContactList />
       </div>
-      <ContactList />
     </div>
   );
 };

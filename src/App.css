@@ -17,14 +17,16 @@ li {
   display: flex;
 }
 .about {
-  width: 30%;
+  width: 35%;
   background-color: darkgray;
+  justify-content: flex-end;
+  display: flex;
 }
 .projects {
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .navbar {
@@ -58,8 +60,8 @@ li {
 .col-1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: 0;
 }
 .name {
   font-size: 42px;
@@ -74,19 +76,21 @@ li {
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 16px 8px 32px;
+  margin: 0 24px 8px 40px;
 }
-.picture-cont {
-  height: 175px;
-  min-height: 175px;
-  width: 175px;
-  min-width: 175px;
-  background-color: #fff;
-  border: 1px solid gray;
+.profile-cont {
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid white;
   border-radius: 8em;
-  margin: 60px 12px 36px;
+  display: flex;
 }
-.picture-img {
+.profile-img {
+  background-color: blue;
+  min-height: 175px;
+  min-width: 175px;
+  border-radius: 8em;
+  width: 175px;
 }
 .slogan-cont {
   width: 60%;
@@ -97,6 +101,9 @@ li {
 }
 .summary-cont {
   width: 65%;
+}
+.summary-text {
+  margin: 0;
 }
 .tech-skills-cont {
   width: 100%;
@@ -119,9 +126,11 @@ li {
 }
 .project-item:nth-child(odd) div.prj-i-right a.prj-title {
   margin-left: 16px;
+  margin-right: 14px;
 }
 .project-item:nth-child(even) div.prj-i-right a.prj-title {
   margin-right: 24px;
+  margin-left: 14px;
 }
 .prj-i-right {
   width: 33.5%;
@@ -183,8 +192,9 @@ li {
   border-radius: 2px;
 }
 .section-horz-line {
-  width: 35%;
-  height: 2.75px;
+  width: 70%;
+  height: 2.15px;
+  margin-top: 16px;
   background-color: black;
   border-radius: 3px;
   justify-self: flex-start;
@@ -233,4 +243,15 @@ li {
   min-width: 34em;
   min-height: 20em;
   width: 100%;
+}
+
+.about-cont {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+}
+.projects-cont {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
