@@ -208,31 +208,28 @@ li {
 .section-title {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
   padding-left: 16px;
   line-height: 40px;
-  font-family: "Quattrocento", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  color: #fff;
 }
-.section-header-cont {
-  width: 300px;
-  background-color: #3895de;
-  height: fit-content;
-  border-radius: 2px;
-}
+
 .section-horz-line {
   width: 70%;
   height: 2.15px;
   margin-top: 16px;
-  background-color: #3895de;
-  border-radius: 3px;
+  border-top: 2px ridge black;
+  border-radius: 1px;
   justify-self: flex-start;
 }
 .section-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   align-items: center;
   height: 72px;
+  margin-top: 16px;
 }
 .project-section {
   width: 90%;
@@ -260,6 +257,8 @@ li {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .skill-icon {
@@ -270,7 +269,7 @@ li {
   background-position: center;
   border: 2px solid white;
   border-radius: 3px;
-  margin: 20px 10px;
+  margin: 4px 8px;
 }
 .project-img {
   background-size: contain;

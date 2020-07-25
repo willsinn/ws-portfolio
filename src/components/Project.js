@@ -20,17 +20,6 @@ const Project = ({ project }) => {
   };
   return (
     <li className="project-item">
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ marginRight: "24px" }}
-      >
-        <div
-          className="project-img"
-          style={{ backgroundImage: `url(${renderImgs()})` }}
-        />
-      </a>
       <div className="prj-i-right col-1">
         <a
           href={`${project.link}`}
@@ -42,6 +31,17 @@ const Project = ({ project }) => {
         </a>
         <div className="prj-desc">{project.desc}</div>
       </div>
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginRight: "24px" }}
+      >
+        <div
+          className="project-img"
+          style={{ backgroundImage: `url(${renderImgs()})` }}
+        />
+      </a>
     </li>
   );
 };
