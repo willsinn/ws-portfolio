@@ -120,18 +120,18 @@ li {
 .summary-text {
   margin: 0;
   padding-bottom: 12px;
+  color: #fff;
 }
 .tech-skills-cont {
   width: 100%;
 }
-
 .project-item {
   height: 100%;
   width: 100%;
   display: flex;
   margin-bottom: 24px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 .project-item:nth-child(odd) {
   display: flex;
@@ -142,7 +142,8 @@ li {
 }
 .project-item:nth-child(odd) div.prj-i-right a.prj-title {
   margin-left: 16px;
-  margin-right: 14px;
+  width: 200px;
+  height: 100%;
 }
 .project-item:nth-child(even) div.prj-i-right a.prj-title {
   margin-right: 24px;
@@ -156,6 +157,7 @@ li {
   font-size: 32px;
   text-decoration: none;
   color: black;
+  width: 150px;
 }
 .prj-title:hover {
   color: #3895de;
@@ -184,6 +186,9 @@ li {
 }
 .icon:hover {
   background-color: #3895de;
+}
+.icon:hover a {
+  margin-top: 2.5px;
 }
 .footer {
   height: 40px;

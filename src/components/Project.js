@@ -24,7 +24,7 @@ const Project = ({ project }) => {
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ marginRight: "8px" }}
+        style={{ marginRight: "24px" }}
       >
         <div
           className="project-img"
