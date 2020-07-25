@@ -6,7 +6,9 @@ const SkillList = () => {
   const renderSkills = () => {
     const skills = stackList();
     if (skills && skills.length > 0) {
-      return skills.map((skill) => <Skill key={skill} skill={skill} />);
+      return skills.map((skill) => (
+        <Skill key={`dataid-${skill.name}`} skill={skill} />
+      ));
     }
   };
   return (
