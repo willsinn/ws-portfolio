@@ -12,9 +12,11 @@ li {
 }
 .app {
   height: 100%;
+  min-height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
+  background-color: #142d3b;
 }
 .sider {
   position: fixed;
@@ -30,17 +32,30 @@ li {
   justify-content: flex-end;
 }
 .about {
-  width: 35%;
-  background-color: #3e474c;
-  justify-content: flex-end;
+  width: 42%;
   display: flex;
+  flex-direction: column;
 }
 .projects {
-  width: 70%;
+  min-width: 850px;
+  width: 55%;
+  min-height: 700px;
+  height: 70%;
+  right: 24px;
+  top: 12.5%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  font-weight: 400;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+  box-sizing: border-box;
+  outline: 0;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
@@ -72,26 +87,26 @@ li {
 }
 .col-1 {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   padding: 0;
-  margin: 0 0 8px 0;
+  flex-direction: column;
 }
 .name {
   font-size: 42px;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
-  width: 400px;
-  margin: 4px 0;
+  width: 300px;
+  margin: 4px 0 0 40px;
 }
 .content-cont {
-  width: 100%;
+  width: 70%;
   margin-top: 24px;
 }
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 24px 8px 40px;
+  margin: 0 0 8px 40px;
+  align-items: center;
+  width: fit-content;
 }
 .profile-cont {
   height: fit-content;
@@ -122,42 +137,15 @@ li {
   padding-bottom: 12px;
   color: #fff;
 }
-.tech-skills-cont {
-  width: 100%;
-}
 .project-item {
-  height: 100%;
-  width: 100%;
-  display: flex;
   margin-bottom: 24px;
-  align-items: center;
-  justify-content: flex-end;
-}
-.project-item:nth-child(odd) {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.project-item:nth-child(odd) div.prj-i-right {
-  align-items: flex-start;
-}
-.project-item:nth-child(odd) div.prj-i-right a.prj-title {
-  margin-left: 16px;
-  width: 200px;
-  height: 100%;
-}
-.project-item:nth-child(even) div.prj-i-right a.prj-title {
-  margin-right: 24px;
-  margin-left: 14px;
-}
-.prj-i-right {
-  width: 33.5%;
-  align-items: flex-end;
+  max-width: 250px;
 }
 .prj-title {
-  font-size: 32px;
+  font-size: 22px;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   color: black;
-  width: 150px;
 }
 .prj-title:hover {
   color: #3895de;
@@ -207,38 +195,38 @@ li {
 .section-title {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
   padding-left: 16px;
   line-height: 40px;
-  font-family: "Quattrocento", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  color: #fff;
 }
-.section-header-cont {
-  width: 300px;
-  background-color: #3895de;
-  height: fit-content;
-  border-radius: 2px;
-}
+
 .section-horz-line {
   width: 70%;
-  height: 2.15px;
-  margin-top: 16px;
-  background-color: #3895de;
-  border-radius: 3px;
+  margin-top: 12px;
+  height: fit-content;
+  border-top: 5px double #142d3b;
   justify-self: flex-start;
 }
 .section-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   align-items: center;
   height: 72px;
+  margin-top: 16px;
 }
 .project-section {
-  width: 90%;
   height: fit-content;
 }
 .name-cont {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
 }
 .profile-header-cont {
   margin-top: 52px;
@@ -247,21 +235,34 @@ li {
   margin-bottom: 16px;
   align-items: flex-end;
 }
+.profile-wrap {
+  display: flex;
+  width: fit-content;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  margin: 0;
+  padding: 0;
 }
-.skill-cont {
-  margin: 0 20px;
-}
+
 .skill-icon {
   background-size: contain;
   height: 50px;
   width: 75px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 24px;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin: 4px 8px;
+  font-weight: 400;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+  box-sizing: border-box;
+  outline: 0;
+  overflow: hidden;
 }
 .project-img {
   background-size: contain;
@@ -300,7 +301,7 @@ li {
 }
 .email-sider {
   right: 0;
-  position: fixed;
+  position: absolute;
   top: 70%;
   bottom: 50%;
   height: 300px;
