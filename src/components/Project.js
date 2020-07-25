@@ -32,30 +32,22 @@ const Project = ({ project, active, handleRenderActive }) => {
           <div className="prj-desc">{project.desc}</div>
         </div>
       </div>
-      {active === project.title ? (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ marginRight: "24px" }}
-        >
-          <div
-            className="project-img"
-            style={{ backgroundImage: `url(${renderImgs()})` }}
-          />
-        </a>
-      ) : null}
+      <div className="active-project-cont">
+        {active === project.title ? (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: "24px" }}
+          >
+            <div
+              className="project-img"
+              style={{ backgroundImage: `url(${renderImgs()})` }}
+            />
+          </a>
+        ) : null}
+      </div>
     </li>
   );
 };
 export default Project;
-{
-  /* <a
-href={`${project.link}`}
-target="_blank"
-rel="noopener noreferrer"
-className="prj-title"
->
-{project.title}
-</a> */
-}

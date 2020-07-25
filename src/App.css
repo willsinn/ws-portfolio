@@ -38,9 +38,9 @@ li {
 }
 .projects {
   width: 52.5%;
-  height: fit-content;
   right: 6em;
-  top: 12.5%;
+  top: 102px;
+  min-height: 65%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -139,6 +139,7 @@ li {
 .project-item {
   margin-bottom: 24px;
   max-width: 250px;
+  position: relative;
 }
 .prj-title {
   font-size: 22px;
@@ -268,7 +269,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 34em;
+  min-width: 28em;
   min-height: 20em;
   width: 100%;
 }
@@ -282,7 +283,7 @@ li {
   margin-top: 80px;
 }
 .projects-cont {
-  width: 96%;
+  width: 93%;
   display: flex;
   flex-direction: column;
 }
@@ -327,4 +328,10 @@ li {
 .fa {
   font-size: 32px;
   color: #fff;
+}
+.active-project-cont {
+  width: fit-content;
+  position: fixed;
+  right: 10%;
+  top: 205px;
 }

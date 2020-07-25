@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ProjectList from "./ProjectList";
 import { projectList } from "../utils/static";
-import { abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
   const projects = projectList();
