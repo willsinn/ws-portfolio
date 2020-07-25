@@ -36,14 +36,14 @@ export const projectList = () => {
     },
     {
       title: "Bus Stuff",
-      link: "filler-website.com",
+      link: "https://bus-stuff.herokuapp.com/",
       img: "snapshot.img",
       desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
       title: "Zombie Diner",
-      link: "filler-website.com",
+      link: "https://zombie-diner.herokuapp.com/",
       img: "snapshot.img",
       desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",

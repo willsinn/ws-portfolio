@@ -1,6 +1,6 @@
 body {
   font-family: "Hind Madurai", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 }
 ul {
@@ -106,24 +106,40 @@ li {
   height: 100%;
   width: 100%;
   display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .project-item:nth-child(odd) {
   display: flex;
   flex-direction: row-reverse;
 }
-.prj-i-right {
+.project-item:nth-child(odd) div.prj-i-right {
   align-items: flex-start;
+}
+.project-item:nth-child(odd) div.prj-i-right a.prj-title {
+  margin-left: 16px;
+}
+.project-item:nth-child(even) div.prj-i-right a.prj-title {
+  margin-right: 24px;
+}
+.prj-i-right {
   width: 33.5%;
+  align-items: flex-end;
 }
 .prj-title {
   font-size: 32px;
+  text-decoration: none;
+  color: black;
+}
+.prj-title:hover {
+  color: #3895de;
 }
 .prj-link {
   font-size: 14px;
 }
 .prj-desc {
-  line-height: 28px;
-  margin-top: 20px;
+  line-height: 20px;
 }
 .contact-item {
   width: 100%;
@@ -158,7 +174,7 @@ li {
   color: #fff;
   padding-left: 16px;
   line-height: 40px;
-  font-family: "Exo", serif;
+  font-family: "Quattrocento", sans-serif;
 }
 .section-header-cont {
   width: 300px;
@@ -168,7 +184,7 @@ li {
 }
 .section-horz-line {
   width: 35%;
-  height: 3px;
+  height: 2.75px;
   background-color: black;
   border-radius: 3px;
   justify-self: flex-start;
@@ -214,6 +230,7 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40em;
-  height: 20em;
+  min-width: 34em;
+  min-height: 20em;
+  width: 100%;
 }
