@@ -1,5 +1,5 @@
 export const abtBrand = () => {
-  const txt = "Short slogan, brand.";
+  const txt = "Data driven innovative thinker.";
   return txt;
 };
 

@@ -91,6 +91,8 @@ li {
 }
 .slogan-cont {
   width: 60%;
+  display: flex;
+  justify-content: flex-end;
 }
 .slogan-text {
 }
