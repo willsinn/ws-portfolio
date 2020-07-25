@@ -25,7 +25,7 @@ const Project = ({ project, active, handleRenderActive }) => {
         <div className="row">
           <div
             className="prj-title"
-            onClick={(e) => handleRenderActive(project.title)}
+            onClick={(e) => handleRenderActive(e, project.title)}
           >
             {project.title}
           </div>

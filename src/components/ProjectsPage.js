@@ -6,8 +6,10 @@ import { abtBrand } from "../utils/static";
 const ProjectsPage = () => {
   const projects = projectList();
   const [active, setActive] = useState("Wello");
-  const handleRenderActive = (targ) => {
-    setActive(targ);
+  const handleRenderActive = (e, targ) => {
+    if (e) {
+      setActive(targ);
+    }
   };
   return (
     <div className="projects">
