@@ -40,9 +40,8 @@ const Skill = ({ skill }) => {
     }
   };
   return (
-    <li key={`${skill.name}-id`} className="stack-list-item">
+    <li key={`${skill.name}-id`}>
       <div className="skill-cont">
-        {skill.name}
         <div
           className="skill-icon"
           style={{ backgroundImage: `url(${renderSkill()})` }}

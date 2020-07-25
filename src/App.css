@@ -98,13 +98,9 @@ li {
   width: 65%;
 }
 .tech-skills-cont {
-  margin: 24px 0;
   width: 100%;
 }
-.stack-list-item {
-  width: 60px;
-  height: 60px;
-}
+
 .project-item {
   height: 100%;
   width: 100%;
@@ -202,16 +198,18 @@ li {
   align-items: flex-end;
 }
 .skill-list {
-  height: 100%;
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
 }
 .skill-cont {
+  margin: 0 20px;
 }
 .skill-icon {
-  background-size: cover;
-  height: 48px;
-  width: 48px;
+  background-size: contain;
+  height: 50px;
+  width: 75px;
   background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 24px;
 }
