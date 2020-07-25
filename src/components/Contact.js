@@ -6,19 +6,19 @@ const Contact = ({ contact, orient }) => {
         case "linkedin":
           return (
             <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
           );
         case "github":
           return (
             <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-github-square" aria-hidden="true"></i>
+              <i className="fa fa-github-square" aria-hidden="true"></i>
             </a>
           );
         case "instagram":
           return (
             <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i className="fa fa-instagram" aria-hidden="true"></i>
             </a>
           );
         default:

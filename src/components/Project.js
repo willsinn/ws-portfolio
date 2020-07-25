@@ -20,18 +20,20 @@ const Project = ({ project }) => {
   };
   return (
     <li className="project-item">
-      <div className="prj-i-right col-1">
-        <a
-          href={`${project.link}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="prj-title"
-        >
-          {project.title}
-        </a>
-        <div className="prj-desc">{project.desc}</div>
+      <div className="col-1">
+        <div className="row">
+          <a
+            href={`${project.link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="prj-title"
+          >
+            {project.title}
+          </a>
+          <div className="prj-desc">{project.desc}</div>
+        </div>
       </div>
-      <a
+      {/* <a
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
@@ -41,7 +43,7 @@ const Project = ({ project }) => {
           className="project-img"
           style={{ backgroundImage: `url(${renderImgs()})` }}
         />
-      </a>
+      </a> */}
     </li>
   );
 };

@@ -11,7 +11,7 @@ li {
   text-decoration: none;
 }
 .app {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -72,10 +72,8 @@ li {
 }
 .col-1 {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   padding: 0;
-  margin: 0 0 8px 0;
+  flex-direction: column;
 }
 .name {
   font-size: 42px;
@@ -127,14 +125,10 @@ li {
 .tech-skills-cont {
 }
 .project-item {
-  height: 100%;
-  width: 100%;
-  display: flex;
   margin-bottom: 24px;
-  align-items: center;
-  justify-content: flex-end;
+  max-width: 250px;
 }
-.project-item:nth-child(odd) {
+/* .project-item:nth-child(odd) {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -149,11 +143,11 @@ li {
 .project-item:nth-child(even) div.prj-i-right a.prj-title {
   margin-right: 24px;
   margin-left: 14px;
-}
-.prj-i-right {
-  width: 33.5%;
-  align-items: flex-end;
-}
+} */
+/* .prj-i-right {
+  display: flex;
+  flex-direction: column;
+} */
 .prj-title {
   font-size: 32px;
   text-decoration: none;
@@ -217,7 +211,7 @@ li {
 
 .section-horz-line {
   width: 70%;
-  margin-top: 8px;
+  margin-top: 12px;
   height: fit-content;
   border-top: 5px double #142d3b;
   justify-self: flex-start;
@@ -231,7 +225,6 @@ li {
   margin-top: 16px;
 }
 .project-section {
-  width: 90%;
   height: fit-content;
 }
 .name-cont {
