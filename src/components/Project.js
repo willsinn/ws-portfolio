@@ -23,13 +23,24 @@ const Project = ({ project, active, handleRenderActive }) => {
     <li className="project-item">
       <div className="col-1">
         <div className="row">
-          <div
-            className="prj-title"
-            onClick={(e) => handleRenderActive(e, project.title)}
-          >
-            {project.title}
-          </div>
-          <div className="prj-desc">{project.desc}</div>
+          {active === project.title ? (
+            <div
+              style={{ backgroundColor: "#e4f0f6", color: "#0079bf" }}
+              className="prj-title"
+              onClick={(e) => handleRenderActive(e, project.title)}
+            >
+              <div>{project.title}</div>
+              <div className="prj-desc">{project.desc}</div>
+            </div>
+          ) : (
+            <div
+              className="prj-title"
+              onClick={(e) => handleRenderActive(e, project.title)}
+            >
+              <div>{project.title}</div>
+              <div className="prj-desc">{project.desc}</div>
+            </div>
+          )}
         </div>
       </div>
       <div className="active-project-cont">

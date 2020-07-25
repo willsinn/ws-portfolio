@@ -1,6 +1,6 @@
 body {
   font-family: "Hind Madurai", sans-serif;
-  font-size: 16px;
+  font-size: 15.5px;
   color: #000;
 }
 ul {
@@ -137,7 +137,7 @@ li {
   font-size: 0.95em;
 }
 .project-item {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   max-width: 250px;
   position: relative;
 }
@@ -146,9 +146,11 @@ li {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: black;
+  padding: 6px 12px;
+  border-radius: 2px;
 }
 .prj-title:hover {
-  color: #3895de;
+  background: rgba(9, 30, 66, 0.04);
 }
 .prj-link {
   font-size: 14px;
@@ -156,6 +158,8 @@ li {
 .prj-desc {
   line-height: 18px;
   font-size: 0.85em;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 13.5px;
 }
 .contact-item {
   width: 100%;
@@ -331,6 +335,6 @@ li {
 .active-project-cont {
   width: fit-content;
   position: fixed;
-  right: 10%;
+  right: 8%;
   top: 205px;
 }
