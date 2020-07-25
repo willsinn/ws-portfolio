@@ -291,3 +291,13 @@ li {
   align-items: center;
   justify-content: flex-end;
 }
+.email-wrap {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.fixed-email {
+  transform: rotate(90deg);
+}
