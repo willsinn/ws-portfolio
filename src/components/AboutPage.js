@@ -1,6 +1,6 @@
 import React from "react";
 import ContactList from "./ContactList";
-import { abtBrand, abtSummary } from "../utils/static";
+import { abtSummary } from "../utils/static";
 
 const AboutPage = () => {
   return (
@@ -13,7 +13,7 @@ const AboutPage = () => {
 
       <div className="about-section">
         <div className="content-cont">
-          <span className="section-title">Technical Stack</span>
+          <span className="section-title">About</span>
           <p className="summary-text">{abtSummary()}</p>
         </div>
       </div>

@@ -1,19 +1,8 @@
 import React from "react";
-import ContactList from "./ContactList";
-import { stackList, projectList, abtBrand } from "../utils/static";
-import Footer from "./Footer";
+import SkillList from "./SkillList";
+import { projectList, abtBrand } from "../utils/static";
 
 const ProjectsPage = () => {
-  const renderSkills = () => {
-    const skills = stackList();
-    if (skills && skills.length > 0) {
-      return skills.map((skill) => (
-        <li key={`${skill.name}-id`} className="stack-list-item">
-          <div className="horz-wrap">{skill.name}</div>
-        </li>
-      ));
-    }
-  };
   const renderProjects = () => {
     const projects = projectList();
     if (projects && projects.length > 0) {
@@ -59,6 +48,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
+
       <div className="project-section">
         <div className="section-header">
           <div className="section-header-cont">
@@ -66,9 +56,8 @@ const ProjectsPage = () => {
           </div>
           <div className="section-horz-line" />
         </div>
-        <div className="tech-skills-cont">
-          <ul>{renderSkills()}</ul>
-        </div>
+
+        <SkillList />
       </div>
     </div>
   );

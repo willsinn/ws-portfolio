@@ -98,13 +98,9 @@ li {
   width: 65%;
 }
 .tech-skills-cont {
-  margin: 24px 0;
   width: 100%;
 }
-.stack-list-item {
-  width: fit-content;
-  height: 28px;
-}
+
 .project-item {
   height: 100%;
   width: 100%;
@@ -192,7 +188,6 @@ li {
   height: fit-content;
 }
 .name-cont {
-  /* width: 40%; */
   margin: 0;
 }
 .profile-header-cont {
@@ -201,4 +196,20 @@ li {
   width: 80%;
   margin-bottom: 16px;
   align-items: flex-end;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.skill-cont {
+  margin: 0 20px;
+}
+.skill-icon {
+  background-size: contain;
+  height: 50px;
+  width: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 24px;
 }

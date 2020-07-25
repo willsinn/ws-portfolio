@@ -11,11 +11,16 @@ export const abtSummary = () => {
 
 export const stackList = () => {
   const arr = [
-    { name: "Javascript" },
-    { name: "Ruby" },
-    { name: "React JS" },
-    { name: "Ruby on Rails" },
-    { name: "SQLite3" },
+    { name: "javascript" },
+    { name: "ruby" },
+    { name: "reactjs" },
+    { name: "rails" },
+    { name: "redux" },
+    { name: "reactredux" },
+    { name: "sql" },
+    { name: "postgresql" },
+    { name: "aws" },
+    { name: "sqlite" },
   ];
   return arr;
 };
