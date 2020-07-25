@@ -18,10 +18,10 @@ li {
 }
 .sider {
   position: fixed;
-  top: 30%;
+  top: 65%;
   left: 0;
   bottom: 50%;
-  height: 450px;
+  height: 350px;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -31,7 +31,7 @@ li {
 }
 .about {
   width: 35%;
-  background-color: darkgray;
+  background-color: #3e474c;
   justify-content: flex-end;
   display: flex;
 }
@@ -274,10 +274,15 @@ li {
   display: flex;
   flex-direction: column;
 }
-.sider-vert-line {
+.project-sider-vert-line {
   height: 100%;
   width: 1.5px;
-  background-color: black;
+  background-color: #3e474c;
+}
+.about-sider-vert-line {
+  height: 100%;
+  width: 1.5px;
+  background-color: #fff;
 }
 .contact-links {
   margin-left: 8px;
@@ -285,9 +290,9 @@ li {
 .email-sider {
   right: 0;
   position: fixed;
-  top: 30%;
+  top: 70%;
   bottom: 50%;
-  height: 450px;
+  height: 300px;
   width: -moz-fit-content;
   width: 36px;
   display: flex;
@@ -304,4 +309,6 @@ li {
 }
 .fixed-email {
   transform: rotate(90deg);
+  font-size: 14px;
+  color: #3e474c;
 }
