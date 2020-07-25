@@ -36,11 +36,10 @@ const ProjectsPage = () => {
         </div>
       </div>
       <div className="email-sider">
-        <div className="sider-vert-line" />
         <div className="email-wrap">
           <div className="fixed-email">w.h.sinn@gmail.com</div>
         </div>
-        <div className="sider-vert-line" />
+        <div className="project-sider-vert-line" />
       </div>
     </div>
   );
