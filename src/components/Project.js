@@ -42,6 +42,9 @@ const Project = ({ project, active, handleRenderActive }) => {
               onClick={(e) => handleRenderActive(e, project.title)}
             >
               <div>{project.title}</div>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img className="open-link-icon" src={OpenLinkIcon} alt="" />
+              </a>
               <div className="prj-desc">{project.desc}</div>
             </div>
           )}
