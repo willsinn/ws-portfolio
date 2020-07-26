@@ -11,14 +11,14 @@ const AboutPage = () => {
         <div className="about-sider-vert-line" />
       </div>
       <div className="profile-wrap">
-        <div className="name-cont">
-          <div className="name">William Sinn</div>
-          <span>Fullstack Software Engineer</span>
-        </div>
         <div className="about-cont">
           <div className="profile-cont">
             <div className="profile-img" />
           </div>
+        </div>
+        <div className="name-cont">
+          <div className="name">William Sinn</div>
+          <span>Fullstack Software Engineer</span>
         </div>
       </div>
 
