@@ -23,9 +23,8 @@ const ProjectList = ({ projects, active, handleRenderActive }) => {
           }
         };
         return (
-          <>
+          <div key={`${project.title}-id`}>
             <Project
-              key={`${project.title}-id`}
               project={project}
               active={active}
               handleRenderActive={handleRenderActive}
@@ -45,7 +44,7 @@ const ProjectList = ({ projects, active, handleRenderActive }) => {
                 </a>
               ) : null}
             </div>
-          </>
+          </div>
         );
       });
     }

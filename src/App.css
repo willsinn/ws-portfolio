@@ -38,7 +38,8 @@ li {
   width: 52.5%;
   min-width: 725px;
   margin-top: 40px;
-  min-height: 65%;
+  min-height: 600px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -83,6 +84,7 @@ li {
 .col-1 {
   display: flex;
   padding: 0;
+  position: relative;
   flex-direction: column;
 }
 .name {
@@ -317,9 +319,9 @@ li {
 }
 .active-project-cont {
   width: fit-content;
-  position: fixed;
-  right: 9%;
-  top: 205px;
+  position: absolute;
+  right: 16px;
+  top: -20px;
 }
 .open-link-icon {
   height: 16px;
