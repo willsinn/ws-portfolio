@@ -1,25 +1,10 @@
 import React from "react";
-import Mywellotask from "../images/mywellotask.png";
-import Busstuff from "../images/busstuff.png";
-import Zombiediner from "../images/zombiediner.png";
+
 import OpenLinkIcon from "../images/open-link-icon.png";
 
 const Project = ({ project, active, handleRenderActive }) => {
   console.log(project, active);
-  const renderImgs = () => {
-    if (project.img) {
-      switch (project.title) {
-        case "Wello":
-          return Mywellotask;
-        case "Bus Stuff":
-          return Busstuff;
-        case "Zombie Diner":
-          return Zombiediner;
-        default:
-          return;
-      }
-    }
-  };
+
   return (
     <li className="project-item">
       <div className="col-1">
@@ -50,7 +35,7 @@ const Project = ({ project, active, handleRenderActive }) => {
           )}
         </div>
       </div>
-      <div className="active-project-cont">
+      {/* <div className="active-project-cont">
         {active === project.title ? (
           <a
             href={project.link}
@@ -64,7 +49,7 @@ const Project = ({ project, active, handleRenderActive }) => {
             />
           </a>
         ) : null}
-      </div>
+      </div> */}
     </li>
   );
 };

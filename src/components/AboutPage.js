@@ -31,7 +31,7 @@ const AboutPage = () => {
       </div>
       <div className="about-section">
         <div className="content-cont">
-          <span className="section-title">Skill set</span>
+          <span className="section-title">Skills</span>
           <SkillList />
         </div>
       </div>

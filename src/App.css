@@ -36,11 +36,9 @@ li {
 }
 .projects {
   width: 52.5%;
-  right: 6em;
   min-width: 725px;
-  top: 102px;
+  margin-top: 40px;
   min-height: 65%;
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
