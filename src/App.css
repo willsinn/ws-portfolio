@@ -17,6 +17,7 @@ li {
   overflow: scroll;
   display: flex;
   background-color: #142d3b;
+  align-items: center;
 }
 .sider {
   position: fixed;
@@ -37,7 +38,6 @@ li {
 .projects {
   width: 52.5%;
   min-width: 725px;
-  margin-top: 40px;
   min-height: 600px;
   height: 100%;
   display: flex;
@@ -100,7 +100,7 @@ li {
 .about-section {
   display: flex;
   flex-direction: column;
-  margin: 0 0 8px 40px;
+  margin: 16px 0 8px 40px;
   align-items: center;
   width: fit-content;
 }
@@ -185,9 +185,9 @@ li {
   font-size: 22px;
   font-weight: 700;
   padding-left: 16px;
-  line-height: 40px;
+  line-height: 20px;
   font-family: "Roboto", sans-serif;
-  width: 200px;
+  width: 90%;
   color: #fff;
 }
 
@@ -229,7 +229,7 @@ li {
   width: fit-content;
   width: 100%;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .skill-list {
   display: flex;
