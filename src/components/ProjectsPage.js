@@ -15,7 +15,10 @@ const ProjectsPage = () => {
       <div className="projects-cont">
         <div className="project-section">
           <div className="section-header">
-            <span className="section-title" style={{ color: "black" }}>
+            <span
+              className="section-title"
+              style={{ color: "black", width: "200px" }}
+            >
               Technical Projects
             </span>
             <div className="section-horz-line" />

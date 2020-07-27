@@ -26,7 +26,7 @@ const AboutPage = () => {
         <div className="content-cont col-1">
           <span className="section-title">
             About me
-            <div style={{ borderBottom: "1px solid white" }} />
+            <div className="line" />
           </span>
           <p className="summary-text">{abtSummary()}</p>
           <p className="summary-text">{abtMission()}</p>
@@ -35,7 +35,8 @@ const AboutPage = () => {
       <div className="about-section">
         <div className="content-cont col-1">
           <span className="section-title">
-            Skills <div style={{ borderBottom: "1px solid white" }} />
+            Skills
+            <div className="line" />
           </span>
           <SkillList />
         </div>

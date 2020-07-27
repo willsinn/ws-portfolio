@@ -35,21 +35,6 @@ const Project = ({ project, active, handleRenderActive }) => {
           )}
         </div>
       </div>
-      {/* <div className="active-project-cont">
-        {active === project.title ? (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ marginRight: "24px" }}
-          >
-            <div
-              className="project-img"
-              style={{ backgroundImage: `url(${renderImgs()})` }}
-            />
-          </a>
-        ) : null}
-      </div> */}
     </li>
   );
 };

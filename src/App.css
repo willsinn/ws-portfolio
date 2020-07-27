@@ -32,6 +32,10 @@ li {
   align-items: center;
   justify-content: flex-end;
 }
+.line {
+  border-bottom: 1px solid white;
+  margin-top: 4px;
+}
 .about {
   width: 40%;
 }
@@ -123,14 +127,12 @@ li {
   display: flex;
   justify-content: flex-end;
 }
-.slogan-text {
-}
 .summary-cont {
   width: 65%;
 }
 .summary-text {
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   color: #fff;
   font-size: 0.95em;
 }
@@ -187,7 +189,8 @@ li {
   padding-left: 16px;
   line-height: 20px;
   font-family: "Roboto", sans-serif;
-  width: 90%;
+  width: 95%;
+  margin-bottom: 12px;
   color: #fff;
 }
 
@@ -303,7 +306,8 @@ li {
   margin-right: 8px;
 }
 .email-wrap {
-  height: 50%;
+  height: 175px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
