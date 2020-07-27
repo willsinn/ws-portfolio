@@ -263,10 +263,8 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 28em;
-  min-height: 20em;
-  width: 100%;
-  margin: 0 4px;
+  min-width: 32em;
+  min-height: 22em;
 }
 
 .about-cont {
