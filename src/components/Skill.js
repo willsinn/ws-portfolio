@@ -9,6 +9,8 @@ import ReactRedux from "../images/ReactRedux.png";
 import Sql from "../images/Sql.png";
 import Postgresql from "../images/Postgresql.png";
 import Aws from "../images/Aws.png";
+import Html from "../images/Html.png";
+import Css from "../images/Css.png";
 
 const Skill = ({ skill }) => {
   const renderSkill = () => {
@@ -34,6 +36,10 @@ const Skill = ({ skill }) => {
           return Postgresql;
         case "aws":
           return Aws;
+        case "html":
+          return Html;
+        case "css":
+          return Css;
         default:
           return;
       }

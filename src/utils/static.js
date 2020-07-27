@@ -24,7 +24,8 @@ export const stackList = () => {
     { name: "sql" },
     { name: "postgresql" },
     { name: "aws" },
-    { name: "sqlite" },
+    { name: "html" },
+    { name: "css" },
   ];
   return arr;
 };
