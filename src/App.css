@@ -181,7 +181,7 @@ li {
   background-color: #3895de;
 }
 .icon:hover a {
-  margin-top: 2.5px;
+  margin-top: 4px;
 }
 .section-title {
   font-size: 22px;
@@ -266,7 +266,6 @@ li {
   min-width: 32em;
   min-height: 22em;
 }
-
 .about-cont {
   display: flex;
   flex-direction: column;
