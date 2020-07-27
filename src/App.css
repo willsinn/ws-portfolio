@@ -277,7 +277,7 @@ li {
   flex-direction: column;
 }
 .project-sider-vert-line {
-  height: 100%;
+  height: 50%;
   width: 1.75px;
   background-color: #fff;
 }
