@@ -40,15 +40,15 @@ export const projectList = () => {
         "A web app to help you manage, track and organize tasks and goals, using labels, checklists, lists and boards.",
     },
     {
-      title: "Bus Stuff",
-      link: "https://bus-stuff.herokuapp.com/",
+      title: "Bus Comparer",
+      link: "https://bus-comparer.herokuapp.com",
       img: "snapshot.img",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
     },
     {
       title: "Zombie Diner",
-      link: "https://zombie-diner.herokuapp.com/",
+      link: "https://zombie-diner.herokuapp.com",
       img: "snapshot.img",
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",

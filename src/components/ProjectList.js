@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import Mywellotask from "../images/mywellotask.png";
-import Busstuff from "../images/busstuff.png";
+import Buscomparer from "../images/buscomparer.png";
 import Zombiediner from "../images/zombiediner.png";
 
 const ProjectList = ({ projects, active, handleRenderActive }) => {
@@ -13,8 +13,8 @@ const ProjectList = ({ projects, active, handleRenderActive }) => {
             switch (project.title) {
               case "Wello":
                 return Mywellotask;
-              case "Bus Stuff":
-                return Busstuff;
+              case "Bus Comparer":
+                return Buscomparer;
               case "Zombie Diner":
                 return Zombiediner;
               default:
