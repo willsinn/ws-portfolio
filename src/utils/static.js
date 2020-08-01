@@ -34,7 +34,7 @@ export const projectList = () => {
   const arr = [
     {
       title: "Wello",
-      link: "https://www.mywellotask.com",
+      link: "http://ec2-52-86-173-242.compute-1.amazonaws.com",
       img: "snapshot.img",
       desc:
         "A web app to help you manage, track and organize tasks and goals, using labels, checklists, lists and boards.",
