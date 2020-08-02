@@ -11,8 +11,10 @@ body {
 }
 .projects,
 .about,
-.landing {
+.landing,
+.work {
   width: 100%;
+  min-height: 100vh;
   max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
@@ -21,6 +23,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
+  padding: 150px 0;
 }
 ul {
   display: flex;
