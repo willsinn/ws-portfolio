@@ -24,6 +24,9 @@ body {
   align-items: flex-start;
   margin: 0px auto;
 }
+.project-container {
+  min-width: 800px;
+}
 ul {
   display: flex;
 }
@@ -170,9 +173,10 @@ li {
   font-size: 0.95em;
 }
 .project-item {
-  margin-bottom: 8px;
-  max-width: 250px;
+  min-width: 100%;
   position: relative;
+  min-height: 450px;
+  padding: 0;
 }
 .work-content {
   min-width: 800px;
