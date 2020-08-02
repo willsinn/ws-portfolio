@@ -1,13 +1,13 @@
 :root {
   --txt-color: rgb(252, 230, 35, 1);
-  --main-txt-color: blue;
-  --main-padding: 15px;
+  --main-txt-color: rgb(204, 214, 246);
 }
 
 body {
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
   font-size: 13px;
-  color: #000;
+  color: var(--txt-color);
 }
 .projects,
 .about,
@@ -69,15 +69,22 @@ li {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #f5f5f5;
-  height: 48px;
+  height: 70px;
   width: 100%;
-  box-shadow: 0 6px 12px -3px rgba(9, 30, 66, 0.25),
+  box-shadow: 0 6px 12px -3px rgb(66, 66, 9, 69%),
     0 0 0 1px rgba(9, 30, 66, 0.08);
+  padding: 0 50px;
+  /* border-bottom: 0.25px solid var(--txt-color); */
+}
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
 }
 .navbar-btn {
-  font-size: 20px;
   padding: 13px 20px;
 }
 .navbar-btn:hover {
@@ -89,7 +96,7 @@ li {
 }
 .active-link {
   text-decoration: none;
-  color: #000;
+  color: var(--main-txt-color);
 }
 .row-2 {
   max-width: 38em;
@@ -339,4 +346,7 @@ li {
   position: absolute;
   right: 8px;
   top: 8px;
+}
+.nav-num {
+  font-size: 11px;
 }

@@ -1,30 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const navItems = ["about", "work", "contacts"];
 const Navbar = () => {
+  const renderNavItems = () => {
+    let counter = 0;
+    return navItems.map((item) => {
+      counter++;
+      return (
+        <div className="navbar-btn">
+          <span className="nav-num">0{counter}.</span>
+          <Link className="active-link" to={`/${item}`}>
+            {item}
+          </Link>
+        </div>
+      );
+    });
+  };
   return (
-    <div className="navbar">
-      <div className="navbar-btn">
-        <Link className="active-link" to="/about">
-          William Sinn
-        </Link>
-      </div>
-      <div className="horz-wrap">
-        <div className="navbar-btn">
-          <a href="resume" className="active-link">
-            resume
-          </a>
-        </div>
-        <div className="navbar-btn">
-          <Link className="active-link" to="/about">
-            about
-          </Link>
-        </div>
-        <div className="navbar-btn">
-          <Link className="active-link" to="/projects">
-            projects
-          </Link>
-        </div>
+    <div className="nav-wrap">
+      <div className="navbar">
+        <div>LOGO PLACEHOLDER</div>
+        <div className="horz-wrap">{renderNavItems()}</div>
       </div>
     </div>
   );
