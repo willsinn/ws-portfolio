@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectList from "./ProjectList";
 import { projectList } from "../utils/static";
 
-const ProjectsPage = () => {
+const WorkPage = () => {
   const projects = projectList();
   const [active, setActive] = useState("Wello");
   const handleRenderActive = (e, targ) => {
@@ -34,10 +34,9 @@ const ProjectsPage = () => {
         <div className="email-wrap">
           <div className="fixed-email">w.h.sinn@gmail.com</div>
         </div>
-        <div className="project-sider-vert-line" />
       </div>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default WorkPage;
