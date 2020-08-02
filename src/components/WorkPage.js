@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectList from "./ProjectList";
 import { projectList } from "../utils/static";
 
-const ProjectsPage = () => {
+const WorkPage = () => {
   const projects = projectList();
   const [active, setActive] = useState("Wello");
   const handleRenderActive = (e, targ) => {
@@ -39,4 +39,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default WorkPage;

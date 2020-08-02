@@ -2,8 +2,8 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <section className="main">
-      <div className="landing">
+    <div className="landing">
+      <section className="main">
         <h1>Hi, my name is.</h1>
         <h2 className="name">William Sinn</h2>
         <h3>
@@ -16,8 +16,8 @@ const LandingPage = () => {
             everything in between.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
