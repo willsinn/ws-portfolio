@@ -1,57 +1,13 @@
 import React from "react";
-import Sqlite from "../images/Sqlite3.png";
-import Javascript from "../images/Javascript.png";
-import Ruby from "../images/Ruby.png";
-import ReactJS from "../images/ReactJS.png";
-import Rails from "../images/Rails.png";
-import Redux from "../images/Redux.png";
-import ReactRedux from "../images/ReactRedux.png";
-import Sql from "../images/Sql.png";
-import Postgresql from "../images/Postgresql.png";
-import Aws from "../images/Aws.png";
-import Html from "../images/Html.png";
-import Css from "../images/Css.png";
 
 const Skill = ({ skill }) => {
-  const renderSkill = () => {
-    if (skill) {
-      switch (skill.name) {
-        case "sqlite":
-          return Sqlite;
-        case "javascript":
-          return Javascript;
-        case "ruby":
-          return Ruby;
-        case "reactjs":
-          return ReactJS;
-        case "rails":
-          return Rails;
-        case "redux":
-          return Redux;
-        case "reactredux":
-          return ReactRedux;
-        case "sql":
-          return Sql;
-        case "postgresql":
-          return Postgresql;
-        case "aws":
-          return Aws;
-        case "html":
-          return Html;
-        case "css":
-          return Css;
-        default:
-          return;
-      }
-    }
-  };
+  const icnStyle = { color: "var(--txt-yw)" };
+  const txtStyle = { color: "var(--main-txt-wht)" };
   return (
-    <li key={`${skill.name}-id`}>
+    <li className="skill-item" key={`${skill.name}-id`}>
       <div>
-        <div
-          className="skill-icon"
-          style={{ backgroundImage: `url(${renderSkill()})` }}
-        />
+        <span style={icnStyle}>></span>
+        <span style={txtStyle}>{skill.name}</span>
       </div>
     </li>
   );
