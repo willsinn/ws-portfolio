@@ -4,13 +4,15 @@ import WorkPage from "./components/WorkPage";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import ContactList from "./components/ContactList";
+import HexagonGrid from "./containers/HexagonGrid";
 
 import "./App.css";
 
 const App = () => {
   return (
     <div className="app">
-      <div className="section-horz-line" />
+      <HexagonGrid />
+
       <div className="sider contact-links">
         <ContactList orient={"vertical"} />
       </div>
