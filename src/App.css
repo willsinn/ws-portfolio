@@ -1,13 +1,13 @@
 :root {
-  --txt-color: rgb(252, 230, 35, 1);
-  --main-txt-color: rgb(204, 214, 246);
+  --txt-yw: rgb(252, 230, 35, 1);
+  --main-txt-wht: #fff;
 }
 
 body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
   font-size: 13px;
-  color: var(--txt-color);
+  color: var(--txt-yw);
 }
 .projects,
 .about,
@@ -32,10 +32,9 @@ li {
 }
 .sider {
   position: fixed;
-  top: 65%;
-  left: 0;
-  bottom: 50%;
-  height: 350px;
+  left: 16px;
+  bottom: 20%;
+  height: 450px;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -78,7 +77,6 @@ li {
 .nav-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -95,7 +93,7 @@ li {
 }
 .active-link {
   text-decoration: none;
-  color: var(--main-txt-color);
+  color: var(--main-txt-wht);
 }
 .row-2 {
   max-width: 38em;
@@ -193,10 +191,9 @@ li {
   border-radius: 5px;
 }
 .icon:hover {
-  background-color: #3895de;
 }
 .icon:hover a {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 .section-title {
   font-size: 22px;
@@ -322,7 +319,10 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: #fff;
+  color: var(--main-txt-wht);
+}
+.fa:hover {
+  color: var(--txt-yw);
 }
 .active-project-cont {
   width: fit-content;
