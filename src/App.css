@@ -277,6 +277,10 @@ li {
 .project-section {
   height: fit-content;
 }
+.img-wrap {
+  height: fit-content;
+  width: fit-content;
+}
 .name-cont {
   margin: 0;
   display: flex;

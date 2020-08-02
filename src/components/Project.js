@@ -5,6 +5,7 @@ import Zombie from "../images/zombiediner.png";
 
 const Project = ({ project }) => {
   const icn = { color: "var(--txt-yw)", fontSize: "13.5px" };
+  const phoneStyles = { height: "390px", width: "260px" };
   const renderProjectImg = (type) => {
     switch (type) {
       case "Wello":
@@ -17,6 +18,7 @@ const Project = ({ project }) => {
         return;
     }
   };
+
   console.log(project);
   return (
     <li className="project-item">
@@ -33,11 +35,12 @@ const Project = ({ project }) => {
         </div>
         <div className="prj-desc">{project.desc}</div>
       </div>
-      <a href={project.link}>
+      <a href={project.link} targ="_blank" alt="" className="img-wrap">
         <img
           src={renderProjectImg(project.title)}
-          alt=""
+          alt={project.link}
           className="project-img"
+          style={project.appType === "mobile" ? phoneStyles : null}
         />
       </a>
     </li>
