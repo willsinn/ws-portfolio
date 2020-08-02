@@ -16,10 +16,6 @@ const AboutPage = () => {
             <div className="profile-img" />
           </div>
         </div>
-        <div className="name-cont">
-          <div className="name">William Sinn</div>
-          <span>Fullstack Software Engineer</span>
-        </div>
       </div>
 
       <div className="about-section">
