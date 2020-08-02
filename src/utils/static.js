@@ -45,6 +45,7 @@ export const projectList = () => {
         "Rails",
         "AWS-EC2",
       ],
+      git: "https://github.com/willsinn/frontend-wello",
     },
     {
       title: "Bus Comparer",
@@ -54,6 +55,7 @@ export const projectList = () => {
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
       appType: "web",
       stack: ["React", "React-Router", "Rails", "Heroku"],
+      git: "https://github.com/willsinn/frontend-bus-comparer",
     },
     {
       title: "Zombie Diner",
@@ -63,6 +65,7 @@ export const projectList = () => {
         "A phone app where you match recipes to complete all orders before the time runs out.",
       appType: "mobile",
       stack: ["React", "Redux", "React Redux", "Ruby on Rails", "Heroku"],
+      git: "https://github.com/willsinn/zombie-diner-front-end",
     },
   ];
   return arr;

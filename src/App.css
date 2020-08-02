@@ -1,8 +1,12 @@
 :root {
   --txt-yw: rgb(252, 230, 35, 1);
   --txt-wht: #fff;
+  --txt-content: rgb(255, 255, 255, 0.75);
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
@@ -28,7 +32,7 @@ body {
   min-width: 800px;
 }
 .project-item:nth-child(even) .project-info ul li {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 16px;
 }
 .project-stack {
   padding: 0;
@@ -38,7 +42,9 @@ body {
   line-height: 14px;
   flex-wrap: wrap;
   margin: 9px 0;
+  color: var(--txt-content);
 }
+
 ul {
   display: flex;
 }
@@ -228,17 +234,16 @@ li {
   font-size: 11.5px;
 }
 .prj-title {
-  font-size: 19px;
+  font-size: 28px;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: var(--txt-yw);
-  padding: 6px 12px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--txt-wht);
+  font-weight: 600;
+  padding-bottom: 12px;
   border-radius: 2px;
   justify-content: space-between;
 }
-.prj-title:hover {
-  background: rgba(9, 30, 66, 0.04);
-}
+
 .prj-link {
   font-size: 14px;
 }
@@ -252,7 +257,7 @@ li {
   font-size: 0.85em;
   font-family: "Hind Madurai", sans-serif;
   font-size: 13.5px;
-  color: var(--txt-wht);
+  color: var(--txt-content);
 }
 .contact-item {
   width: 100%;
@@ -337,11 +342,13 @@ li {
   padding: 0;
 }
 .overlay-container {
-  padding: 25px 50px;
-  background-color: blue;
+  padding: 25px;
+  background-color: rgb(23, 42, 69);
   z-index: 1;
-  border-radius: 2px;
+  border-radius: 3px;
   min-width: 100%;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
 }
 
 .skill-icon {
@@ -416,6 +423,7 @@ li {
   font-size: 32px;
   color: rgb(10, 25, 47);
 }
+
 .fa-github-square {
   font-size: 38px;
 }

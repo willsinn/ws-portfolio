@@ -4,7 +4,12 @@ import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
 
 const Project = ({ project }) => {
-  const icn = { color: "var(--txt-yw)", fontSize: "13.5px" };
+  const iconStyles = {
+    fontSize: "20px",
+    height: "20px",
+    width: "20px",
+    marginRight: "8px",
+  };
   const phoneStyles = { height: "390px", width: "260px" };
   const renderProjectImg = (type) => {
     switch (type) {
@@ -28,17 +33,37 @@ const Project = ({ project }) => {
       <div className="project-info col-1">
         <div className="prj-title row">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <div>{project.title}</div>
+            {project.title}
           </a>
         </div>
         <div className="overlay-container">
           <div className="prj-desc">{project.desc}</div>
         </div>
         <ul className="project-stack">{renderProjectStack(project.stack)}</ul>
-        <i className="fa fa-external-link" style={icn} aria-hidden="true"></i>
+        <div className="row">
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <i
+              className="icon fa fa-github-square"
+              style={iconStyles}
+              aria-hidden="true"
+            ></i>
+          </a>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <i
+              className="icon fa fa-external-link"
+              style={iconStyles}
+              aria-hidden="true"
+            ></i>
+          </a>
+        </div>
       </div>
 
-      <a href={project.link} targ="_blank" alt="" className="img-wrap">
+      <a
+        href={project.link}
+        targ="_blank"
+        rel="noopener noreferrer"
+        className="img-wrap"
+      >
         <img
           src={renderProjectImg(project.title)}
           alt={project.link}
