@@ -77,6 +77,7 @@ const Project = ({ project }) => {
         rel="noopener noreferrer"
         className="img-wrap"
       >
+        <div className="dampener" />
         <img
           src={renderProjectImg(project.title)}
           alt={project.link}
