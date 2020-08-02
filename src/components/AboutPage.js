@@ -9,22 +9,24 @@ const AboutPage = () => {
       <div className="sider contact-links">
         <ContactList orient={"vertical"} />
       </div>
-      <div className="profile-wrap">
-        <div className="about-cont">
-          <div className="profile-cont">
-            <div className="profile-img" />
+      <div className="row">
+        <div className="profile-wrap">
+          <div className="about-cont">
+            <div className="profile-cont">
+              <div className="profile-img" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="about-section">
-        <div className="content-cont col-1">
-          <span className="section-title">
-            About me
-            <div className="line" />
-          </span>
-          <p className="summary-text">{abtSummary()}</p>
-          <p className="summary-text">{abtMission()}</p>
+        <div className="about-section">
+          <div className="content-cont col-1">
+            <span className="section-title">
+              About me
+              <div className="line" />
+            </span>
+            <p className="summary-text">{abtSummary()}</p>
+            <p className="summary-text">{abtMission()}</p>
+          </div>
         </div>
       </div>
       <div className="about-section">
