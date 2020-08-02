@@ -27,12 +27,32 @@ body {
 .project-container {
   min-width: 800px;
 }
+.project-item:nth-child(even) .project-info ul li {
+  margin: 0 0 0 20px;
+}
+.project-stack {
+  padding: 0;
+  align-items: center;
+  display: flex;
+  height: fit-content;
+  line-height: 14px;
+  flex-wrap: wrap;
+  margin: 9px 0;
+}
 ul {
   display: flex;
 }
 li {
   list-style: none;
   text-decoration: none;
+}
+.stack-item {
+  font-size: 11px;
+  margin-right: 16px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .app {
   width: 100%;
@@ -187,6 +207,11 @@ li {
 .project-item:nth-child(even) div.project-info {
   align-items: flex-end;
 }
+.project-info {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+}
 .work-content {
   max-width: 800px;
   display: flex;
@@ -312,7 +337,7 @@ li {
   padding: 0;
 }
 .overlay-container {
-  padding: 25px;
+  padding: 25px 50px;
   background-color: blue;
   z-index: 1;
   border-radius: 2px;

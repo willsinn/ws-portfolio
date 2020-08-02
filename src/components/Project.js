@@ -18,25 +18,26 @@ const Project = ({ project }) => {
         return;
     }
   };
-
-  console.log(project);
+  const renderProjectStack = (stack) => {
+    if (stack.length > 0) {
+      return stack.map((val) => <li className="stack-item">{val}</li>);
+    }
+  };
   return (
     <li className="project-item">
       <div className="project-info col-1">
         <div className="prj-title row">
-          <div>{project.title}</div>
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <i
-              className="fa fa-external-link"
-              style={icn}
-              aria-hidden="true"
-            ></i>
+            <div>{project.title}</div>
           </a>
         </div>
         <div className="overlay-container">
           <div className="prj-desc">{project.desc}</div>
         </div>
+        <ul className="project-stack">{renderProjectStack(project.stack)}</ul>
+        <i className="fa fa-external-link" style={icn} aria-hidden="true"></i>
       </div>
+
       <a href={project.link} targ="_blank" alt="" className="img-wrap">
         <img
           src={renderProjectImg(project.title)}

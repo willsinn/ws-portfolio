@@ -37,6 +37,14 @@ export const projectList = () => {
       desc:
         "A web app to help you manage, track and organize tasks and goals, using labels, checklists, lists and boards.",
       appType: "web",
+      stack: [
+        "React",
+        "Redux",
+        "React-Hooks",
+        "React-Redux",
+        "Rails",
+        "AWS-EC2",
+      ],
     },
     {
       title: "Bus Comparer",
@@ -45,6 +53,7 @@ export const projectList = () => {
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
       appType: "web",
+      stack: ["React", "React-Router", "Rails", "Heroku"],
     },
     {
       title: "Zombie Diner",
@@ -53,6 +62,7 @@ export const projectList = () => {
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",
       appType: "mobile",
+      stack: ["React", "Redux", "React Redux", "Ruby on Rails", "Heroku"],
     },
   ];
   return arr;
