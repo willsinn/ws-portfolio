@@ -56,7 +56,9 @@ li {
 .about {
   width: 40%;
 }
-.projects {
+.work {
+}
+/* .projects {
   width: 52.5%;
   min-width: 725px;
   display: flex;
@@ -71,7 +73,7 @@ li {
   box-sizing: border-box;
   outline: 0;
   overflow: hidden;
-}
+} */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -221,14 +223,14 @@ li {
   margin-bottom: 12px;
   color: #fff;
 }
-
+/* 
 .section-horz-line {
   width: 70%;
   margin-top: 12px;
   height: fit-content;
   border-top: 5px double #142d3b;
   justify-self: flex-start;
-}
+} */
 .section-header {
   display: flex;
   justify-content: center;
