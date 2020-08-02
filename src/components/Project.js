@@ -33,7 +33,9 @@ const Project = ({ project }) => {
             ></i>
           </a>
         </div>
-        <div className="prj-desc">{project.desc}</div>
+        <div className="overlay-container">
+          <div className="prj-desc">{project.desc}</div>
+        </div>
       </div>
       <a href={project.link} targ="_blank" alt="" className="img-wrap">
         <img

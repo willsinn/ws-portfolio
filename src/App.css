@@ -182,8 +182,10 @@ li {
 }
 .project-item:nth-child(even) {
   display: flex;
-
   flex-direction: row-reverse;
+}
+.project-item:nth-child(even) div.project-info {
+  align-items: flex-end;
 }
 .work-content {
   max-width: 800px;
@@ -308,6 +310,13 @@ li {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+.overlay-container {
+  padding: 25px;
+  background-color: blue;
+  z-index: 1;
+  border-radius: 2px;
+  min-width: 100%;
 }
 
 .skill-icon {
