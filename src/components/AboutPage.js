@@ -8,7 +8,6 @@ const AboutPage = () => {
     <div className="about">
       <div className="sider contact-links">
         <ContactList orient={"vertical"} />
-        <div className="about-sider-vert-line" />
       </div>
       <div className="profile-wrap">
         <div className="about-cont">

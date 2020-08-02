@@ -34,7 +34,6 @@ const ProjectsPage = () => {
         <div className="email-wrap">
           <div className="fixed-email">w.h.sinn@gmail.com</div>
         </div>
-        <div className="project-sider-vert-line" />
       </div>
     </div>
   );

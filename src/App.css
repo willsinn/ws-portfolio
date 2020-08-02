@@ -74,7 +74,6 @@ li {
   box-shadow: 0 6px 12px -3px rgb(66, 66, 9, 69%),
     0 0 0 1px rgba(9, 30, 66, 0.08);
   padding: 0 50px;
-  /* border-bottom: 0.25px solid var(--txt-color); */
 }
 .nav-wrap {
   display: flex;
@@ -292,16 +291,7 @@ li {
   display: flex;
   flex-direction: column;
 }
-.project-sider-vert-line {
-  height: 50%;
-  width: 1.75px;
-  background-color: #fff;
-}
-.about-sider-vert-line {
-  height: 100%;
-  width: 1.5px;
-  background-color: #fff;
-}
+
 .contact-links {
   margin-left: 8px;
 }
