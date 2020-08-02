@@ -4,11 +4,19 @@ import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
 
 const Project = ({ project }) => {
-  const iconStyles = {
+  const iconGit = {
     fontSize: "20px",
     height: "20px",
     width: "20px",
+    marginRight: "12px",
+  };
+  const iconExternal = {
+    fontSize: "23.5px",
+    height: "24px",
+    width: "24px",
     marginRight: "8px",
+    color: "white",
+    backgroundColor: "inherit",
   };
   const phoneStyles = { height: "390px", width: "260px" };
   const renderProjectImg = (type) => {
@@ -41,17 +49,22 @@ const Project = ({ project }) => {
         </div>
         <ul className="project-stack">{renderProjectStack(project.stack)}</ul>
         <div className="row">
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <a href={project.git} target="_blank" rel="noopener noreferrer">
             <i
               className="icon fa fa-github-square"
-              style={iconStyles}
+              style={iconGit}
               aria-hidden="true"
             ></i>
           </a>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={project.link}
+            style={{ background: "transparent" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i
               className="icon fa fa-external-link"
-              style={iconStyles}
+              style={iconExternal}
               aria-hidden="true"
             ></i>
           </a>

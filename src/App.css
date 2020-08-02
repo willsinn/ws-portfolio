@@ -414,6 +414,7 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+
 .fixed-email {
   transform: rotate(90deg);
   font-size: 14px;
