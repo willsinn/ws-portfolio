@@ -14,6 +14,16 @@ body {
 .landing {
   min-height: 100vh;
   width: 100%;
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0px auto;
+  padding: 150px 0px;
 }
 ul {
   display: flex;
@@ -74,12 +84,24 @@ li {
     0 0 0 1px rgba(9, 30, 66, 0.08);
   padding: 0 50px;
 }
+.main {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  counter-reset: section 0;
+  padding: 200px 150px;
+  margin: 0px auto;
+}
 .nav-wrap {
   display: flex;
   justify-content: space-between;
   height: 100px;
   width: 100%;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 70;
 }
 .navbar-btn {
   padding: 13px 20px;
