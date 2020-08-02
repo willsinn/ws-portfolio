@@ -36,6 +36,7 @@ export const projectList = () => {
       img: "../images/mywellotask.png",
       desc:
         "A web app to help you manage, track and organize tasks and goals, using labels, checklists, lists and boards.",
+      app_type: "web",
     },
     {
       title: "Bus Comparer",
@@ -43,6 +44,7 @@ export const projectList = () => {
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
+      app_type: "web",
     },
     {
       title: "Zombie Diner",
@@ -50,6 +52,7 @@ export const projectList = () => {
       img: "../images/zombiediner.png",
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",
+      app_type: "mobile",
     },
   ];
   return arr;

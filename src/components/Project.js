@@ -33,13 +33,13 @@ const Project = ({ project }) => {
         </div>
         <div className="prj-desc">{project.desc}</div>
       </div>
-      <div className="project-imgs">
+      <a href={project.link}>
         <img
           src={renderProjectImg(project.title)}
           alt=""
           className="project-img"
         />
-      </div>
+      </a>
     </li>
   );
 };
