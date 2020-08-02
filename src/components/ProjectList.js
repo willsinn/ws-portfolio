@@ -15,6 +15,6 @@ const ProjectList = () => {
       });
     }
   };
-  return <ul className="col-1">{renderProjects()}</ul>;
+  return <ul className="project-container col-1">{renderProjects()}</ul>;
 };
 export default ProjectList;
