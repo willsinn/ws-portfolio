@@ -6,7 +6,7 @@ const Skill = ({ skill }) => {
   return (
     <li className="skill-item" key={`${skill.name}-id`}>
       <div>
-        <span style={icnStyle}>></span>
+        <span style={icnStyle}>⎖</span>
         <span style={txtStyle}>{skill.name}</span>
       </div>
     </li>
