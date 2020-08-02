@@ -10,6 +10,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="app">
+      <div className="section-horz-line" />
       <div className="sider contact-links">
         <ContactList orient={"vertical"} />
       </div>

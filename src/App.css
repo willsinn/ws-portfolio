@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
-  padding: 150px 0;
 }
 ul {
   display: flex;
@@ -83,7 +82,7 @@ li {
   height: 70px;
   width: 100%;
   box-shadow: 0 6px 12px -3px rgb(66, 66, 9, 69%),
-    0 0 0 1px rgba(9, 30, 66, 0.08);
+    0 0 0 1px rgb(208, 192, 41, 7%);
   padding: 0 50px;
 }
 .main {
@@ -226,7 +225,7 @@ li {
 .icon {
   height: 24px;
   width: 24px;
-  background-color: transparent;
+  background-color: var(--txt-wht);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,9 +233,10 @@ li {
   border-radius: 5px;
 }
 .icon:hover {
+  background-color: var(--txt-yw);
 }
 .icon:hover a {
-  margin-top: 3px;
+  margin-top: 2px;
 }
 .section-title {
   font-size: 22px;
@@ -248,14 +248,13 @@ li {
   margin-bottom: 12px;
   color: #fff;
 }
-/* 
+
 .section-horz-line {
-  width: 70%;
+  width: 100%;
   margin-top: 12px;
-  height: fit-content;
-  border-top: 5px double #142d3b;
-  justify-self: flex-start;
-} */
+  height: 1px;
+  background-color: var(--txt-yw);
+}
 .section-header {
   display: flex;
   justify-content: center;
@@ -362,10 +361,10 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: var(--txt-wht);
+  color: rgb(10, 25, 47);
 }
-.fa:hover {
-  color: var(--txt-yw);
+.fa-github-square {
+  font-size: 38px;
 }
 .active-project-cont {
   width: fit-content;

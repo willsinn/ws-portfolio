@@ -58,16 +58,16 @@ export const projectList = () => {
 export const contactMethods = () => {
   const arr = [
     {
-      method: "github",
-      link: "https://github.com/willsinn",
-    },
-    {
       method: "linkedin",
       link: "https://www.linkedin.com/in/will-sinn",
     },
     {
       method: "instagram",
       link: "https://www.instagram.com/advansinnnn",
+    },
+    {
+      method: "github",
+      link: "https://github.com/willsinn",
     },
   ];
   return arr;
