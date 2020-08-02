@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProjectList from "./ProjectList";
 import SkillList from "./SkillList";
 
@@ -9,7 +9,7 @@ const WorkPage = () => {
         <div>02.</div>
         <div>Work that I've done.</div>
       </div>
-      <div className="row">
+      <div className="work-content row">
         <ProjectList />
         <SkillList />
       </div>
