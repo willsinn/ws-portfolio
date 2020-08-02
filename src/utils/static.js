@@ -15,17 +15,15 @@ export const abtMission = () => {
 };
 export const stackList = () => {
   const arr = [
-    { name: "javascript" },
-    { name: "ruby" },
-    { name: "reactjs" },
-    { name: "rails" },
-    { name: "redux" },
-    { name: "reactredux" },
-    { name: "sql" },
-    { name: "postgresql" },
-    { name: "aws" },
-    { name: "html" },
-    { name: "css" },
+    { name: "JavaScript (ES6)" },
+    { name: "Ruby" },
+    { name: "ReactJS" },
+    { name: "Ruby on Rails" },
+    { name: "Redux" },
+    { name: "React Redux" },
+    { name: "SQL & Psql" },
+    { name: "Amazon Web Services" },
+    { name: "HTML & CSS" },
   ];
   return arr;
 };

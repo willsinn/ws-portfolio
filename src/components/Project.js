@@ -1,39 +1,22 @@
 import React from "react";
 
-import OpenLinkIcon from "../images/open-link-icon.png";
-
-const Project = ({ project, active, handleRenderActive }) => {
-  console.log(project, active);
+const Project = ({ project }) => {
+  const icn = { color: "var(--txt-yw)", fontSize: "13.5px" };
 
   return (
     <li className="project-item">
       <div className="col-1">
-        <div>
-          {active === project.title ? (
-            <div
-              style={{ backgroundColor: "#e4f0f6", color: "#0079bf" }}
-              className="prj-title"
-              onClick={(e) => handleRenderActive(e, project.title)}
-            >
-              <div>{project.title}</div>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img className="open-link-icon" src={OpenLinkIcon} alt="" />
-              </a>
-              <div className="prj-desc">{project.desc}</div>
-            </div>
-          ) : (
-            <div
-              className="prj-title"
-              onClick={(e) => handleRenderActive(e, project.title)}
-            >
-              <div>{project.title}</div>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img className="open-link-icon" src={OpenLinkIcon} alt="" />
-              </a>
-              <div className="prj-desc">{project.desc}</div>
-            </div>
-          )}
+        <div className="prj-title row">
+          <div>{project.title}</div>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <i
+              className="fa fa-external-link"
+              style={icn}
+              aria-hidden="true"
+            ></i>
+          </a>
         </div>
+        <div className="prj-desc">{project.desc}</div>
       </div>
     </li>
   );

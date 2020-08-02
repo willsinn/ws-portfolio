@@ -1,6 +1,6 @@
 :root {
   --txt-yw: rgb(252, 230, 35, 1);
-  --main-txt-wht: #fff;
+  --txt-wht: #fff;
 }
 
 body {
@@ -11,8 +11,10 @@ body {
 }
 .projects,
 .about,
-.landing {
+.landing,
+.work {
   width: 100%;
+  min-height: 100vh;
   max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
@@ -21,6 +23,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
+  padding: 150px 0;
 }
 ul {
   display: flex;
@@ -56,7 +59,9 @@ li {
 .about {
   width: 40%;
 }
-.projects {
+.work {
+}
+/* .projects {
   width: 52.5%;
   min-width: 725px;
   display: flex;
@@ -71,7 +76,7 @@ li {
   box-sizing: border-box;
   outline: 0;
   overflow: hidden;
-}
+} */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -109,7 +114,7 @@ li {
 }
 .active-link {
   text-decoration: none;
-  color: var(--main-txt-wht);
+  color: var(--txt-wht);
 }
 .row {
   display: flex;
@@ -170,13 +175,29 @@ li {
   max-width: 250px;
   position: relative;
 }
+.work-content {
+  min-width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+}
+.tech-skills-cont {
+  width: 350px;
+}
+.skill-item {
+  height: 20px;
+  width: 175px;
+  font-size: 11.5px;
+}
 .prj-title {
   font-size: 19px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: var(--txt-yw);
   padding: 6px 12px;
   border-radius: 2px;
+  justify-content: space-between;
 }
 .prj-title:hover {
   background: rgba(9, 30, 66, 0.04);
@@ -184,11 +205,17 @@ li {
 .prj-link {
   font-size: 14px;
 }
+
+.prj-title.row a i:hover {
+  font-weight: 900;
+}
+
 .prj-desc {
   line-height: 18px;
   font-size: 0.85em;
   font-family: "Hind Madurai", sans-serif;
   font-size: 13.5px;
+  color: var(--txt-wht);
 }
 .contact-item {
   width: 100%;
@@ -221,14 +248,14 @@ li {
   margin-bottom: 12px;
   color: #fff;
 }
-
+/* 
 .section-horz-line {
   width: 70%;
   margin-top: 12px;
   height: fit-content;
   border-top: 5px double #142d3b;
   justify-self: flex-start;
-}
+} */
 .section-header {
   display: flex;
   justify-content: center;
@@ -335,7 +362,7 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: var(--main-txt-wht);
+  color: var(--txt-wht);
 }
 .fa:hover {
   color: var(--txt-yw);

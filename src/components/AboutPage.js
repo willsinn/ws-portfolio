@@ -1,13 +1,13 @@
 import React from "react";
 import SkillList from "./SkillList";
-import ContactList from "./ContactList";
 import { abtSummary, abtMission } from "../utils/static";
 
 const AboutPage = () => {
   return (
     <div className="about">
-      <div className="sider contact-links">
-        <ContactList orient={"vertical"} />
+      <div className="section-header">
+        <div>01.</div>
+        <div>About</div>
       </div>
       <div className="row">
         <div className="profile-wrap">
@@ -27,15 +27,6 @@ const AboutPage = () => {
             <p className="summary-text">{abtSummary()}</p>
             <p className="summary-text">{abtMission()}</p>
           </div>
-        </div>
-      </div>
-      <div className="about-section">
-        <div className="content-cont col-1">
-          <span className="section-title">
-            Skills
-            <div className="line" />
-          </span>
-          <SkillList />
         </div>
       </div>
     </div>
