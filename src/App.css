@@ -163,10 +163,10 @@ li {
 .active-link {
   text-decoration: none;
   color: var(--white);
-  font-size: 12.75px;
-  font-weight: 600;
+  font-size: 11.5px;
+  font-weight: 900;
   letter-spacing: 0.04em;
-  line-height: 20px;
+  line-height: 19px;
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
     Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
@@ -336,9 +336,9 @@ li {
   cursor: pointer;
   border-radius: 5px;
 }
-.icon:hover {
+/* .icon:hover {
   background-color: var(--content-red);
-}
+} */
 
 .section-title {
   font-size: 30px;
@@ -517,10 +517,19 @@ li {
 }
 .fa {
   font-size: 28px;
-  color: var(--off-white);
+  color: var(--navbar);
 }
 .fa:hover {
-  color: var(--white);
+  color: var(--titles-red);
+  /* background-size: contain;
+  background-color: var(--lightgray-ui);
+  border-radius: 3px; */
+}
+.p-i {
+  color: var(--off-white);
+}
+.p-i:hover {
+  color: var(--titles-red);
 }
 .fa-github-square {
 }
@@ -544,28 +553,31 @@ li {
   margin-right: 4px;
 }
 .clipboard {
-  height: 40px;
-  padding: 6px 8px 2px 8px;
+  /* height: 40px; */
+  /* padding: 6px 8px 2px 8px; */
   width: fit-content;
   border-radius: 3px;
   z-index: 2;
   display: flex;
   align-items: center;
-  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
-    0 0 0 1px rgba(9, 30, 66, 0.08);
+
   position: relative;
 }
 .clip-cont {
-  background-color: var(--white);
+  background-color: var(--navbar);
   border-radius: 2px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+  padding: 12px 4px;
+  border: 0.5px solid rgb(66, 61, 61);
 }
 .clip-title {
-  height: 30px;
+  height: 28px;
   width: 100%;
-  color: var(--titles-red);
+  color: var(--white);
   justify-content: center;
-  align-items: center;
-  font-weight: 900;
+  margin-left: 12px;
+  font-weight: 300;
   cursor: default;
 }
 .clip-text {
@@ -583,14 +595,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--content-red);
+  color: black;
 }
 .fa.fa-clipboard {
   height: 24px;
   width: 24px;
   font-size: 21px;
-  color: var(--white);
-  background-color: var(--navbar);
   padding: 3px;
   position: relative;
   border-radius: 3px;
@@ -599,21 +609,31 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--lightgray-ui);
 }
 .fa.fa-clipboard:hover {
-  color: var(--content-red);
+  color: var(--titles-red);
 }
-.copied-verify {
-  padding: 3px 3px 3px 12px;
+.popup-info {
+  padding: 3px 8px;
   font-size: 11px;
   position: absolute;
   border-radius: 2px;
+  width: -moz-fit-content;
   width: fit-content;
   color: var(--overlay);
   background-color: var(--white);
-  border: 1px solid lightgray;
-  right: -38px;
-  top: -28px;
+  right: -24px;
+  top: 34px;
+}
+.triangle-up {
+  height: 2px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid var(--white);
+  position: absolute;
+  top: -10px;
+  right: 28px;
 }
 .popover {
   position: absolute;

@@ -2,13 +2,23 @@ import React, { useState } from "react";
 const Contact = ({ contact, orient }) => {
   const [popup, setPopup] = useState(false);
   const [msg, setMsg] = useState(false);
+  const [hover, setHover] = useState(false);
   const emailClipboard = (
     <div className="popover">
       <div className="clip-cont col-1">
-        <div className="clip-title col-1">Save to clipboard</div>
-        <div className="clipboard">
+        <div className="active-link clip-title col-1">My Email Address</div>
+        <div className="clipboard" onMouseEnter={(e) => renderDirections(e)}>
           <textarea className="clip-text">{contact.link}</textarea>
-          {msg ? <div className="copied-verify">Copied!!</div> : null}
+          {msg ? (
+            <div className="popup-info">
+              <div className="triangle-up"></div>Copied!!
+            </div>
+          ) : null}
+          {hover ? (
+            <div className="popup-info">
+              <div className="triangle-up"></div>Copy to clipboard
+            </div>
+          ) : null}
           <i
             className="fa fa-clipboard"
             aria-hidden="true"
@@ -18,6 +28,13 @@ const Contact = ({ contact, orient }) => {
       </div>
     </div>
   );
+  const renderDirections = (e) => {
+    if (e && !hover) {
+      setHover(!hover);
+      setTimeout(() => setHover(false), 5000);
+    }
+  };
+  console.log(hover);
   const copyToClipboard = (e) => {
     if (e) {
       const elem = e.target.parentElement.firstElementChild;
@@ -25,7 +42,6 @@ const Contact = ({ contact, orient }) => {
       document.execCommand("copy");
       setMsg(!msg);
       setTimeout(() => setMsg(false), 2000);
-      setTimeout(() => setPopup(false), 3000);
     }
   };
   const renderContact = () => {
@@ -34,14 +50,14 @@ const Contact = ({ contact, orient }) => {
         case "email":
           return (
             <div className="icon">
-              <a href={contact.link} target="_blank" rel="noopener noreferrer">
+              <div target="_blank" rel="noopener noreferrer">
                 {popup ? emailClipboard : null}
                 <i
                   className="fa fa-envelope"
                   aria-hidden="true"
                   onClick={(e) => handleEmailClick(e)}
                 ></i>
-              </a>
+              </div>
             </div>
           );
         case "linkedin":
