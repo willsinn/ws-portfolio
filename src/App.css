@@ -2,6 +2,8 @@
   /* --txt-yw: rgb(252, 230, 35, 1); */
   --txt-yw: rgb(228, 34, 19);
   --txt-wht: #fff;
+  --titles: rgb(217, 84, 74);
+  --content: rgb(247, 159, 152);
   --txt-content: rgb(255, 255, 255, 0.75);
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
@@ -24,7 +26,6 @@ body {
 .work {
   width: 100%;
   min-height: 95vh;
-  max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -67,19 +68,34 @@ li {
   align-items: center;
 }
 .app {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   align-items: center;
-  flex-direction: column;
 }
-.sider {
+.app-side-liners {
+  width: 125px;
+  height: 100%;
+  background-color: var(--txt-content);
+  position: relative;
+}
+.app-content {
+  display: flex;
+  padding: 0;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+.sider-container {
   position: fixed;
-  left: 16px;
+  left: 95px;
   bottom: 20%;
-  height: 450px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 50px;
+  height: 180px;
+  border-radius: 3px;
+  background-color: var(--txt-wht);
+  width: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,9 +105,7 @@ li {
   border-bottom: 1px solid white;
   margin-top: 4px;
 }
-.about {
-  padding: 0 100px;
-}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -103,7 +117,8 @@ li {
 }
 .main {
   margin: 0px auto;
-  width: 90%;
+  width: 70%;
+  max-width: 1000px;
 }
 
 .nav-wrap {
@@ -253,10 +268,20 @@ li {
   align-items: center;
   margin: 8px 0;
 }
+/* .contact-item:hover {
+  background-color: var(--txt-yw);
+  margin-left: 8px;
+} */
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
 .icon {
   height: 24px;
   width: 24px;
-  background-color: var(--txt-wht);
+  background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,11 +289,10 @@ li {
   border-radius: 5px;
 }
 .icon:hover {
-  background-color: var(--txt-yw);
+  background-color: var(--content);
+  margin-left: 8px;
 }
-.icon:hover a {
-  margin-top: 2px;
-}
+
 .section-title {
   font-size: 30px;
   font-weight: 700;
@@ -351,12 +375,15 @@ li {
 .fa.fa-envelope {
   color: var(--txt-wht);
   background-color: var(--bg);
-  font-size: 21px;
+  font-size: 24px;
   height: 24px;
-  width: 24px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fa.fa-envelope:hover {
-  color: var(--txt-yw);
+  color: var(--titles);
 }
 .overlay-container {
   padding: 25px;
@@ -439,11 +466,10 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: rgb(10, 25, 47);
+  color: var(--navbar);
 }
 
 .fa-github-square {
-  font-size: 38px;
 }
 .active-project-cont {
   width: fit-content;

@@ -23,13 +23,19 @@ const App = () => {
   };
   return (
     <div className="app">
-      <Navbar show={show} />
-      <LandingPage handleOverrideTimer={handleOverrideTimer} />
-      <AboutPage handleHideNav={handleHideNav} />
-      <WorkPage handleHideNav={handleHideNav} />
-
-      <div className="sider contact-links">
-        <ContactList orient={"vertical"} />
+      <div className="app-side-liners" />
+      <div className="app-content">
+        <Navbar show={show} />
+        <LandingPage handleOverrideTimer={handleOverrideTimer} />
+        <AboutPage handleHideNav={handleHideNav} />
+        <WorkPage handleHideNav={handleHideNav} />
+      </div>
+      <div className="app-side-liners">
+        <div className="sider-container">
+          <div className="contact-links">
+            <ContactList orient={"vertical"} />
+          </div>
+        </div>
       </div>
     </div>
   );

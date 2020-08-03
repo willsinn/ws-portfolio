@@ -37,6 +37,7 @@ const Contact = ({ contact, orient }) => {
               style={{
                 backgroundColor: "rgb(23, 42, 69)",
                 position: "relative",
+                borderRadius: "3px",
               }}
             >
               {popup ? emailClipboard : null}
