@@ -3,7 +3,7 @@ import React from "react";
 const LandingPage = () => {
   return (
     <div className="landing">
-      <section className="">
+      <section className="main">
         <h1>Hi, my name is.</h1>
         <h2 className="name">William Sinn</h2>
         <h3>
