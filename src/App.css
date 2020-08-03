@@ -2,7 +2,7 @@
   /* --txt-yw: rgb(252, 230, 35, 1); */
   /* --titles-red: rgb(228, 34, 19); */
 
-  --titles-red: rgb(255, 23, 5);
+  --titles-red: rgb(239, 34, 18);
   --txt-wht: #fff;
   --content-red: rgb(217, 84, 74);
   --content: rgb(247, 159, 152);
@@ -10,7 +10,7 @@
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
   --overlay: rgb(23, 42, 69);
-  --navbar: rgb(66, 66, 66, 1);
+  --navbar: rgb(52, 52, 52);
   --lightgray-ui: rgb(159, 155, 155);
 }
 a {
@@ -94,14 +94,14 @@ li {
   position: fixed;
   left: 95px;
   bottom: 20%;
-  height: 180px;
+  height: 168px;
   border-radius: 3px;
   background-color: var(--txt-wht);
   width: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .line {
   border-bottom: 1px solid white;
@@ -114,8 +114,9 @@ li {
   height: 75%;
   width: 100%;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
-  padding: 0 50px;
+  padding: 0 100px;
   background-color: var(--navbar);
+  align-items: center;
 }
 .main {
   margin: 0px auto;
@@ -126,7 +127,7 @@ li {
 .nav-wrap {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 84px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -375,7 +376,6 @@ li {
   padding: 0;
 }
 .fa.fa-envelope {
-  background-color: var(--lightgray-ui);
   font-size: 24px;
   height: 24px;
   width: 28px;
@@ -383,6 +383,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 3px;
 }
 .fa.fa-envelope:hover {
   color: var(--content-red);
@@ -468,7 +469,7 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: var(--lightgray-ui);
+  color: var(--navbar);
 }
 
 .fa-github-square {
@@ -487,8 +488,9 @@ li {
   top: 8px;
 }
 .nav-num {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--titles-red);
+  margin-right: 4px;
 }
 .clipboard {
   height: 40px;
@@ -537,7 +539,7 @@ li {
   width: 24px;
   font-size: 21px;
   color: var(--txt-wht);
-  background-color: var(--lightgray-ui);
+  background-color: var(--navbar);
   padding: 3px;
   position: relative;
   border-radius: 3px;
@@ -549,7 +551,6 @@ li {
 }
 .fa.fa-clipboard:hover {
   color: var(--content-red);
-  background-color: var(--lightgray-ui);
 }
 .copied-verify {
   padding: 3px 3px 3px 12px;

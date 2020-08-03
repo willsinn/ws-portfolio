@@ -19,7 +19,7 @@ const Navbar = ({ show }) => {
     });
   };
   return (
-    <div className="nav-wrap" style={show ? { top: "0" } : { top: "-70px" }}>
+    <div className="nav-wrap" style={show ? { top: "0" } : { top: "-84px" }}>
       <div className="navbar">
         <div>LOGO PLACEHOLDER</div>
         <div className="horz-wrap">{renderNavItems()}</div>
