@@ -348,7 +348,7 @@ li {
 .fa.fa-envelope {
   color: var(--txt-wht);
   background-color: var(--bg);
-  font-size: 24px;
+  font-size: 21px;
   height: 24px;
   width: 24px;
 }
@@ -459,28 +459,45 @@ li {
   font-size: 11px;
 }
 .clipboard {
-  height: 30px;
-  margin: 2px 8px;
+  height: 24px;
+  padding: 6px 8px 2px 8px;
   width: fit-content;
   background-color: var(--overlay);
-  border: 2px solid white;
+  border-radius: 3px;
   z-index: 2;
   display: flex;
+  align-items: center;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+}
+.clipboard:hover {
+  border: 1.5px solid white;
+  margin: 1.5px;
+  opacity: 0.75;
+  cursor: pointer;
 }
 .clip-text {
   border: none;
   padding: 0;
   margin: 0;
-  height: 20px;
+  height: 23px;
   width: fit-content;
-  opacity: 0.8;
-  height: fit-content;
+  background-color: rgb(255, 255, 255, 0);
   resize: none;
+  text-align: justify;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-wht);
 }
 .fa.fa-clipboard {
-  height: 28px;
-  width: 28px;
-  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  font-size: 22px;
+  background-color: var(--overlay);
+  color: white;
 }
 .popover {
   position: absolute;
@@ -490,7 +507,5 @@ li {
   z-index: 2;
   width: fit-content;
   height: fit-content;
-  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
-    0 0 0 1px rgba(9, 30, 66, 0.08);
 }
 /*    */
