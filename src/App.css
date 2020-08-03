@@ -462,7 +462,7 @@ li {
   height: 24px;
   padding: 6px 8px 2px 8px;
   width: fit-content;
-  background-color: var(--overlay);
+  background-color: var(--txt-wht);
   border-radius: 3px;
   z-index: 2;
   display: flex;
@@ -470,19 +470,14 @@ li {
   box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
     0 0 0 1px rgba(9, 30, 66, 0.08);
 }
-.clipboard:hover {
-  border: 1.5px solid white;
-  margin: 1.5px;
-  opacity: 0.75;
-  cursor: pointer;
-}
+
 .clip-text {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 4px 0;
   height: 23px;
-  width: fit-content;
-  background-color: rgb(255, 255, 255, 0);
+  width: 160px;
+  background-color: var(--txt-content);
   resize: none;
   text-align: justify;
   -moz-text-align-last: center; /* Firefox 12+ */
@@ -490,15 +485,28 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--txt-wht);
+  color: var(--overlay);
 }
 .fa.fa-clipboard {
   height: 24px;
   width: 24px;
-  font-size: 22px;
-  background-color: var(--overlay);
-  color: white;
+  font-size: 21px;
+  color: var(--overlay);
+  background-color: var(--txt-wht);
+  padding: 3px;
+  position: relative;
+  border-radius: 3px;
+  top: -2px;
+  right: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.fa.fa-clipboard:hover {
+  background-color: var(--overlay);
+  color: var(--txt-wht);
+}
+
 .popover {
   position: absolute;
   top: 0;
