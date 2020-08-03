@@ -213,7 +213,6 @@ li {
   font-size: 0.95em;
 }
 .project-item {
-  min-width: 100%;
   position: relative;
   min-height: 400px;
   padding: 0;

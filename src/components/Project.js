@@ -37,7 +37,10 @@ const Project = ({ project }) => {
     }
   };
   return (
-    <li className="project-item">
+    <li
+      className="project-item"
+      style={project.appType === "mobile" ? { width: "66.66%" } : {}}
+    >
       <div className="project-info col-1">
         <div className="prj-title row">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
