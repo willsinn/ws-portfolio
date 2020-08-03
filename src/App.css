@@ -1,6 +1,8 @@
 :root {
   /* --txt-yw: rgb(252, 230, 35, 1); */
-  --titles-red: rgb(228, 34, 19);
+  /* --titles-red: rgb(228, 34, 19); */
+
+  --titles-red: rgb(255, 23, 5);
   --txt-wht: #fff;
   --content-red: rgb(217, 84, 74);
   --content: rgb(247, 159, 152);
@@ -162,6 +164,7 @@ li {
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
+  color: var(--titles-red);
 }
 .content-cont {
   margin-top: 24px;
@@ -485,6 +488,7 @@ li {
 }
 .nav-num {
   font-size: 11px;
+  color: var(--titles-red);
 }
 .clipboard {
   height: 40px;
