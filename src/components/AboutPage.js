@@ -26,6 +26,7 @@ const AboutPage = ({ handleHideNav }) => {
           <div className="profile-wrap">
             <div className="about-cont">
               <div className="profile-cont">
+                <div className="dampener" style={{ height: "100%" }} />
                 <div className="profile-img" />
               </div>
             </div>

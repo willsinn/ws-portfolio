@@ -173,6 +173,8 @@ li {
 .row {
   display: flex;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .col-1 {
   display: flex;
@@ -201,16 +203,13 @@ li {
 .profile-cont {
   height: fit-content;
   width: fit-content;
-  border: 2px solid white;
-  border-radius: 8em;
-  display: flex;
+  position: relative;
 }
 .profile-img {
   background-color: #fff;
-  min-height: 200px;
-  min-width: 200px;
-  border-radius: 8em;
-  width: 200px;
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
 }
 .slogan-cont {
   width: 60%;
@@ -253,7 +252,8 @@ li {
   height: 100%;
 }
 .tech-skills-cont {
-  width: 350px;
+  min-width: 400px;
+  padding: 75px 0;
 }
 .skill-item {
   height: 24px;
@@ -416,7 +416,7 @@ li {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 16px 0 0 0;
   padding: 0;
 }
 .fa.fa-envelope {
