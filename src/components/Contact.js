@@ -1,17 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 const Contact = ({ contact, orient }) => {
+  const [popup, setPopup] = useState(false);
+  const emailClipboard = (
+    <div className="popover">
+      <div className="clipboard">
+        <textarea id="clip" value={contact.link}>
+          {contact.link}
+        </textarea>
+        <div className="icon" onClick={(e) => copyToClipboard(e)}>
+          <i className="fa fa-clipboard" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  );
+  const copyToClipboard = (e) => {
+    if (e) {
+      debugger;
+      const elem = e.target.parentElement.parentElement.firstElementChild;
+      elem.select();
+      document.execCommand("copy");
+    }
+  };
   const renderContact = () => {
     if (contact) {
       switch (contact.method) {
         case "email":
           return (
-            <div
-              onClick={(e) => handleEmailClick(e)}
+            <span
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                backgroundColor: "rgb(23, 42, 69)",
+                position: "relative",
+              }}
             >
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-            </div>
+              {popup ? emailClipboard : null}
+              <i
+                className="fa fa-envelope"
+                aria-hidden="true"
+                onClick={(e) => handleEmailClick(e)}
+              ></i>
+            </span>
           );
         case "linkedin":
           return (
@@ -36,7 +65,11 @@ const Contact = ({ contact, orient }) => {
       }
     }
   };
-  const handleEmailClick = (e) => {};
+  const handleEmailClick = (e) => {
+    if (e) {
+      setPopup(!popup);
+    }
+  };
   return (
     <>
       {orient === "vertical" ? (
