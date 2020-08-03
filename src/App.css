@@ -3,10 +3,10 @@
   /* --titles-red: rgb(228, 34, 19); */
 
   --titles-red: rgb(239, 34, 18);
-  --txt-wht: #fff;
+  --white: #fff;
   --content-red: rgb(217, 84, 74);
   --content: rgb(247, 159, 152);
-  --off-white: rgb(255, 255, 252, 0.95);
+  --off-white: rgb(252, 252, 252, 0.95);
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
   --overlay: rgb(23, 42, 69);
@@ -96,7 +96,7 @@ li {
   bottom: 20%;
   height: 168px;
   border-radius: 3px;
-  background-color: var(--txt-wht);
+  background-color: var(--white);
   width: 54px;
   display: flex;
   flex-direction: column;
@@ -147,7 +147,14 @@ li {
 }
 .active-link {
   text-decoration: none;
-  color: var(--txt-wht);
+  color: var(--white);
+  font-size: 12.75px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
 }
 .row {
   display: flex;
@@ -165,7 +172,7 @@ li {
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
-  color: var(--titles-red);
+  color: var(--white);
 }
 .content-cont {
   margin-top: 24px;
@@ -244,7 +251,7 @@ li {
   font-size: 28px;
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-  color: var(--txt-wht);
+  color: var(--white);
   font-weight: 600;
   padding-bottom: 12px;
   border-radius: 2px;
@@ -303,7 +310,7 @@ li {
   font-family: "Ubuntu", sans-serif;
   width: 95%;
   margin: 8px 0 12px 12px;
-  color: var(--txt-wht);
+  color: var(--white);
 }
 .section-title-label {
   font-size: 20px;
@@ -379,7 +386,7 @@ li {
   font-size: 24px;
   height: 24px;
   width: 28px;
-  color: var(--txt-wht);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -488,7 +495,8 @@ li {
   top: 8px;
 }
 .nav-num {
-  font-size: 12px;
+  font-size: 10.5px;
+  letter-spacing: 0.0475em;
   color: var(--titles-red);
   margin-right: 4px;
 }
@@ -505,7 +513,7 @@ li {
   position: relative;
 }
 .clip-cont {
-  background-color: var(--txt-wht);
+  background-color: var(--white);
   border-radius: 2px;
 }
 .clip-title {
@@ -538,7 +546,7 @@ li {
   height: 24px;
   width: 24px;
   font-size: 21px;
-  color: var(--txt-wht);
+  color: var(--white);
   background-color: var(--navbar);
   padding: 3px;
   position: relative;
@@ -559,7 +567,7 @@ li {
   border-radius: 2px;
   width: fit-content;
   color: var(--overlay);
-  background-color: var(--txt-wht);
+  background-color: var(--white);
   border: 1px solid lightgray;
   right: -38px;
   top: -28px;
