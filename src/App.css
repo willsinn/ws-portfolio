@@ -1,14 +1,15 @@
 :root {
   /* --txt-yw: rgb(252, 230, 35, 1); */
-  --txt-yw: rgb(228, 34, 19);
+  --titles-red: rgb(228, 34, 19);
   --txt-wht: #fff;
-  --titles: rgb(217, 84, 74);
+  --content-red: rgb(217, 84, 74);
   --content: rgb(247, 159, 152);
-  --txt-content: rgb(255, 255, 255, 0.75);
+  --off-white: rgb(255, 255, 252, 0.95);
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
   --overlay: rgb(23, 42, 69);
-  --navbar: rgb(60, 56, 56);
+  --navbar: rgb(66, 66, 66, 1);
+  --lightgray-ui: rgb(159, 155, 155);
 }
 a {
   text-decoration: none;
@@ -18,7 +19,7 @@ body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
   font-size: 13px;
-  color: var(--txt-yw);
+  color: var(--content-red);
 }
 .projects,
 .about,
@@ -91,11 +92,10 @@ li {
   position: fixed;
   left: 95px;
   bottom: 20%;
-  width: 50px;
   height: 180px;
   border-radius: 3px;
   background-color: var(--txt-wht);
-  width: 70px;
+  width: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,7 +269,7 @@ li {
   margin: 8px 0;
 }
 /* .contact-item:hover {
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
   margin-left: 8px;
 } */
 .contact-links {
@@ -289,8 +289,7 @@ li {
   border-radius: 5px;
 }
 .icon:hover {
-  background-color: var(--content);
-  margin-left: 8px;
+  background-color: var(--content-red);
 }
 
 .section-title {
@@ -311,7 +310,7 @@ li {
   width: 100%;
   margin-top: 12px;
   height: 1px;
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
 }
 .section-header {
   display: flex;
@@ -343,7 +342,7 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
   border-radius: 3px;
   opacity: 0.35;
   height: 98%;
@@ -373,17 +372,17 @@ li {
   padding: 0;
 }
 .fa.fa-envelope {
-  color: var(--txt-wht);
-  background-color: var(--bg);
+  background-color: var(--lightgray-ui);
   font-size: 24px;
   height: 24px;
   width: 28px;
+  color: var(--txt-wht);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .fa.fa-envelope:hover {
-  color: var(--titles);
+  color: var(--content-red);
 }
 .overlay-container {
   padding: 25px;
@@ -466,7 +465,7 @@ li {
 }
 .fa {
   font-size: 32px;
-  color: var(--navbar);
+  color: var(--lightgray-ui);
 }
 
 .fa-github-square {
@@ -488,10 +487,9 @@ li {
   font-size: 11px;
 }
 .clipboard {
-  height: 24px;
+  height: 40px;
   padding: 6px 8px 2px 8px;
   width: fit-content;
-  background-color: var(--txt-wht);
   border-radius: 3px;
   z-index: 2;
   display: flex;
@@ -500,14 +498,27 @@ li {
     0 0 0 1px rgba(9, 30, 66, 0.08);
   position: relative;
 }
-
+.clip-cont {
+  background-color: var(--txt-wht);
+  border-radius: 2px;
+}
+.clip-title {
+  height: 30px;
+  width: 100%;
+  color: var(--titles-red);
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  cursor: default;
+}
 .clip-text {
+  background-color: var(--lightgray-ui);
+  border-radius: 2px;
   border: none;
   padding: 0;
   margin: 0 4px 0;
-  height: 23px;
+  height: 28px;
   width: 160px;
-  background-color: var(--txt-content);
   resize: none;
   text-align: justify;
   -moz-text-align-last: center; /* Firefox 12+ */
@@ -515,26 +526,26 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--overlay);
+  color: var(--content-red);
 }
 .fa.fa-clipboard {
   height: 24px;
   width: 24px;
   font-size: 21px;
-  color: var(--overlay);
-  background-color: var(--txt-wht);
+  color: var(--txt-wht);
+  background-color: var(--lightgray-ui);
   padding: 3px;
   position: relative;
   border-radius: 3px;
-  top: -2px;
-  right: -6px;
+  top: 0;
+  right: -2px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .fa.fa-clipboard:hover {
-  background-color: var(--overlay);
-  color: var(--txt-wht);
+  color: var(--content-red);
+  background-color: var(--lightgray-ui);
 }
 .copied-verify {
   padding: 3px 3px 3px 12px;
@@ -550,7 +561,8 @@ li {
 }
 .popover {
   position: absolute;
-  top: 0;
+  top: -15px;
+  border-radius: 2px;
   left: 50px;
   bottom: 0;
   z-index: 2;

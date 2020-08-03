@@ -4,15 +4,17 @@ const Contact = ({ contact, orient }) => {
   const [msg, setMsg] = useState(false);
   const emailClipboard = (
     <div className="popover">
-      <div className="clipboard">
-        <textarea className="clip-text">{contact.link}</textarea>
-        {msg ? <div className="copied-verify">Copied!!</div> : null}
-
-        <i
-          className="fa fa-clipboard"
-          aria-hidden="true"
-          onClick={(e) => copyToClipboard(e)}
-        ></i>
+      <div className="clip-cont col-1">
+        <div className="clip-title col-1">Save to clipboard</div>
+        <div className="clipboard">
+          <textarea className="clip-text">{contact.link}</textarea>
+          {msg ? <div className="copied-verify">Copied!!</div> : null}
+          <i
+            className="fa fa-clipboard"
+            aria-hidden="true"
+            onClick={(e) => copyToClipboard(e)}
+          ></i>
+        </div>
       </div>
     </div>
   );
