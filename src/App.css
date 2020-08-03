@@ -63,7 +63,6 @@ li {
 }
 .app {
   width: 100%;
-  overflow: scroll;
   display: flex;
   background-color: rgb(10, 25, 47);
   align-items: center;
@@ -91,12 +90,11 @@ li {
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 75%;
   width: 100%;
-  box-shadow: 0 6px 12px -3px rgb(66, 66, 9, 69%),
-    0 0 0 1px rgb(208, 192, 41, 7%);
+  box-shadow: 0 3px 3px 2px rgb(154, 154, 24, 28%);
   padding: 0 50px;
-  background-color: var(--bg);
+  background-color: #051227;
 }
 .main {
   padding: 200px 150px;
@@ -106,13 +104,13 @@ li {
 .nav-wrap {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 70;
+  z-index: 2;
 }
 .navbar-btn {
   padding: 13px 20px;
