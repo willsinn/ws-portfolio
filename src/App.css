@@ -1,9 +1,12 @@
 :root {
-  --txt-yw: rgb(252, 230, 35, 1);
+  /* --txt-yw: rgb(252, 230, 35, 1); */
+  --txt-yw: rgb(228, 34, 19);
   --txt-wht: #fff;
   --txt-content: rgb(255, 255, 255, 0.75);
-  --bg: rgb(10, 25, 47);
+  /* --bg: rgb(10, 25, 47); */
+  --bg: rgb(38, 35, 35);
   --overlay: rgb(23, 42, 69);
+  --navbar: rgb(60, 56, 56);
 }
 a {
   text-decoration: none;
@@ -66,7 +69,7 @@ li {
 .app {
   width: 100%;
   display: flex;
-  background-color: rgb(10, 25, 47);
+  background-color: var(--bg);
   align-items: center;
   flex-direction: column;
 }
@@ -96,7 +99,7 @@ li {
   width: 100%;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
   padding: 0 50px;
-  background-color: #051227;
+  background-color: var(--navbar);
 }
 .main {
   margin: 0px auto;
