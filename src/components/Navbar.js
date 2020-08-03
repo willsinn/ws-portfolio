@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const navItems = ["about", "work", "contacts"];
-const Navbar = () => {
+
+const Navbar = ({ show }) => {
   const renderNavItems = () => {
     let counter = 0;
     return navItems.map((item) => {
@@ -18,7 +19,7 @@ const Navbar = () => {
     });
   };
   return (
-    <div className="nav-wrap">
+    <div className="nav-wrap" style={show ? { top: "0" } : { top: "-70px" }}>
       <div className="navbar">
         <div>LOGO PLACEHOLDER</div>
         <div className="horz-wrap">{renderNavItems()}</div>
