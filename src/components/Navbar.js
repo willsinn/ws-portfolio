@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const navItems = ["about", "work", "contacts"];
 
@@ -11,17 +10,28 @@ const Navbar = ({ show }) => {
       return (
         <div className="navbar-btn">
           <span className="nav-num">0{counter}.</span>
-          <Link className="active-link" to={`/${item}`}>
+          <div className="active-link" onClick={(e) => scrollToTarget(e, item)}>
             {item}
-          </Link>
+          </div>
         </div>
       );
     });
   };
+  const scrollToTarget = (e, item) => {
+    if (e) {
+      const target = document.getElementsByClassName(`${item}`);
+      if (target[0]) {
+        return target[0].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  };
   return (
     <div className="nav-wrap" style={show ? { top: "0" } : { top: "-84px" }}>
       <div className="navbar">
-        <div>LOGO PLACEHOLDER</div>
+        <div>RESUME</div>
         <div className="horz-wrap">{renderNavItems()}</div>
       </div>
     </div>

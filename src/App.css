@@ -34,12 +34,12 @@ body {
   font-size: 13.5px;
   /* color: var(--content-red); */
 }
-.projects,
 .about,
 .landing,
 .work {
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
