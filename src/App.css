@@ -3,6 +3,7 @@
   --txt-wht: #fff;
   --txt-content: rgb(255, 255, 255, 0.75);
   --bg: rgb(10, 25, 47);
+  --overlay: rgb(23, 42, 69);
 }
 a {
   text-decoration: none;
@@ -19,7 +20,7 @@ body {
 .landing,
 .work {
   width: 100%;
-  min-height: 100vh;
+  min-height: 95vh;
   max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
@@ -28,6 +29,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
+  background-color: var(--bg);
 }
 .project-container {
   min-width: 800px;
@@ -85,7 +87,7 @@ li {
   margin-top: 4px;
 }
 .about {
-  width: 40%;
+  padding: 0 100px;
 }
 .navbar {
   display: flex;
@@ -97,10 +99,10 @@ li {
   background-color: #051227;
 }
 .main {
-  padding: 200px 150px;
   margin: 0px auto;
-  height: 100vh;
+  width: 90%;
 }
+
 .nav-wrap {
   display: flex;
   justify-content: space-between;
@@ -135,6 +137,7 @@ li {
   padding: 0;
   position: relative;
   flex-direction: column;
+  width: 100%;
 }
 .name {
   font-size: 42px;
@@ -143,10 +146,10 @@ li {
   margin: 4px 0 0 40px;
 }
 .content-cont {
-  width: 70%;
   margin-top: 24px;
 }
 .about-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,7 +186,7 @@ li {
 .project-item {
   min-width: 100%;
   position: relative;
-  min-height: 450px;
+  min-height: 400px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -264,16 +267,19 @@ li {
   margin-top: 2px;
 }
 .section-title {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
-  padding-left: 16px;
-  line-height: 20px;
-  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  font-family: "Ubuntu", sans-serif;
   width: 95%;
-  margin-bottom: 12px;
-  color: #fff;
+  margin: 8px 0 12px 12px;
+  color: var(--txt-wht);
 }
-
+.section-title-label {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 36px;
+}
 .section-horz-line {
   width: 100%;
   margin-top: 12px;
@@ -312,9 +318,9 @@ li {
   left: 0;
   background-color: var(--txt-yw);
   border-radius: 3px;
-  opacity: 0.2;
+  opacity: 0.35;
   height: 98%;
-  transition: background-color 1s;
+  transition: background-color 0.25s;
 }
 .dampener:hover {
   background-color: transparent;
@@ -339,9 +345,19 @@ li {
   margin: 0;
   padding: 0;
 }
+.fa.fa-envelope {
+  color: var(--txt-wht);
+  background-color: var(--bg);
+  font-size: 21px;
+  height: 24px;
+  width: 24px;
+}
+.fa.fa-envelope:hover {
+  color: var(--txt-yw);
+}
 .overlay-container {
   padding: 25px;
-  background-color: rgb(23, 42, 69);
+  background-color: var(--overlay);
   z-index: 1;
   border-radius: 3px;
   min-width: 100%;
@@ -442,5 +458,74 @@ li {
 .nav-num {
   font-size: 11px;
 }
+.clipboard {
+  height: 24px;
+  padding: 6px 8px 2px 8px;
+  width: fit-content;
+  background-color: var(--txt-wht);
+  border-radius: 3px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
+    0 0 0 1px rgba(9, 30, 66, 0.08);
+  position: relative;
+}
 
+.clip-text {
+  border: none;
+  padding: 0;
+  margin: 0 4px 0;
+  height: 23px;
+  width: 160px;
+  background-color: var(--txt-content);
+  resize: none;
+  text-align: justify;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--overlay);
+}
+.fa.fa-clipboard {
+  height: 24px;
+  width: 24px;
+  font-size: 21px;
+  color: var(--overlay);
+  background-color: var(--txt-wht);
+  padding: 3px;
+  position: relative;
+  border-radius: 3px;
+  top: -2px;
+  right: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa.fa-clipboard:hover {
+  background-color: var(--overlay);
+  color: var(--txt-wht);
+}
+.copied-verify {
+  padding: 3px 3px 3px 12px;
+  font-size: 11px;
+  position: absolute;
+  border-radius: 2px;
+  width: fit-content;
+  color: var(--overlay);
+  background-color: var(--txt-wht);
+  border: 1px solid lightgray;
+  right: -38px;
+  top: -28px;
+}
+.popover {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  bottom: 0;
+  z-index: 2;
+  width: fit-content;
+  height: fit-content;
+}
 /*    */

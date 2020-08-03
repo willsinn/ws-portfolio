@@ -1,22 +1,22 @@
 import React from "react";
 import ProjectList from "./ProjectList";
-import SkillList from "./SkillList";
 
-const WorkPage = () => {
+const WorkPage = ({ handleHideNav }) => {
   return (
-    <div className="work" style={{ alignItems: "center" }}>
-      <div className="section-header">
-        <div>02.</div>
-        <div>Things that I've built.</div>
-      </div>
-      <div className="work-content row">
-        <ProjectList />
-      </div>
-      <div className="email-sider">
-        <div className="email-wrap">
-          <div className="fixed-email">w.h.sinn@gmail.com</div>
+    <div
+      className="work"
+      style={{ alignItems: "center" }}
+      onMouseEnter={(e) => handleHideNav(e)}
+    >
+      <section className="main" onMouseLeave={(e) => handleHideNav(e)}>
+        <div className="section-header">
+          <div className="section-title-label">02.</div>
+          <div className="section-title">Things I've built!</div>
         </div>
-      </div>
+        <div className="work-content row">
+          <ProjectList />
+        </div>
+      </section>
     </div>
   );
 };

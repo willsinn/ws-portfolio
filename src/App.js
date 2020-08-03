@@ -9,27 +9,27 @@ import "./App.css";
 
 const App = () => {
   const [show, setShow] = useState(true);
-  const handleHideCountdown = (e) => {
+  const handleHideNav = (e) => {
     if (e) {
       setShow(true);
       setTimeout(() => setShow(false), 3000);
     }
   };
-  console.log(show);
+  const handleOverrideTimer = (e) => {
+    if (e) {
+      setShow(true);
+      setTimeout(() => setShow(true), 4000);
+    }
+  };
   return (
     <div className="app">
+      <Navbar show={show} />
+      <LandingPage handleOverrideTimer={handleOverrideTimer} />
+      <AboutPage handleHideNav={handleHideNav} />
+      <WorkPage handleHideNav={handleHideNav} />
+
       <div className="sider contact-links">
         <ContactList orient={"vertical"} />
-      </div>
-      <Navbar show={show} />
-      <LandingPage />
-
-      <div
-        onMouseEnter={(e) => handleHideCountdown(e)}
-        style={{ height: "fit-content", width: "fit-content" }}
-      >
-        <AboutPage />
-        <WorkPage />
       </div>
     </div>
   );
