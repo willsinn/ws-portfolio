@@ -3,6 +3,16 @@ const Contact = ({ contact, orient }) => {
   const renderContact = () => {
     if (contact) {
       switch (contact.method) {
+        case "email":
+          return (
+            <div
+              onClick={(e) => handleEmailClick(e)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+          );
         case "linkedin":
           return (
             <a href={contact.link} target="_blank" rel="noopener noreferrer">
@@ -26,7 +36,7 @@ const Contact = ({ contact, orient }) => {
       }
     }
   };
-
+  const handleEmailClick = (e) => {};
   return (
     <>
       {orient === "vertical" ? (

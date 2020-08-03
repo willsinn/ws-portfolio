@@ -74,6 +74,10 @@ export const projectList = () => {
 export const contactMethods = () => {
   const arr = [
     {
+      method: "email",
+      link: "w.h.sinn@gmail.com",
+    },
+    {
       method: "linkedin",
       link: "https://www.linkedin.com/in/will-sinn",
     },
