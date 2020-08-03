@@ -8,27 +8,14 @@ import ContactList from "./components/ContactList";
 import "./App.css";
 
 const App = () => {
-  const [show, setShow] = useState(true);
-  const handleHideNav = (e) => {
-    if (e) {
-      setShow(true);
-      setTimeout(() => setShow(false), 3000);
-    }
-  };
-  const handleOverrideTimer = (e) => {
-    if (e) {
-      setShow(true);
-      setTimeout(() => setShow(true), 4000);
-    }
-  };
   return (
     <div className="app">
       <div className="app-side-liners" />
       <div className="app-content">
-        <Navbar show={show} />
-        <LandingPage handleOverrideTimer={handleOverrideTimer} />
-        <AboutPage handleHideNav={handleHideNav} />
-        <WorkPage handleHideNav={handleHideNav} />
+        <Navbar />
+        <LandingPage />
+        <AboutPage />
+        <WorkPage />
       </div>
       <div className="app-side-liners">
         <div className="sider-container">
