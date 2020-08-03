@@ -31,6 +31,9 @@ const AboutPage = ({ handleHideNav }) => {
             </div>
           </div>
         </div>
+        <div className="row">
+          <SkillList />
+        </div>
       </section>
     </div>
   );

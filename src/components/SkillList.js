@@ -11,11 +11,10 @@ const SkillList = () => {
       ));
     }
   };
-  const titleStyle = { color: "var(--txt-yw)" };
 
   return (
     <div className="tech-skills-cont">
-      <h3 style={titleStyle}>Technical Stack</h3>
+      <h3>I'm good at</h3>
       <ul className="skill-list">{renderSkills()}</ul>
     </div>
   );
