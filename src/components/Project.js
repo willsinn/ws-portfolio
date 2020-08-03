@@ -37,15 +37,22 @@ const Project = ({ project }) => {
           <div className="project-refs">
             <div className="icon" style={{ marginRight: "4px" }}>
               <a href={project.git} target="_blank" rel="noopener noreferrer">
-                <i className="p-i fa fa-github-square " aria-hidden="true"></i>
+                <div className="p-i btn-hover-bg">
+                  <i
+                    className="p-i fa fa-github-square "
+                    aria-hidden="true"
+                  ></i>
+                </div>
               </a>
             </div>
             <div className="icon">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <i
-                  className="p-i fa fa-external-link-square"
-                  aria-hidden="true"
-                ></i>
+                <div className="p-i btn-hover-bg">
+                  <i
+                    className="p-i fa fa-external-link-square"
+                    aria-hidden="true"
+                  ></i>
+                </div>
               </a>
             </div>
           </div>

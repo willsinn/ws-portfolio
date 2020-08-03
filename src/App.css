@@ -26,6 +26,7 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
@@ -520,16 +521,19 @@ li {
   color: var(--navbar);
 }
 .fa:hover {
-  color: var(--titles-red);
+  /* color: var(--lightgray-ui); */
+  color: rgb(91, 85, 85);
+  /* opacity: 0.6; */
   /* background-size: contain;
   background-color: var(--lightgray-ui);
   border-radius: 3px; */
 }
 .p-i {
-  color: var(--off-white);
+  color: var(--lightgray-ui);
 }
 .p-i:hover {
-  color: var(--titles-red);
+  /* color: var(--white); */
+  color: whitesmoke;
 }
 .fa-github-square {
 }
@@ -649,4 +653,26 @@ li {
 .project-item.project-item:nth-child(even) div div div.project-refs {
   right: unset;
   left: 12px;
+}
+.btn-hover-bg,
+.p-i.btn-hover-bg {
+  height: 23px;
+  width: 23px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-hover-bg:hover {
+  background-color: var(--titles-red);
+}
+.p-i.btn-hover-bg:hover {
+  background-color: var(--content-red);
 }

@@ -48,21 +48,28 @@ const Contact = ({ contact, orient }) => {
         case "email":
           return (
             <div className="icon">
-              <div target="_blank" rel="noopener noreferrer">
+              <span target="_blank" rel="noopener noreferrer">
                 {popup ? <>{emailClipboard()}</> : null}
-                <i
-                  className="fa fa-envelope"
-                  aria-hidden="true"
-                  onClick={(e) => handleEmailClick(e)}
-                ></i>
-              </div>
+                <div
+                  className="btn-hover-bg"
+                  style={{ height: "17px", width: "23.5px" }}
+                >
+                  <i
+                    className="fa fa-envelope"
+                    aria-hidden="true"
+                    onClick={(e) => handleEmailClick(e)}
+                  ></i>
+                </div>
+              </span>
             </div>
           );
         case "linkedin":
           return (
             <div className="icon">
               <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                <div className="btn-hover-bg">
+                  <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
               </a>
             </div>
           );
@@ -70,7 +77,9 @@ const Contact = ({ contact, orient }) => {
           return (
             <div className="icon">
               <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-github-square" aria-hidden="true"></i>
+                <div className="btn-hover-bg">
+                  <i className="fa fa-github-square" aria-hidden="true"></i>
+                </div>
               </a>
             </div>
           );
@@ -78,7 +87,9 @@ const Contact = ({ contact, orient }) => {
           return (
             <div className="icon">
               <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
+                <div className="btn-hover-bg">
+                  <i className="fa fa-instagram" aria-hidden="true"></i>
+                </div>
               </a>
             </div>
           );
