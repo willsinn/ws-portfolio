@@ -15,15 +15,32 @@ export const abtMission = () => {
 };
 export const stackList = () => {
   const arr = [
-    { name: "JavaScript (ES6)" },
+    { name: "JavaScript(ES6)" },
     { name: "Ruby" },
     { name: "ReactJS" },
     { name: "Ruby on Rails" },
     { name: "Redux" },
     { name: "React Redux" },
-    { name: "SQL & Psql" },
-    { name: "Amazon Web Services" },
-    { name: "HTML & CSS" },
+    { name: "React Router" },
+    { name: "NodeJS" },
+    { name: "React useState-Hook" },
+    { name: "React useEffect-Hook" },
+    { name: "SQL" },
+    { name: "POSTGRESql" },
+    { name: "MySQL" },
+    { name: "Sqlite" },
+    { name: "AWS-EC2" },
+    { name: "AWS-Amplify" },
+    { name: "AWS-Lambda" },
+    { name: "AWS-Route53" },
+    { name: "AWS-CloudFront" },
+    { name: "AWS-S3" },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "Nginx" },
+    { name: "Apache" },
+    { name: "Phusion Passenger" },
+    { name: "EaselJS" },
   ];
   return arr;
 };

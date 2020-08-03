@@ -1,9 +1,27 @@
 :root {
-  --txt-yw: rgb(252, 230, 35, 1);
-  --txt-wht: #fff;
-  --txt-content: rgb(255, 255, 255, 0.75);
-  --bg: rgb(10, 25, 47);
-  --overlay: rgb(23, 42, 69);
+  /* --txt-yw: rgb(252, 230, 35, 1); */
+  /* --titles-red: rgb(228, 34, 19); */
+
+  --titles-red: rgb(239, 34, 18);
+  --white: #fff;
+  --content-red: rgb(255, 116, 107, 0.75);
+  --content: rgb(216, 131, 125);
+  --off-white: rgb(252, 252, 252, 0.75);
+  /* --bg: rgb(10, 25, 47); */
+  --bg: rgb(38, 35, 35);
+  /* --overlay: rgb(23, 42, 69); */
+  --navbar: rgb(52, 52, 52);
+  --lightgray-ui: rgb(159, 155, 155);
+  --overlay: rgba(80, 74, 74, 1);
+}
+p {
+  color: var(--off-white);
+}
+h1 {
+  color: var(--titles-red);
+}
+h3 {
+  color: var(--off-white);
 }
 a {
   text-decoration: none;
@@ -11,9 +29,9 @@ a {
 }
 body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
-    "Lucida Console", Monaco, monospace;
-  font-size: 13px;
-  color: var(--txt-yw);
+    "Lucida Console", Monaco, sans-serif;
+  font-size: 13.5px;
+  /* color: var(--content-red); */
 }
 .projects,
 .about,
@@ -21,7 +39,6 @@ body {
 .work {
   width: 100%;
   min-height: 95vh;
-  max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -33,6 +50,7 @@ body {
 }
 .project-container {
   min-width: 800px;
+  align-items: center;
 }
 .project-item:nth-child(even) .project-info ul li {
   margin: 0 0 0 16px;
@@ -45,7 +63,7 @@ body {
   line-height: 14px;
   flex-wrap: wrap;
   margin: 9px 0;
-  color: var(--txt-content);
+  color: var(--off-white);
 }
 
 ul {
@@ -64,49 +82,67 @@ li {
   align-items: center;
 }
 .app {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  background-color: rgb(10, 25, 47);
+  background-color: rgb(221, 217, 217);
   align-items: center;
-  flex-direction: column;
 }
-.sider {
+.app-side-liners {
+  max-width: 175px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--txt-content);
+  position: relative;
+}
+.app-content {
+  display: flex;
+  padding: 0;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.75);
+}
+.sider-container {
   position: fixed;
-  left: 16px;
+  left: 125px;
   bottom: 20%;
-  height: 450px;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 160px;
+  border-radius: 3px;
+  width: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .line {
   border-bottom: 1px solid white;
   margin-top: 4px;
 }
-.about {
-  padding: 0 100px;
-}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   height: 75%;
   width: 100%;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
-  padding: 0 50px;
-  background-color: #051227;
+  padding: 0 100px;
+  background-color: var(--navbar);
+  align-items: center;
 }
 .main {
   margin: 0px auto;
-  width: 90%;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .nav-wrap {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 84px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -126,11 +162,20 @@ li {
 }
 .active-link {
   text-decoration: none;
-  color: var(--txt-wht);
+  color: var(--white);
+  font-size: 12.75px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
 }
 .row {
   display: flex;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .col-1 {
   display: flex;
@@ -144,6 +189,7 @@ li {
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
+  color: var(--white);
 }
 .content-cont {
   margin-top: 24px;
@@ -158,16 +204,13 @@ li {
 .profile-cont {
   height: fit-content;
   width: fit-content;
-  border: 2px solid white;
-  border-radius: 8em;
-  display: flex;
+  position: relative;
 }
 .profile-img {
   background-color: #fff;
-  min-height: 200px;
-  min-width: 200px;
-  border-radius: 8em;
-  width: 200px;
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
 }
 .slogan-cont {
   width: 60%;
@@ -184,12 +227,11 @@ li {
   font-size: 0.95em;
 }
 .project-item {
-  min-width: 100%;
   position: relative;
   min-height: 400px;
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .project-item:nth-child(even) {
   display: flex;
@@ -211,18 +253,42 @@ li {
   height: 100%;
 }
 .tech-skills-cont {
-  width: 350px;
+  min-width: 400px;
+  padding: 75px 0;
 }
 .skill-item {
-  height: 20px;
+  height: 24px;
   width: 175px;
-  font-size: 11.5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+}
+.bullet-pt {
+  color: var(--content-red);
+  font-size: 16px;
+  transform: rotate(270deg);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+.bullet-wrap {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  transform: rotateX(180deg);
+}
+.skill-text {
+  color: var(--off-white);
+  margin-left: 20px;
 }
 .prj-title {
   font-size: 28px;
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-  color: var(--txt-wht);
+  color: var(--white);
   font-weight: 600;
   padding-bottom: 12px;
   border-radius: 2px;
@@ -242,7 +308,7 @@ li {
   font-size: 0.85em;
   font-family: "Hind Madurai", sans-serif;
   font-size: 13.5px;
-  color: var(--txt-content);
+  color: var(--off-white);
 }
 .contact-item {
   width: 100%;
@@ -250,10 +316,20 @@ li {
   align-items: center;
   margin: 8px 0;
 }
+/* .contact-item:hover {
+  background-color: var(--content-red);
+  margin-left: 8px;
+} */
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  margin-left: 16px;
+}
 .icon {
   height: 24px;
   width: 24px;
-  background-color: var(--txt-wht);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,11 +337,9 @@ li {
   border-radius: 5px;
 }
 .icon:hover {
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
 }
-.icon:hover a {
-  margin-top: 2px;
-}
+
 .section-title {
   font-size: 30px;
   font-weight: 700;
@@ -273,18 +347,19 @@ li {
   font-family: "Ubuntu", sans-serif;
   width: 95%;
   margin: 8px 0 12px 12px;
-  color: var(--txt-wht);
+  color: var(--white);
 }
 .section-title-label {
   font-size: 20px;
   font-weight: 100;
   line-height: 36px;
+  color: var(--titles-red);
 }
 .section-horz-line {
   width: 100%;
   margin-top: 12px;
   height: 1px;
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
 }
 .section-header {
   display: flex;
@@ -316,7 +391,7 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: var(--txt-yw);
+  background-color: var(--content-red);
   border-radius: 3px;
   opacity: 0.35;
   height: 98%;
@@ -342,27 +417,36 @@ li {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 16px 0 0 0;
   padding: 0;
 }
 .fa.fa-envelope {
-  color: var(--txt-wht);
-  background-color: var(--bg);
-  font-size: 21px;
+  font-size: 23.75px;
   height: 24px;
   width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
 }
-.fa.fa-envelope:hover {
-  color: var(--txt-yw);
-}
+
 .overlay-container {
-  padding: 25px;
-  background-color: var(--overlay);
+  padding: 40px 25px 25px 25px;
+  background-color: var(--navbar);
   z-index: 1;
   border-radius: 3px;
   min-width: 100%;
+  position: relative;
   box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
     0 0 0 1px rgba(9, 30, 66, 0.08);
+}
+.project-refs {
+  right: 12px;
+  position: absolute;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-icon {
@@ -405,9 +489,6 @@ li {
   flex-direction: column;
 }
 
-.contact-links {
-  margin-left: 8px;
-}
 .email-sider {
   right: 0;
   position: fixed;
@@ -435,12 +516,13 @@ li {
   color: #fff;
 }
 .fa {
-  font-size: 32px;
-  color: rgb(10, 25, 47);
+  font-size: 28px;
+  color: var(--off-white);
 }
-
+.fa:hover {
+  color: var(--white);
+}
 .fa-github-square {
-  font-size: 38px;
 }
 .active-project-cont {
   width: fit-content;
@@ -456,13 +538,15 @@ li {
   top: 8px;
 }
 .nav-num {
-  font-size: 11px;
+  font-size: 10.5px;
+  letter-spacing: 0.0475em;
+  color: var(--titles-red);
+  margin-right: 4px;
 }
 .clipboard {
-  height: 24px;
+  height: 40px;
   padding: 6px 8px 2px 8px;
   width: fit-content;
-  background-color: var(--txt-wht);
   border-radius: 3px;
   z-index: 2;
   display: flex;
@@ -471,14 +555,27 @@ li {
     0 0 0 1px rgba(9, 30, 66, 0.08);
   position: relative;
 }
-
+.clip-cont {
+  background-color: var(--white);
+  border-radius: 2px;
+}
+.clip-title {
+  height: 30px;
+  width: 100%;
+  color: var(--titles-red);
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  cursor: default;
+}
 .clip-text {
+  background-color: var(--lightgray-ui);
+  border-radius: 2px;
   border: none;
   padding: 0;
   margin: 0 4px 0;
-  height: 23px;
+  height: 28px;
   width: 160px;
-  background-color: var(--txt-content);
   resize: none;
   text-align: justify;
   -moz-text-align-last: center; /* Firefox 12+ */
@@ -486,26 +583,25 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--overlay);
+  color: var(--content-red);
 }
 .fa.fa-clipboard {
   height: 24px;
   width: 24px;
   font-size: 21px;
-  color: var(--overlay);
-  background-color: var(--txt-wht);
+  color: var(--white);
+  background-color: var(--navbar);
   padding: 3px;
   position: relative;
   border-radius: 3px;
-  top: -2px;
-  right: -6px;
+  top: 0;
+  right: -2px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .fa.fa-clipboard:hover {
-  background-color: var(--overlay);
-  color: var(--txt-wht);
+  color: var(--content-red);
 }
 .copied-verify {
   padding: 3px 3px 3px 12px;
@@ -514,14 +610,15 @@ li {
   border-radius: 2px;
   width: fit-content;
   color: var(--overlay);
-  background-color: var(--txt-wht);
+  background-color: var(--white);
   border: 1px solid lightgray;
   right: -38px;
   top: -28px;
 }
 .popover {
   position: absolute;
-  top: 0;
+  top: -15px;
+  border-radius: 2px;
   left: 50px;
   bottom: 0;
   z-index: 2;
@@ -529,3 +626,7 @@ li {
   height: fit-content;
 }
 /*    */
+.project-item.project-item:nth-child(even) div div div.project-refs {
+  right: unset;
+  left: 12px;
+}

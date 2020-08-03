@@ -18,7 +18,9 @@ const ContactList = ({ orient }) => {
   return (
     <>
       {orient === "vertical" ? (
-        <ul className="col-1">{renderContacts()}</ul>
+        <ul className="col-1" style={{ width: "30px" }}>
+          {renderContacts()}
+        </ul>
       ) : (
         <ul style={{ display: "flex" }}>{renderContacts()}</ul>
       )}

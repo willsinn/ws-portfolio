@@ -4,20 +4,6 @@ import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
 
 const Project = ({ project }) => {
-  const iconGit = {
-    fontSize: "20px",
-    height: "20px",
-    width: "20px",
-    marginRight: "12px",
-  };
-  const iconExternal = {
-    fontSize: "23.5px",
-    height: "24px",
-    width: "24px",
-    marginRight: "8px",
-    color: "white",
-    backgroundColor: "inherit",
-  };
   const phoneStyles = { height: "390px", width: "260px" };
   const renderProjectImg = (type) => {
     switch (type) {
@@ -37,7 +23,10 @@ const Project = ({ project }) => {
     }
   };
   return (
-    <li className="project-item">
+    <li
+      className="project-item"
+      style={project.appType === "mobile" ? { width: "66.66%" } : {}}
+    >
       <div className="project-info col-1">
         <div className="prj-title row">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -45,30 +34,27 @@ const Project = ({ project }) => {
           </a>
         </div>
         <div className="overlay-container">
+          <div className="project-refs">
+            <div className="icon" style={{ marginRight: "4px" }}>
+              <a href={project.git} target="_blank" rel="noopener noreferrer">
+                <i
+                  className="fa fa-github-square project-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+            <div className="icon">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <i
+                  class="fa fa-external-link-square project-icon"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </div>
           <div className="prj-desc">{project.desc}</div>
         </div>
         <ul className="project-stack">{renderProjectStack(project.stack)}</ul>
-        <div className="row">
-          <a href={project.git} target="_blank" rel="noopener noreferrer">
-            <i
-              className="icon fa fa-github-square"
-              style={iconGit}
-              aria-hidden="true"
-            ></i>
-          </a>
-          <a
-            href={project.link}
-            style={{ background: "transparent" }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i
-              className="icon fa fa-external-link"
-              style={iconExternal}
-              aria-hidden="true"
-            ></i>
-          </a>
-        </div>
       </div>
 
       <a

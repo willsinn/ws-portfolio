@@ -11,7 +11,7 @@ const WorkPage = ({ handleHideNav }) => {
       <section className="main" onMouseLeave={(e) => handleHideNav(e)}>
         <div className="section-header">
           <div className="section-title-label">02.</div>
-          <div className="section-title">Things I've built!</div>
+          <div className="section-title">What I've built</div>
         </div>
         <div className="work-content row">
           <ProjectList />
