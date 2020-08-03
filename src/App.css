@@ -4,14 +4,20 @@
 
   --titles-red: rgb(239, 34, 18);
   --white: #fff;
-  --content-red: rgb(217, 84, 74);
-  --content: rgb(247, 159, 152);
-  --off-white: rgb(252, 252, 252, 0.95);
+  --content-red: rgb(255, 116, 107, 0.75);
+  --content: rgb(216, 131, 125);
+  --off-white: rgb(252, 252, 252, 0.75);
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
   --overlay: rgb(23, 42, 69);
   --navbar: rgb(52, 52, 52);
   --lightgray-ui: rgb(159, 155, 155);
+}
+h1 {
+  color: var(--titles-red);
+}
+h3 {
+  color: var(--off-white);
 }
 a {
   text-decoration: none;
@@ -20,8 +26,8 @@ a {
 body {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
-  font-size: 13px;
-  color: var(--content-red);
+  font-size: 13.5px;
+  /* color: var(--content-red); */
 }
 .projects,
 .about,
@@ -40,6 +46,7 @@ body {
 }
 .project-container {
   min-width: 800px;
+  align-items: center;
 }
 .project-item:nth-child(even) .project-info ul li {
   margin: 0 0 0 16px;
@@ -52,7 +59,7 @@ body {
   line-height: 14px;
   flex-wrap: wrap;
   margin: 9px 0;
-  color: var(--txt-content);
+  color: var(--off-white);
 }
 
 ul {
@@ -122,6 +129,10 @@ li {
   margin: 0px auto;
   width: 70%;
   max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .nav-wrap {
@@ -217,7 +228,7 @@ li {
   min-height: 400px;
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .project-item:nth-child(even) {
   display: flex;
@@ -270,7 +281,7 @@ li {
   font-size: 0.85em;
   font-family: "Hind Madurai", sans-serif;
   font-size: 13.5px;
-  color: var(--txt-content);
+  color: var(--off-white);
 }
 .contact-item {
   width: 100%;
@@ -292,7 +303,6 @@ li {
 .icon {
   height: 24px;
   width: 24px;
-  background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,6 +326,7 @@ li {
   font-size: 20px;
   font-weight: 100;
   line-height: 36px;
+  color: var(--titles-red);
 }
 .section-horz-line {
   width: 100%;
@@ -383,9 +394,9 @@ li {
   padding: 0;
 }
 .fa.fa-envelope {
-  font-size: 24px;
+  font-size: 22.5px;
   height: 24px;
-  width: 28px;
+  width: 24px;
   color: var(--white);
   display: flex;
   align-items: center;
@@ -396,13 +407,22 @@ li {
   color: var(--content-red);
 }
 .overlay-container {
-  padding: 25px;
+  padding: 40px 25px 25px 25px;
   background-color: var(--overlay);
   z-index: 1;
   border-radius: 3px;
   min-width: 100%;
+  position: relative;
   box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
     0 0 0 1px rgba(9, 30, 66, 0.08);
+}
+.project-refs {
+  right: 12px;
+  position: absolute;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-icon {
@@ -472,8 +492,8 @@ li {
   color: #fff;
 }
 .fa {
-  font-size: 32px;
-  color: var(--navbar);
+  font-size: 28px;
+  color: var(--off-white);
 }
 
 .fa-github-square {
@@ -580,3 +600,7 @@ li {
   height: fit-content;
 }
 /*    */
+.project-item.project-item:nth-child(even) div div div.project-refs {
+  right: unset;
+  left: 12px;
+}

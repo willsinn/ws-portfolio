@@ -33,40 +33,49 @@ const Contact = ({ contact, orient }) => {
       switch (contact.method) {
         case "email":
           return (
-            <span
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                backgroundColor: "rgb(23, 42, 69)",
-                position: "relative",
-                borderRadius: "3px",
-              }}
-            >
-              {popup ? emailClipboard : null}
-              <i
-                className="fa fa-envelope"
-                aria-hidden="true"
-                onClick={(e) => handleEmailClick(e)}
-              ></i>
-            </span>
+            <div className="icon">
+              <a
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  backgroundColor: "rgb(23, 42, 69)",
+                  position: "relative",
+                  borderRadius: "3px",
+                }}
+              >
+                {popup ? emailClipboard : null}
+                <i
+                  className="fa fa-envelope"
+                  aria-hidden="true"
+                  onClick={(e) => handleEmailClick(e)}
+                ></i>
+              </a>
+            </div>
           );
         case "linkedin":
           return (
-            <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
+            <div className="icon">
+              <a href={contact.link} target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </div>
           );
         case "github":
           return (
-            <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-github-square" aria-hidden="true"></i>
-            </a>
+            <div className="icon">
+              <a href={contact.link} target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-github-square" aria-hidden="true"></i>
+              </a>
+            </div>
           );
         case "instagram":
           return (
-            <a href={contact.link} target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-instagram" aria-hidden="true"></i>
-            </a>
+            <div className="icon">
+              <a href={contact.link} target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
           );
         default:
           break;
@@ -81,9 +90,7 @@ const Contact = ({ contact, orient }) => {
   return (
     <>
       {orient === "vertical" ? (
-        <li className="contact-item">
-          <div className="icon">{renderContact()}</div>
-        </li>
+        <li className="contact-item">{renderContact()}</li>
       ) : null}
     </>
   );
