@@ -34,16 +34,7 @@ const Contact = ({ contact, orient }) => {
         case "email":
           return (
             <div className="icon">
-              <a
-                href={contact.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: "rgb(23, 42, 69)",
-                  position: "relative",
-                  borderRadius: "3px",
-                }}
-              >
+              <a href={contact.link} target="_blank" rel="noopener noreferrer">
                 {popup ? emailClipboard : null}
                 <i
                   className="fa fa-envelope"

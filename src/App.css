@@ -9,9 +9,13 @@
   --off-white: rgb(252, 252, 252, 0.75);
   /* --bg: rgb(10, 25, 47); */
   --bg: rgb(38, 35, 35);
-  --overlay: rgb(23, 42, 69);
+  /* --overlay: rgb(23, 42, 69); */
   --navbar: rgb(52, 52, 52);
   --lightgray-ui: rgb(159, 155, 155);
+  --overlay: rgba(80, 74, 74, 1);
+}
+p {
+  color: var(--off-white);
 }
 h1 {
   color: var(--titles-red);
@@ -80,7 +84,7 @@ li {
 .app {
   width: 100vw;
   display: flex;
-  /* background-color: var(--bg); */
+  background-color: rgb(221, 217, 217);
   align-items: center;
 }
 .app-side-liners {
@@ -99,11 +103,10 @@ li {
 }
 .sider-container {
   position: fixed;
-  left: 95px;
+  left: 125px;
   bottom: 20%;
   height: 160px;
   border-radius: 3px;
-  background-color: var(--white);
   width: 50px;
   display: flex;
   flex-direction: column;
@@ -394,21 +397,18 @@ li {
   padding: 0;
 }
 .fa.fa-envelope {
-  font-size: 22.5px;
+  font-size: 23.75px;
   height: 24px;
   width: 24px;
-  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
 }
-.fa.fa-envelope:hover {
-  color: var(--content-red);
-}
+
 .overlay-container {
   padding: 40px 25px 25px 25px;
-  background-color: var(--overlay);
+  background-color: var(--navbar);
   z-index: 1;
   border-radius: 3px;
   min-width: 100%;
@@ -495,7 +495,9 @@ li {
   font-size: 28px;
   color: var(--off-white);
 }
-
+.fa:hover {
+  color: var(--white);
+}
 .fa-github-square {
 }
 .active-project-cont {
