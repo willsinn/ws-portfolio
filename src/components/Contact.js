@@ -4,18 +4,19 @@ const Contact = ({ contact, orient }) => {
   const emailClipboard = (
     <div className="popover">
       <div className="clipboard">
-        <textarea id="clip" value={contact.link}>
+        <textarea className="clip-text" value={contact.link}>
           {contact.link}
         </textarea>
-        <div className="icon" onClick={(e) => copyToClipboard(e)}>
-          <i className="fa fa-clipboard" aria-hidden="true"></i>
-        </div>
+        <i
+          className="fa fa-clipboard"
+          aria-hidden="true"
+          onClick={(e) => copyToClipboard(e)}
+        ></i>
       </div>
     </div>
   );
   const copyToClipboard = (e) => {
     if (e) {
-      debugger;
       const elem = e.target.parentElement.parentElement.firstElementChild;
       elem.select();
       document.execCommand("copy");

@@ -459,12 +459,28 @@ li {
   font-size: 11px;
 }
 .clipboard {
-  height: 40px;
-  width: 300px;
+  height: 30px;
+  margin: 2px 8px;
+  width: fit-content;
   background-color: var(--overlay);
   border: 2px solid white;
   z-index: 2;
   display: flex;
+}
+.clip-text {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: fit-content;
+  opacity: 0.8;
+  height: fit-content;
+  resize: none;
+}
+.fa.fa-clipboard {
+  height: 28px;
+  width: 28px;
+  font-size: 24px;
 }
 .popover {
   position: absolute;
