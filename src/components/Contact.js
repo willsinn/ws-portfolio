@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 const Contact = ({ contact, orient }) => {
   const [popup, setPopup] = useState(false);
+  const [msg, setMsg] = useState(false);
   const emailClipboard = (
     <div className="popover">
       <div className="clipboard">
         <textarea className="clip-text">{contact.link}</textarea>
+        {msg ? <div className="copied-verify">Copied!!</div> : null}
+
         <i
           className="fa fa-clipboard"
           aria-hidden="true"
@@ -18,6 +21,9 @@ const Contact = ({ contact, orient }) => {
       const elem = e.target.parentElement.firstElementChild;
       elem.select();
       document.execCommand("copy");
+      setMsg(!msg);
+      setTimeout(() => setMsg(false), 2000);
+      setTimeout(() => setPopup(false), 3000);
     }
   };
   const renderContact = () => {

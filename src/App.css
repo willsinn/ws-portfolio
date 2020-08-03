@@ -469,6 +469,7 @@ li {
   align-items: center;
   box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
     0 0 0 1px rgba(9, 30, 66, 0.08);
+  position: relative;
 }
 
 .clip-text {
@@ -506,7 +507,18 @@ li {
   background-color: var(--overlay);
   color: var(--txt-wht);
 }
-
+.copied-verify {
+  padding: 3px 3px 3px 12px;
+  font-size: 11px;
+  position: absolute;
+  border-radius: 2px;
+  width: fit-content;
+  color: var(--overlay);
+  background-color: var(--txt-wht);
+  border: 1px solid lightgray;
+  right: -38px;
+  top: -28px;
+}
 .popover {
   position: absolute;
   top: 0;
