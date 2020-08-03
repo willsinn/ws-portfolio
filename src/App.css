@@ -92,7 +92,7 @@ li {
   justify-content: space-between;
   height: 75%;
   width: 100%;
-  box-shadow: 0 3px 3px 2px rgb(154, 154, 24, 28%);
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
   padding: 0 50px;
   background-color: #051227;
 }
