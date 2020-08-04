@@ -3,7 +3,7 @@ import React from "react";
 const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
   const copyToClipboard = (e) => {
     if (e) {
-      const elem = e.target.parentElement.firstElementChild;
+      const elem = e.target.parentElement.lastElementChild;
       elem.select();
       document.execCommand("copy");
       handleCopySeq(e);
@@ -12,20 +12,13 @@ const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
   return (
     <div className="popover">
       <div className="clip-cont col-1">
-        <div className="active-link col-1">
-          <button
-            className="btn-hover-bg close-btn"
-            onClick={(e) => handleClosePopup(e)}
-          >
-            <span className="abs-close-btn">✕</span>
+        <div className="popup-header">
+          <div className="clip-title col-1">Copy my e-mail</div>
+          <button className="close-btn" onClick={(e) => handleClosePopup(e)}>
+            <span>✕</span>
           </button>
         </div>
         <div className="clipboard">
-          <textarea
-            className="clip-text"
-            value={contact.link}
-            readOnly
-          ></textarea>
           {alert === "success" ? (
             <div className="popup-info">
               <div className="triangle-up"></div>
@@ -38,11 +31,20 @@ const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
               <span>Copy to clipboard</span>
             </div>
           ) : null}
+          <div className="popup-info">
+            <div className="triangle-up"></div>
+            <span>Copy to clipboard</span>
+          </div>
           <i
             className="fa fa-clipboard"
             aria-hidden="true"
             onClick={(e) => copyToClipboard(e)}
           ></i>
+          <textarea
+            className="clip-text"
+            value={`${contact.link}`}
+            readOnly
+          ></textarea>
         </div>
       </div>
     </div>

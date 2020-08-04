@@ -11,9 +11,9 @@ const Contact = ({ contact, orient }) => {
         () =>
           setAlert(
             "guide",
-            setTimeout(() => setAlert(""), 3000)
+            setTimeout(() => setAlert(""), 1000)
           ),
-        1500
+        500
       );
     }
   };
