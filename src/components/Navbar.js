@@ -34,7 +34,9 @@ const Navbar = ({}) => {
   return (
     <div className="nav-wrap">
       <div className="navbar">
-        <div>RESUME</div>
+        <div className="resume navbar-btn">
+          <span className="resume active-link">RESUME</span>
+        </div>
         <div className="horz-wrap">{renderNavItems()}</div>
       </div>
     </div>

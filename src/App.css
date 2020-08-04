@@ -140,7 +140,18 @@ li {
   align-items: center;
   flex-direction: column;
 }
-
+.resume.navbar-btn:hover {
+  background-color: rgb(184, 62, 53, 15%);
+}
+.resume.navbar-btn {
+  border: 1px solid var(--titles-red);
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+.resume.active-link {
+  color: var(--titles-red);
+  font-weight: 400;
+}
 .nav-wrap {
   display: flex;
   justify-content: space-between;
