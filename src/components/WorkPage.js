@@ -1,14 +1,10 @@
 import React from "react";
 import ProjectList from "./ProjectList";
 
-const WorkPage = ({ handleHideNav }) => {
+const WorkPage = () => {
   return (
-    <div
-      className="work"
-      style={{ alignItems: "center" }}
-      onMouseEnter={(e) => handleHideNav(e)}
-    >
-      <section className="main" onMouseLeave={(e) => handleHideNav(e)}>
+    <div className="work" style={{ alignItems: "center" }}>
+      <section className="main">
         <div className="section-header">
           <div className="section-title-label">02.</div>
           <div className="section-title">What I've built</div>

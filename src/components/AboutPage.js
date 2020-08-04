@@ -2,14 +2,10 @@ import React from "react";
 import SkillList from "./SkillList";
 import { abtSummary, abtMission } from "../utils/static";
 
-const AboutPage = ({ handleHideNav }) => {
+const AboutPage = () => {
   return (
-    <div className="about" onMouseEnter={(e) => handleHideNav(e)}>
-      <section
-        className="main"
-        style={{ padding: "0" }}
-        onMouseLeave={(e) => handleHideNav(e)}
-      >
+    <div className="about">
+      <section className="main" style={{ padding: "0" }}>
         <div className="row">
           <div className="col-1">
             <div className="section-header">

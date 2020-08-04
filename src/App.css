@@ -34,12 +34,13 @@ body {
   font-size: 13.5px;
   /* color: var(--content-red); */
 }
-.projects,
 .about,
 .landing,
-.work {
+.work,
+.connect {
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -48,6 +49,10 @@ body {
   align-items: flex-start;
   margin: 0px auto;
   background-color: var(--bg);
+  padding-top: 100px;
+}
+.landing {
+  padding: 0;
 }
 .project-container {
   min-width: 800px;
@@ -105,8 +110,8 @@ li {
 }
 .sider-container {
   position: fixed;
-  left: 125px;
-  bottom: 20%;
+  left: 85px;
+  bottom: 33%;
   height: 160px;
   border-radius: 3px;
   width: 50px;
@@ -139,19 +144,28 @@ li {
   align-items: center;
   flex-direction: column;
 }
-
+.resume.navbar-btn:hover {
+  background-color: rgb(184, 62, 53, 15%);
+}
+.resume.navbar-btn {
+  border: 1px solid var(--titles-red);
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+.resume.active-link {
+  color: var(--titles-red);
+  font-weight: 400;
+}
 .nav-wrap {
   display: flex;
   justify-content: space-between;
-  height: 84px;
+  height: 76px;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 2;
-  transition: 0.75s;
-  transition-timing-function: ease-in-out;
 }
 .navbar-btn {
   padding: 13px 20px;
@@ -165,12 +179,17 @@ li {
   text-decoration: none;
   color: var(--white);
   font-size: 11.5px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 19px;
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
     Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  transition: color 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.active-link:hover {
+  color: var(--titles-red);
 }
 .row {
   display: flex;

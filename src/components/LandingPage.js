@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
 
-const LandingPage = ({ handleOverrideTimer }) => {
+const LandingPage = () => {
   return (
-    <div className="landing" onMouseEnter={(e) => handleOverrideTimer(e)}>
+    <div className="landing">
       <section className="main">
         <div>
           <h1>Hi, my name is.</h1>
