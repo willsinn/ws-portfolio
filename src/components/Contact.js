@@ -3,17 +3,33 @@ import ReturnClipped from "./ReturnClipped";
 
 const Contact = ({ contact, orient }) => {
   const [popup, setPopup] = useState(false);
-  const [msg, setMsg] = useState(false);
+  const [alert, setAlert] = useState("");
   const [hover, setHover] = useState(false);
-
-  const copyToClipboard = (e) => {
+  const handleEmailClick = (e) => {
     if (e) {
-      setHover(false);
-      const elem = e.target.parentElement.firstElementChild;
-      elem.select();
-      document.execCommand("copy");
-      setMsg(!msg);
-      setTimeout(() => setPopup(false), 2500);
+      setPopup(!popup);
+      setTimeout(
+        () =>
+          setAlert(
+            "guide",
+            setTimeout(() => setAlert(""), 3000)
+          ),
+        1500
+      );
+    }
+  };
+  const handleCopySeq = (e) => {
+    if (e) {
+      setAlert("success");
+      setTimeout(
+        () =>
+          setAlert(
+            "",
+            setTimeout(() => setPopup(!popup)),
+            1000
+          ),
+        2000
+      );
     }
   };
   const renderContact = () => {
@@ -24,16 +40,11 @@ const Contact = ({ contact, orient }) => {
             <div className="icon">
               <span target="_blank" rel="noopener noreferrer">
                 {popup ? (
-                  <>
-                    {
-                      <ReturnClipped
-                        copyToClipboard={copyToClipboard}
-                        msg={msg}
-                        hover={hover}
-                        contact={contact}
-                      />
-                    }
-                  </>
+                  <ReturnClipped
+                    alert={alert}
+                    contact={contact}
+                    handleCopySeq={handleCopySeq}
+                  />
                 ) : null}
                 <div
                   className="btn-hover-bg"
@@ -83,19 +94,7 @@ const Contact = ({ contact, orient }) => {
       }
     }
   };
-  const handleEmailClick = (e) => {
-    if (e) {
-      setPopup(!popup);
-      setTimeout(
-        () =>
-          setHover(
-            true,
-            setTimeout(() => setHover(false), 3000)
-          ),
-        1500
-      );
-    }
-  };
+
   return (
     <>
       {orient === "vertical" ? (
