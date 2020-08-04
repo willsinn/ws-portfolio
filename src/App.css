@@ -51,6 +51,9 @@ body {
   background-color: var(--bg);
   padding-top: 100px;
 }
+.landing {
+  padding: 0;
+}
 .project-container {
   min-width: 800px;
   align-items: center;

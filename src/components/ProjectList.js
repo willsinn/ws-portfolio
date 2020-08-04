@@ -1,9 +1,6 @@
 import React from "react";
 import { projectList } from "../utils/static";
 import Project from "./Project";
-import Mywellotask from "../images/mywellotask.png";
-import Buscomparer from "../images/buscomparer.png";
-import Zombiediner from "../images/zombiediner.png";
 
 const ProjectList = () => {
   const projects = projectList();

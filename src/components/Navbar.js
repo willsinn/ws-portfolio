@@ -2,7 +2,7 @@ import React from "react";
 
 const navItems = ["about", "work", "connect"];
 
-const Navbar = ({}) => {
+const Navbar = () => {
   const renderNavItems = () => {
     let counter = 0;
     return navItems.map((item) => {

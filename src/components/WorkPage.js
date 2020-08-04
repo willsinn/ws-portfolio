@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectList from "./ProjectList";
 
-const WorkPage = ({}) => {
+const WorkPage = () => {
   return (
     <div className="work" style={{ alignItems: "center" }}>
       <section className="main">

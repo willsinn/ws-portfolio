@@ -2,7 +2,7 @@ import React from "react";
 import SkillList from "./SkillList";
 import { abtSummary, abtMission } from "../utils/static";
 
-const AboutPage = ({}) => {
+const AboutPage = () => {
   return (
     <div className="about">
       <section className="main" style={{ padding: "0" }}>
