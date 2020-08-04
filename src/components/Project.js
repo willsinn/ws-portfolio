@@ -20,7 +20,7 @@ const Project = ({ project }) => {
   const renderProjectStack = (stack) => {
     if (stack.length > 0) {
       return stack.map((val, i) => (
-        <li key={i} className="stack-item">
+        <li key={`skill-${i}`} className="stack-item">
           {val}
         </li>
       ));
