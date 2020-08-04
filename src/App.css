@@ -36,7 +36,8 @@ body {
 }
 .about,
 .landing,
-.work {
+.work,
+.connect {
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -106,8 +107,8 @@ li {
 }
 .sider-container {
   position: fixed;
-  left: 125px;
-  bottom: 20%;
+  left: 85px;
+  bottom: 33%;
   height: 160px;
   border-radius: 3px;
   width: 50px;
@@ -175,12 +176,17 @@ li {
   text-decoration: none;
   color: var(--white);
   font-size: 11.5px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 19px;
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
     Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  transition: color 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.active-link:hover {
+  color: var(--titles-red);
 }
 .row {
   display: flex;

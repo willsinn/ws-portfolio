@@ -1,6 +1,6 @@
 import React from "react";
 
-const navItems = ["about", "work", "contacts"];
+const navItems = ["about", "work", "connect"];
 
 const Navbar = ({}) => {
   const renderNavItems = () => {
@@ -35,7 +35,7 @@ const Navbar = ({}) => {
     <div className="nav-wrap">
       <div className="navbar">
         <div className="resume navbar-btn">
-          <span className="resume active-link">RESUME</span>
+          <span className="resume active-link">resume</span>
         </div>
         <div className="horz-wrap">{renderNavItems()}</div>
       </div>

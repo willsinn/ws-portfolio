@@ -4,6 +4,7 @@ import WorkPage from "./components/WorkPage";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import ContactList from "./components/ContactList";
+import ConnectPage from "./components/ConnectPage";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => {
         <LandingPage />
         <AboutPage />
         <WorkPage />
+        <ConnectPage />
       </div>
       <div className="app-side-liners">
         <div className="sider-container">
