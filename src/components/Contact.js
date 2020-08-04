@@ -4,7 +4,6 @@ import ReturnClipped from "./ReturnClipped";
 const Contact = ({ contact, orient }) => {
   const [popup, setPopup] = useState(false);
   const [alert, setAlert] = useState("");
-  const [hover, setHover] = useState(false);
   const handleEmailClick = (e) => {
     if (e) {
       setPopup(!popup);
@@ -32,6 +31,12 @@ const Contact = ({ contact, orient }) => {
       );
     }
   };
+  const handleClosePopup = (e) => {
+    if (e) {
+      setAlert("");
+      setPopup(!popup);
+    }
+  };
   const renderContact = () => {
     if (contact) {
       switch (contact.method) {
@@ -44,6 +49,7 @@ const Contact = ({ contact, orient }) => {
                     alert={alert}
                     contact={contact}
                     handleCopySeq={handleCopySeq}
+                    handleClosePopup={handleClosePopup}
                   />
                 ) : null}
                 <div
