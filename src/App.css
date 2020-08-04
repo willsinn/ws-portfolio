@@ -587,12 +587,11 @@ li {
   position: relative;
 }
 .clip-cont {
-  background-color: var(--navbar);
+  background-color: var(--white);
   border-radius: 2px;
   box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
-    0 0 0 1px rgba(9, 30, 66, 0.08);
-  padding: 12px 4px;
-  border: 0.5px solid rgb(66, 61, 61);
+    0 0 0 1px rgba(118, 126, 139, 0.08);
+  padding: 12px 8px;
 }
 .clip-title {
   height: 28px;
