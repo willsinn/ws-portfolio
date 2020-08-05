@@ -31,10 +31,6 @@ const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
               <span>Copy to clipboard</span>
             </div>
           ) : null}
-          <div className="popup-info">
-            <div className="triangle-up"></div>
-            <span>Copy to clipboard</span>
-          </div>
           <i
             className="fa fa-clipboard"
             aria-hidden="true"
