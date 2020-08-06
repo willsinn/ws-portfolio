@@ -4,7 +4,7 @@ const LandingPage = () => {
   return (
     <div className="landing">
       <section className="main">
-        <div>
+        <div className="main-content">
           <h1>Hi, my name is.</h1>
           <h2 className="name">William Sinn</h2>
           <h3>

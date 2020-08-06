@@ -17,6 +17,8 @@
 }
 p {
   color: var(--off-white);
+  width: 50%;
+  min-width: 350px;
 }
 h1 {
   color: var(--titles-red);
@@ -145,6 +147,9 @@ li {
   align-items: center;
   flex-direction: column;
 }
+.main-content {
+  width: 50%;
+}
 .resume.navbar-btn:hover {
   background-color: rgb(184, 62, 53, 15%);
 }
@@ -152,6 +157,7 @@ li {
   border: 1px solid var(--titles-red);
   padding: 6px 12px;
   border-radius: 2px;
+  width: fit-content;
 }
 .resume.active-link {
   color: var(--titles-red);
