@@ -1,6 +1,11 @@
 import React from "react";
 
-const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
+const ClipboardModal = ({
+  alert,
+  contact,
+  handleCopySeq,
+  handleClosePopup,
+}) => {
   const copyToClipboard = (e) => {
     if (e) {
       const elem = e.target.parentElement.lastElementChild;
@@ -25,12 +30,6 @@ const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
               <span>Copied!!</span>
             </div>
           ) : null}
-          {alert === "guide" ? (
-            <div className="popup-info">
-              <div className="triangle-up"></div>
-              <span>Copy to clipboard</span>
-            </div>
-          ) : null}
           <i
             className="fa fa-clipboard"
             aria-hidden="true"
@@ -47,4 +46,4 @@ const ReturnClipped = ({ alert, contact, handleCopySeq, handleClosePopup }) => {
   );
 };
 
-export default ReturnClipped;
+export default ClipboardModal;

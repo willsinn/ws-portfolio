@@ -1,21 +1,11 @@
 import React, { useState } from "react";
-import ReturnClipped from "./ReturnClipped";
+import ClipboardModal from "./ClipboardModal";
 
 const Contact = ({ contact, orient }) => {
   const [popup, setPopup] = useState(false);
   const [alert, setAlert] = useState("");
   const handleEmailClick = (e) => {
-    if (e) {
-      setPopup(!popup);
-      setTimeout(
-        () =>
-          setAlert(
-            "guide",
-            setTimeout(() => setAlert(""), 1000)
-          ),
-        500
-      );
-    }
+    if (e) return setPopup(!popup);
   };
   const handleCopySeq = (e) => {
     if (e) {
@@ -45,7 +35,7 @@ const Contact = ({ contact, orient }) => {
             <div className="icon">
               <span target="_blank" rel="noopener noreferrer">
                 {popup ? (
-                  <ReturnClipped
+                  <ClipboardModal
                     alert={alert}
                     contact={contact}
                     handleCopySeq={handleCopySeq}
