@@ -8,7 +8,7 @@ const Navbar = () => {
     return navItems.map((item) => {
       counter++;
       return (
-        <div className="navbar-btn">
+        <div className="navbar-btn" key={`item-${counter - 1}`}>
           <span className="nav-num">0{counter}.</span>
           <span
             className="active-link"
