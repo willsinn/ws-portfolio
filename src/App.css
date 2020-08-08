@@ -561,8 +561,7 @@ li {
   /* color: var(--white); */
   color: whitesmoke;
 }
-.fa-github-square {
-}
+
 .active-project-cont {
   width: fit-content;
   position: absolute;
@@ -584,7 +583,6 @@ li {
 }
 .clipboard {
   height: 30px;
-  /* padding: 6px 8px 2px 8px; */
   width: fit-content;
   border-radius: 3px;
   z-index: 2;
