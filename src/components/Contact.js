@@ -31,8 +31,6 @@ const Contact = ({ contact, content }) => {
   const renderContact = () => {
     if (contact) {
       switch (contact.method) {
-        case "email":
-          return renderEmailContact();
         case "linkedin":
           return <i className="fa fa-linkedin-square" aria-hidden="true"></i>;
         case "github":
@@ -45,42 +43,47 @@ const Contact = ({ contact, content }) => {
     }
   };
   const renderEmailContact = () => {
-    return (
-      <div className="icon">
-        <span target="_blank" rel="noopener noreferrer">
-          {popup ? (
-            <ClipboardModal
-              alert={alert}
-              contact={contact}
-              handleCopySeq={handleCopySeq}
-              handleClosePopup={handleClosePopup}
-            />
-          ) : null}
-          {content === "" ? (
-            <div
-              className="btn-hover-bg"
-              style={{ height: "16.75px", width: "23px" }}
-            >
-              <i
-                className="fa fa-envelope"
-                aria-hidden="true"
-                onClick={(e) => handleEmailClick(e)}
-              ></i>
-            </div>
-          ) : (
-            <div>{content}</div>
-          )}
-        </span>
+    const btnContent = () => (
+      <div onClick={(e) => handleEmailClick(e)}>
+        {content === "" ? (
+          <div
+            className="btn-hover-bg"
+            style={{ height: "16.75px", width: "23px" }}
+          >
+            <i className="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        ) : (
+          <div className="resume navbar-btn">
+            <div className="resume active-link">{content}</div>
+          </div>
+        )}
       </div>
+    );
+    return (
+      <span target="_blank" rel="noopener noreferrer">
+        {popup ? (
+          <ClipboardModal
+            alert={alert}
+            contact={contact}
+            handleCopySeq={handleCopySeq}
+            handleClosePopup={handleClosePopup}
+          />
+        ) : null}
+        {btnContent()}
+      </span>
     );
   };
   return (
     <li className="contact-item">
-      <div className="icon">
-        <a href={contact.link} target="_blank" rel="noopener noreferrer">
-          <div className="btn-hover-bg">{renderContact()}</div>
-        </a>
-      </div>
+      {contact.method === "email" ? (
+        <div className="icon">{renderEmailContact()} </div>
+      ) : (
+        <div className="icon">
+          <a href={contact.link} target="_blank" rel="noopener noreferrer">
+            <div className="btn-hover-bg">{renderContact()}</div>
+          </a>
+        </div>
+      )}
     </li>
   );
 };

@@ -733,6 +733,6 @@ textarea.clip-text {
   font-weight: 700;
   color: var(--lightgray-ui);
 }
-.email.active-link {
+.btn-wrap {
   position: relative;
 }

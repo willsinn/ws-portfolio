@@ -21,10 +21,8 @@ const ConnectPage = () => {
             </p>
           </div>
 
-          <div className="resume navbar-btn">
-            <span className="email active-link">
-              <Contact contact={emailContact[0]} content={"Connect"} />
-            </span>
+          <div className="btn-wrap">
+            <Contact contact={emailContact[0]} content={"Connect"} />
           </div>
         </div>
       </section>
