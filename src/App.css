@@ -342,6 +342,7 @@ li {
   display: flex;
   align-items: center;
   margin: 8px 0;
+  justify-content: center;
 }
 /* .contact-item:hover {
   background-color: var(--content-red);
@@ -362,6 +363,7 @@ li {
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
+  position: relative;
 }
 /* .icon:hover {
   background-color: var(--content-red);
@@ -732,7 +734,4 @@ textarea.clip-text {
 .close-btn span:hover {
   font-weight: 700;
   color: var(--lightgray-ui);
-}
-.btn-wrap {
-  position: relative;
 }

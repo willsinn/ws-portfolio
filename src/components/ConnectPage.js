@@ -20,10 +20,7 @@ const ConnectPage = () => {
               I'm currently looking for opportunities that highlight my skillset
             </p>
           </div>
-
-          <div className="btn-wrap">
-            <Contact contact={emailContact[0]} content={"Connect"} />
-          </div>
+          <Contact contact={emailContact[0]} content={"Connect"} />
         </div>
       </section>
     </div>
