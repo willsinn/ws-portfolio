@@ -264,8 +264,8 @@ li {
   display: flex;
   flex-direction: row-reverse;
 }
-.project-item:nth-child(even) div.project-info {
-  align-items: flex-end;
+.project-item:nth-child(even) .project-info .prj-title {
+  justify-content: flex-end;
 }
 .project-info {
   height: fit-content;
