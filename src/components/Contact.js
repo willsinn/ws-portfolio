@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ClipboardModal from "./ClipboardModal";
 
-const Contact = ({ contact, orient }) => {
+const Contact = ({ contact, content }) => {
   const [popup, setPopup] = useState(false);
   const [alert, setAlert] = useState("");
   const handleEmailClick = (e) => {
@@ -91,12 +91,6 @@ const Contact = ({ contact, orient }) => {
     }
   };
 
-  return (
-    <>
-      {orient === "vertical" ? (
-        <li className="contact-item">{renderContact()}</li>
-      ) : null}
-    </>
-  );
+  return <li className="contact-item">{renderContact()}</li>;
 };
 export default Contact;

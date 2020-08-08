@@ -7,11 +7,7 @@ const ContactList = ({ orient }) => {
     const contacts = contactMethods();
     if (contacts && contacts.length > 0) {
       return contacts.map((contact) => (
-        <Contact
-          key={`${contact.method}-id`}
-          contact={contact}
-          orient={orient}
-        />
+        <Contact key={`${contact.method}-id`} contact={contact} />
       ));
     }
   };
