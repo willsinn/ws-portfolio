@@ -1,6 +1,6 @@
 import React from "react";
 import SkillList from "./SkillList";
-import { abtSummary, abtMission } from "../utils/static";
+import { abtMission } from "../utils/desc.js";
 
 const AboutPage = () => {
   return (
@@ -14,8 +14,8 @@ const AboutPage = () => {
             </div>
             <div className="about-section">
               <div className="content-cont col-1">
-                <p className="summary-text">{abtSummary()}</p>
-                <p className="summary-text">{abtMission()}</p>
+                <p className="summary-text">{}</p>
+                <p className="summary-text">{abtMission}</p>
               </div>
             </div>
           </div>
