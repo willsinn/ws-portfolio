@@ -109,3 +109,6 @@ export const contactMethods = () => {
   ];
   return arr;
 };
+
+export const resumeUrl =
+  "https://docs.google.com/document/d/1MA2CdDaYlZhHS0VYYi5gMwJHJu2pYT7VMG-P9Ea1EJ4/edit";

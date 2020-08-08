@@ -1,4 +1,5 @@
 import React from "react";
+import { resumeUrl } from "../utils/static.js";
 
 const navItems = ["about", "work", "connect"];
 
@@ -34,9 +35,11 @@ const Navbar = () => {
   return (
     <div className="nav-wrap">
       <div className="navbar">
-        <div className="resume navbar-btn">
-          <span className="resume active-link">resume</span>
-        </div>
+        <a href={`${resumeUrl}`} target="_blank" rel="noopener noreferrer">
+          <div className="resume navbar-btn">
+            <span className="resume active-link">resume</span>
+          </div>
+        </a>
         <div className="horz-wrap">{renderNavItems()}</div>
       </div>
     </div>
