@@ -1,13 +1,14 @@
 import React from "react";
 import Contact from "./Contact";
+
 import { contactMethods } from "../utils/static.js";
 
 const ConnectPage = () => {
   const contacts = contactMethods();
+  const emailContact = contacts.filter((c) => c.method === "email");
 
   const renderEmail = () => {
-    const email = contacts.filter((contact) => contact.method === "email");
-    return <Contact email={email} />;
+    debugger;
   };
 
   return (
@@ -15,23 +16,20 @@ const ConnectPage = () => {
       <section className="main">
         <div className="main-content">
           <div className="section-header">
-            <span className="nav-num">03.</span>
-            <h3>
-              <span>Expanding your network? Lets</span>
-            </h3>
+            <h3 className="section-title-label">03.</h3>
+
+            <h3>Expanding your network? Lets</h3>
           </div>
-          <h2 className="name">Get in touch</h2>
+          <h2 className="name">Get connected</h2>
           <div className="row col-1">
             <p>
-              As a person who weighs solutions, I'm currently looking for
-              opportunities to solve complex problems for people who think
-              straight.
+              I'm currently looking for opportunities that highlight my skillset
             </p>
           </div>
 
           <div className="resume navbar-btn">
             <span className="resume active-link">
-              <ul>{renderEmail()}</ul>
+              <Contact contact={emailContact[0]} orient={"vertical"} />
             </span>
           </div>
         </div>

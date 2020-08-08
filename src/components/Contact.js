@@ -44,7 +44,7 @@ const Contact = ({ contact, orient }) => {
                 ) : null}
                 <div
                   className="btn-hover-bg"
-                  style={{ height: "17px", width: "23.5px" }}
+                  style={{ height: "16.75px", width: "23px" }}
                 >
                   <i
                     className="fa fa-envelope"
