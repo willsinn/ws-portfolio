@@ -34,35 +34,11 @@ const Contact = ({ contact, content }) => {
         case "email":
           return renderEmailContact();
         case "linkedin":
-          return (
-            <div className="icon">
-              <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <div className="btn-hover-bg">
-                  <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
-          );
+          return <i className="fa fa-linkedin-square" aria-hidden="true"></i>;
         case "github":
-          return (
-            <div className="icon">
-              <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <div className="btn-hover-bg">
-                  <i className="fa fa-github-square" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
-          );
+          return <i className="fa fa-github-square" aria-hidden="true"></i>;
         case "instagram":
-          return (
-            <div className="icon">
-              <a href={contact.link} target="_blank" rel="noopener noreferrer">
-                <div className="btn-hover-bg">
-                  <i className="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-              </a>
-            </div>
-          );
+          return <i className="fa fa-instagram" aria-hidden="true"></i>;
         default:
           break;
       }
@@ -98,6 +74,14 @@ const Contact = ({ contact, content }) => {
       </div>
     );
   };
-  return <li className="contact-item">{renderContact()}</li>;
+  return (
+    <li className="contact-item">
+      <div className="icon">
+        <a href={contact.link} target="_blank" rel="noopener noreferrer">
+          <div className="btn-hover-bg">{renderContact()}</div>
+        </a>
+      </div>
+    </li>
+  );
 };
 export default Contact;
