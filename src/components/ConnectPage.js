@@ -19,7 +19,11 @@ const ConnectPage = () => {
             <p>{connectOutro}</p>
           </div>
           <div className="connect-btn">
-            <Contact contact={contact[0]} content={"Contact Me"} />
+            <Contact
+              key={`connect-${contact[0].method}-1`}
+              contact={contact[0]}
+              content={"Contact Me"}
+            />
           </div>
         </div>
       </section>
