@@ -17,11 +17,13 @@
 }
 p {
   color: var(--off-white);
-  width: 50%;
+  width: 65%;
   min-width: 350px;
 }
 h1 {
   color: var(--titles-red);
+}
+h2 {
 }
 h3 {
   color: var(--off-white);
@@ -215,12 +217,14 @@ li {
   width: 100%;
 }
 .name {
-  font-size: 42px;
+  font-size: 68px;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
   color: var(--white);
   width: fit-content;
+}
+.intro {
 }
 .content-cont {
   margin-top: 24px;

@@ -10,14 +10,17 @@ const LandingPage = () => {
     <div className="landing">
       <section className="main">
         <div>
-          <h2 className="name">William Sinn</h2>
-          <h3>
-            <span>Software Engineer</span>
-          </h3>
-          <div>
+          <div className="name">William Sinn</div>
+          <div className="row">
             <p>{landingIntro}</p>
           </div>
-          <Contact key={"landing-1"} contact={ct[0]} content={"Say Hello"} />
+          <div className="connect-btn">
+            <Contact
+              key={`landing-${ct[0].method}-1`}
+              contact={ct[0]}
+              content={"Say Hello"}
+            />
+          </div>
         </div>
       </section>
     </div>

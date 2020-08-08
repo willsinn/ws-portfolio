@@ -20,7 +20,7 @@ const ConnectPage = () => {
           </div>
           <div className="connect-btn">
             <Contact
-              key={"connect-1"}
+              key={`connect-${contact[0].method}-1`}
               contact={contact[0]}
               content={"Contact Me"}
             />
