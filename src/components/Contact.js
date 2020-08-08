@@ -43,6 +43,7 @@ const Contact = ({ contact, content }) => {
     }
   };
   const renderEmailContact = () => {
+    const contentArr = content.split(" ");
     const btnContent = () => (
       <div onClick={(e) => handleEmailClick(e)}>
         {content === "" ? (
@@ -53,8 +54,12 @@ const Contact = ({ contact, content }) => {
             <i className="fa fa-envelope" aria-hidden="true"></i>
           </div>
         ) : (
-          <div className="resume navbar-btn">
-            <div className="resume active-link">{content}</div>
+          <div className="email navbar-btn">
+            <div className="email active-link">
+              {contentArr.map((cont) => (
+                <span style={{ marginRight: "4px" }}>{cont}</span>
+              ))}
+            </div>
           </div>
         )}
       </div>

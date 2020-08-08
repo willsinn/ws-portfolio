@@ -158,6 +158,7 @@ li {
   padding: 6px 12px;
   border-radius: 2px;
   width: fit-content;
+  height: 100%;
 }
 .resume.active-link {
   color: var(--titles-red);
@@ -363,6 +364,8 @@ li {
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
+}
+.icon span {
   position: relative;
 }
 /* .icon:hover {
@@ -734,4 +737,19 @@ textarea.clip-text {
 .close-btn span:hover {
   font-weight: 700;
   color: var(--lightgray-ui);
+}
+.email.navbar-btn {
+  border: 1px solid var(--titles-red);
+  border-radius: 2px;
+  width: fit-content;
+  padding: 16px 20px;
+  height: 100%;
+}
+.email.active-link {
+  text-transform: none;
+  color: var(--titles-red);
+  font-size: 15px;
+}
+.email.navbar-btn:hover {
+  background-color: rgb(184, 62, 53, 15%);
 }

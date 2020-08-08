@@ -3,8 +3,7 @@ import Contact from "./Contact";
 import { contactMethods } from "../utils/static.js";
 
 const ConnectPage = () => {
-  const contacts = contactMethods();
-  const emailContact = contacts.filter((c) => c.method === "email");
+  const contact = contactMethods().filter((c) => c.method === "email");
 
   return (
     <div className="connect">
@@ -20,7 +19,7 @@ const ConnectPage = () => {
               I'm currently looking for opportunities that highlight my skillset
             </p>
           </div>
-          <Contact contact={emailContact[0]} content={"Connect"} />
+          <Contact contact={contact[0]} content={"Contact Me"} />
         </div>
       </section>
     </div>

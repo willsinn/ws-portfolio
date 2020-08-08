@@ -1,6 +1,10 @@
 import React from "react";
+import Contact from "./Contact";
+import { contactMethods } from "../utils/static.js";
 
 const LandingPage = () => {
+  const ct = contactMethods().filter((c) => c.method === "email");
+
   return (
     <div className="landing">
       <section className="main">
@@ -17,6 +21,7 @@ const LandingPage = () => {
               applications, and everything in between.
             </p>
           </div>
+          <Contact contact={ct[0]} content={"Say Hello"} />
         </div>
       </section>
     </div>
