@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <div className="landing">
       <section className="main">
-        <div className="main-content">
+        <div>
           <h2 className="name">William Sinn</h2>
           <h3>
             <span>Software Engineer</span>
@@ -17,7 +17,7 @@ const LandingPage = () => {
           <div>
             <p>{landingIntro}</p>
           </div>
-          <Contact contact={ct[0]} content={"Say Hello"} />
+          <Contact key={"landing-1"} contact={ct[0]} content={"Say Hello"} />
         </div>
       </section>
     </div>
