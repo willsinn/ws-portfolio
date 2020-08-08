@@ -13,7 +13,7 @@ const SkillList = () => {
   };
 
   return (
-    <div className="tech-skills-cont">
+    <div className="col-1 tech-skills-cont">
       <h3 className="section-title">My technical proficiencies...</h3>
       <ul className="skill-list">{renderSkills()}</ul>
     </div>

@@ -19,6 +19,7 @@ p {
   color: var(--off-white);
   width: 65%;
   min-width: 350px;
+  text-indent: 16px;
 }
 h1 {
   color: var(--titles-red);
@@ -150,7 +151,7 @@ li {
   flex-direction: column;
 }
 .main-content {
-  width: 50%;
+  width: 75%;
 }
 .resume.navbar-btn:hover {
   background-color: rgb(184, 62, 53, 15%);
