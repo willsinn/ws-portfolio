@@ -10,15 +10,17 @@ const ConnectPage = () => {
     <div className="connect">
       <section className="main">
         <div className="main-content">
-          <div className="section-header">
+          <div className="row section-header">
             <h3 className="section-title-label">03.</h3>
             <h3>Expanding your network? Let's</h3>
           </div>
-          <h2 className="name">Get Connected</h2>
-          <div className="row col-1">
+          <h2 className="row name">Get Connected</h2>
+          <div className="row">
             <p>{connectOutro}</p>
           </div>
-          <Contact contact={contact[0]} content={"Contact Me"} />
+          <div className="connect-btn">
+            <Contact contact={contact[0]} content={"Contact Me"} />
+          </div>
         </div>
       </section>
     </div>

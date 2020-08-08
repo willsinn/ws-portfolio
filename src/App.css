@@ -204,6 +204,8 @@ li {
   align-items: center;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  margin: 20px 0;
 }
 .col-1 {
   display: flex;
@@ -218,6 +220,7 @@ li {
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
   color: var(--white);
+  width: fit-content;
 }
 .content-cont {
   margin-top: 24px;
@@ -228,6 +231,9 @@ li {
   flex-direction: column;
   align-items: center;
   width: fit-content;
+}
+.connect-btn {
+  margin: 60px 0;
 }
 .profile-cont {
   height: fit-content;

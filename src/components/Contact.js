@@ -57,7 +57,7 @@ const Contact = ({ contact, content }) => {
           <div className="email navbar-btn">
             <div className="email active-link">
               {contentArr.map((cont) => (
-                <span style={{ marginRight: "4px" }}>{cont}</span>
+                <span style={{ margin: "0 2px" }}>{cont}</span>
               ))}
             </div>
           </div>
