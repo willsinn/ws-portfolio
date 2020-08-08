@@ -22,7 +22,7 @@ const App = () => {
       <div className="app-side-liners">
         <div className="sider-container">
           <div className="contact-links">
-            <ContactList orient={"vertical"} />
+            <ContactList />
           </div>
         </div>
       </div>

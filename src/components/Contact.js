@@ -27,34 +27,12 @@ const Contact = ({ contact, content }) => {
       setPopup(!popup);
     }
   };
+
   const renderContact = () => {
     if (contact) {
       switch (contact.method) {
         case "email":
-          return (
-            <div className="icon">
-              <span target="_blank" rel="noopener noreferrer">
-                {popup ? (
-                  <ClipboardModal
-                    alert={alert}
-                    contact={contact}
-                    handleCopySeq={handleCopySeq}
-                    handleClosePopup={handleClosePopup}
-                  />
-                ) : null}
-                <div
-                  className="btn-hover-bg"
-                  style={{ height: "16.75px", width: "23px" }}
-                >
-                  <i
-                    className="fa fa-envelope"
-                    aria-hidden="true"
-                    onClick={(e) => handleEmailClick(e)}
-                  ></i>
-                </div>
-              </span>
-            </div>
-          );
+          return renderEmailContact();
         case "linkedin":
           return (
             <div className="icon">
@@ -90,7 +68,36 @@ const Contact = ({ contact, content }) => {
       }
     }
   };
-
+  const renderEmailContact = () => {
+    return (
+      <div className="icon">
+        <span target="_blank" rel="noopener noreferrer">
+          {popup ? (
+            <ClipboardModal
+              alert={alert}
+              contact={contact}
+              handleCopySeq={handleCopySeq}
+              handleClosePopup={handleClosePopup}
+            />
+          ) : null}
+          {content === "" ? (
+            <div
+              className="btn-hover-bg"
+              style={{ height: "16.75px", width: "23px" }}
+            >
+              <i
+                className="fa fa-envelope"
+                aria-hidden="true"
+                onClick={(e) => handleEmailClick(e)}
+              ></i>
+            </div>
+          ) : (
+            <div>{content}</div>
+          )}
+        </span>
+      </div>
+    );
+  };
   return <li className="contact-item">{renderContact()}</li>;
 };
 export default Contact;
