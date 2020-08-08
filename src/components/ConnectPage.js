@@ -1,35 +1,26 @@
 import React from "react";
 import Contact from "./Contact";
 import { contactMethods } from "../utils/static.js";
+import { connectOutro } from "../utils/desc.js";
 
 const ConnectPage = () => {
-  const contacts = contactMethods();
-
-  const renderEmail = () => {
-    const email = contacts.filter((contact) => contact.method === "email");
-    return <Contact email={email} />;
-  };
+  const contact = contactMethods().filter((c) => c.method === "email");
 
   return (
     <div className="connect">
       <section className="main">
-        <div>
-          <span className="nav-num">03.</span>
-          <span>Expanding your network? Lets</span>
-        </div>
-        <h3>Get in touch</h3>
-        <div>
-          <p>
-            As a person who weighs solutions, I'm currently looking for
-            opportunities to solve complex problems for people who think
-            straight.
-          </p>
-        </div>
-
-        <div className="resume navbar-btn">
-          <span className="resume active-link">
-            <ul>{renderEmail()}</ul>
-          </span>
+        <div className="main-content">
+          <div className="row section-header">
+            <h3 className="section-title-label">03.</h3>
+            <h3>Expanding your network? Let's</h3>
+          </div>
+          <h2 className="row name">Get Connected</h2>
+          <div className="row">
+            <p>{connectOutro}</p>
+          </div>
+          <div className="connect-btn">
+            <Contact contact={contact[0]} content={"Contact Me"} />
+          </div>
         </div>
       </section>
     </div>

@@ -1,18 +1,3 @@
-export const abtBrand = () => {
-  const txt = "Data driven, innovative thinker.";
-  return txt;
-};
-
-export const abtSummary = () => {
-  const txt =
-    "Welcome! I'm Will, a software engineer based in NYC. As someone who enjoys self-optimization, I fell in love with the idea that a solution in code can always be made better.";
-  return txt;
-};
-export const abtMission = () => {
-  const txt =
-    "My mission is to improve user experience through simplicity and intuitive design while optimizing the product codebase. Using data points to precisely upgrade weakpoints has always been a strong suit of mine and I intend to build on it!";
-  return txt;
-};
 export const stackList = () => {
   const arr = [
     { name: "JavaScript(ES6)" },
@@ -66,7 +51,7 @@ export const projectList = () => {
     },
     {
       title: "Bus Comparer",
-      link: "https://bus-comparer.herokuapp.com",
+      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
@@ -109,3 +94,6 @@ export const contactMethods = () => {
   ];
   return arr;
 };
+
+export const resumeUrl =
+  "https://docs.google.com/document/d/1MA2CdDaYlZhHS0VYYi5gMwJHJu2pYT7VMG-P9Ea1EJ4/edit";

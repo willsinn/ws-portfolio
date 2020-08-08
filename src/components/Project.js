@@ -32,11 +32,7 @@ const Project = ({ project }) => {
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
     >
       <div className="project-info col-1">
-        <div className="prj-title row">
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            {project.title}
-          </a>
-        </div>
+        <div className="prj-title row">{project.title}</div>
         <div className="overlay-container">
           <div className="project-refs">
             <div className="icon" style={{ marginRight: "4px" }}>
@@ -67,7 +63,7 @@ const Project = ({ project }) => {
 
       <a
         href={project.link}
-        targ="_blank"
+        target="_blank"
         rel="noopener noreferrer"
         className="img-wrap"
       >

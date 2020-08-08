@@ -18,7 +18,7 @@ const ClipboardModal = ({
     <div className="popover">
       <div className="clip-cont col-1">
         <div className="popup-header">
-          <div className="clip-title col-1">Copy my e-mail</div>
+          <div className="clip-title col-1">Copy Email Address</div>
           <button className="close-btn" onClick={(e) => handleClosePopup(e)}>
             <span>✕</span>
           </button>

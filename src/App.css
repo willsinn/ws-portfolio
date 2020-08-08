@@ -17,6 +17,8 @@
 }
 p {
   color: var(--off-white);
+  width: 50%;
+  min-width: 350px;
 }
 h1 {
   color: var(--titles-red);
@@ -145,6 +147,9 @@ li {
   align-items: center;
   flex-direction: column;
 }
+.main-content {
+  width: 50%;
+}
 .resume.navbar-btn:hover {
   background-color: rgb(184, 62, 53, 15%);
 }
@@ -152,6 +157,8 @@ li {
   border: 1px solid var(--titles-red);
   padding: 6px 12px;
   border-radius: 2px;
+  width: fit-content;
+  height: 100%;
 }
 .resume.active-link {
   color: var(--titles-red);
@@ -197,6 +204,8 @@ li {
   align-items: center;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  margin: 20px 0;
 }
 .col-1 {
   display: flex;
@@ -211,6 +220,7 @@ li {
   font-family: "Roboto", sans-serif;
   margin: 4px 0 0 40px;
   color: var(--white);
+  width: fit-content;
 }
 .content-cont {
   margin-top: 24px;
@@ -221,6 +231,9 @@ li {
   flex-direction: column;
   align-items: center;
   width: fit-content;
+}
+.connect-btn {
+  margin: 60px 0;
 }
 .profile-cont {
   height: fit-content;
@@ -258,8 +271,8 @@ li {
   display: flex;
   flex-direction: row-reverse;
 }
-.project-item:nth-child(even) div.project-info {
-  align-items: flex-end;
+.project-item:nth-child(even) .project-info .prj-title {
+  justify-content: flex-end;
 }
 .project-info {
   height: fit-content;
@@ -336,6 +349,7 @@ li {
   display: flex;
   align-items: center;
   margin: 8px 0;
+  justify-content: center;
 }
 /* .contact-item:hover {
   background-color: var(--content-red);
@@ -356,6 +370,9 @@ li {
   align-items: center;
   cursor: pointer;
   border-radius: 5px;
+}
+.icon span {
+  position: relative;
 }
 /* .icon:hover {
   background-color: var(--content-red);
@@ -555,8 +572,7 @@ li {
   /* color: var(--white); */
   color: whitesmoke;
 }
-.fa-github-square {
-}
+
 .active-project-cont {
   width: fit-content;
   position: absolute;
@@ -578,7 +594,6 @@ li {
 }
 .clipboard {
   height: 30px;
-  /* padding: 6px 8px 2px 8px; */
   width: fit-content;
   border-radius: 3px;
   z-index: 2;
@@ -728,4 +743,19 @@ textarea.clip-text {
 .close-btn span:hover {
   font-weight: 700;
   color: var(--lightgray-ui);
+}
+.email.navbar-btn {
+  border: 1px solid var(--titles-red);
+  border-radius: 2px;
+  width: fit-content;
+  padding: 16px 20px;
+  height: 100%;
+}
+.email.active-link {
+  text-transform: none;
+  color: var(--titles-red);
+  font-size: 15px;
+}
+.email.navbar-btn:hover {
+  background-color: rgb(184, 62, 53, 15%);
 }
