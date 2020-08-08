@@ -1,7 +1,7 @@
 import React from "react";
 import { resumeUrl } from "../utils/static.js";
 
-const navItems = ["about", "work", "connect"];
+const navItems = ["about", "work", "contact"];
 
 const Navbar = () => {
   const renderNavItems = () => {

@@ -5,7 +5,7 @@ export const abtBrand = () => {
 
 export const abtSummary = () => {
   const txt =
-    "Welcome! I'm Will, a software engineer based in NYC. As someone who enjoys self-optimization, I fell in love with the idea that a solution in code can always be made better.";
+    "\n\n Welcome! I'm Will, a software engineer based in NYC. As someone who enjoys self-optimization, I fell in love with the idea that a solution in code can always be made better.";
   return txt;
 };
 export const abtMission = () => {
