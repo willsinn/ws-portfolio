@@ -6,7 +6,7 @@ export const welloGif = () => {
       style={{
         width: "100%",
         height: "0",
-        paddingBottom: "56%",
+        paddingBottom: "50%",
         position: "relative",
       }}
     >

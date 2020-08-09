@@ -764,11 +764,10 @@ textarea.clip-text {
 .email.navbar-btn:hover {
   background-color: rgb(184, 62, 53, 15%);
 }
-.gify-activator {
-  width: 100vw;
-  position: absolute;
-  height: 100%;
-  left: -46%;
-  bottom: 0;
-  z-index: 1;
+.gif-cont {
+}
+.render-img-cont {
+  position: relative;
+  min-height: 300px;
+  min-width: 500px;
 }
