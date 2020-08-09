@@ -4,7 +4,7 @@ import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
 import { welloGif } from "../utils/gifs.js";
 
-const Project = ({ project }) => {
+const Project = ({ project, renderGif, gif }) => {
   const phoneStyles = { height: "390px", width: "260px" };
   const renderProjectImg = (type) => {
     switch (type) {
@@ -27,11 +27,16 @@ const Project = ({ project }) => {
       ));
     }
   };
+  console.log(gif);
   return (
     <li
       className="project-item"
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
     >
+      <div
+        className="gify-activator"
+        onMouseEnter={() => renderGif(project.title)}
+      />
       <div className="project-info col-1">
         <div className="prj-title row">{project.title}</div>
         <div className="overlay-container">
@@ -62,21 +67,24 @@ const Project = ({ project }) => {
         <ul className="project-stack">{renderProjectStack(project.stack)}</ul>
       </div>
 
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="img-wrap"
-      >
-        <div className="dampener" />
-        {welloGif()}
-        <img
-          src={renderProjectImg(project.title)}
-          alt={project.link}
-          className="project-img"
-          style={project.appType === "mobile" ? phoneStyles : null}
-        />
-      </a>
+      {gif === project.title ? (
+        <>{welloGif()}</>
+      ) : (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="img-wrap"
+        >
+          <div className="dampener" />
+          <img
+            src={renderProjectImg(project.title)}
+            alt={project.link}
+            className="project-img"
+            style={project.appType === "mobile" ? phoneStyles : null}
+          />
+        </a>
+      )}
     </li>
   );
 };
