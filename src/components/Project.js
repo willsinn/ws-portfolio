@@ -8,7 +8,8 @@ const Project = ({ project }) => {
   const [gif, setGif] = useState(false);
   const delayRenderGif = (e) => {
     if (e) {
-      setTimeout(() => setGif(!gif), 200);
+      setGif(!gif);
+      // setTimeout(() => setGif(!gif), 200);
     }
   };
   const phoneStyles = { height: "390px", width: "260px" };

@@ -765,6 +765,8 @@ textarea.clip-text {
   background-color: rgb(184, 62, 53, 15%);
 }
 .gif-cont {
+  height: 109%;
+  width: 109%;
 }
 .render-img-cont {
   position: relative;
