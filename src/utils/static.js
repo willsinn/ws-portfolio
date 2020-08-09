@@ -51,7 +51,7 @@ export const projectList = () => {
     },
     {
       title: "Bus Comparer",
-      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
+      link: "https://buscomparer.herokuapp.com",
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
