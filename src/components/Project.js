@@ -2,6 +2,7 @@ import React from "react";
 import Wello from "../images/mywellotask.png";
 import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
+import { welloGif } from "../utils/gifs.js";
 
 const Project = ({ project }) => {
   const phoneStyles = { height: "390px", width: "260px" };
@@ -68,6 +69,7 @@ const Project = ({ project }) => {
         className="img-wrap"
       >
         <div className="dampener" />
+        {welloGif()}
         <img
           src={renderProjectImg(project.title)}
           alt={project.link}
