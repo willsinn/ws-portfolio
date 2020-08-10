@@ -2,6 +2,7 @@ import React from "react";
 import Wello from "../images/mywellotask.png";
 import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
+import Otter from "../images/swimmyotter.png";
 
 const Project = ({ project }) => {
   const phoneStyles = { height: "390px", width: "260px" };
@@ -13,6 +14,8 @@ const Project = ({ project }) => {
         return Bus;
       case "Zombie Diner":
         return Zombie;
+      case "Swimmy Otter":
+        return Otter;
       default:
         return;
     }
