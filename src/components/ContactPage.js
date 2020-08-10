@@ -3,11 +3,11 @@ import Contact from "./Contact";
 import { contactMethods } from "../utils/static.js";
 import { connectOutro } from "../utils/desc.js";
 
-const ConnectPage = () => {
+const ContactPage = () => {
   const contact = contactMethods().filter((c) => c.method === "email");
 
   return (
-    <div className="connect">
+    <div className="contact">
       <section className="main">
         <div className="main-content">
           <div className="row section-header">
@@ -31,4 +31,4 @@ const ConnectPage = () => {
   );
 };
 
-export default ConnectPage;
+export default ContactPage;
