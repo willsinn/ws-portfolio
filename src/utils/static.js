@@ -50,6 +50,16 @@ export const projectList = () => {
       git: "https://github.com/willsinn/frontend-wello",
     },
     {
+      title: "Swimmy Otter",
+      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
+      img: "../images/swimmyotter.png",
+      desc:
+        "An otter themed game where you dodge incoming logs and pick up power ups to survive. High scores are recorded and ranked on an app leaderboard.",
+      appType: "game",
+      stack: ["Javascript", "EaselJS", "Rails"],
+      git: "https://github.com/willsinn/swimmyotter-frontend",
+    },
+    {
       title: "Bus Comparer",
       link: "https://buscomparer.herokuapp.com",
       img: "../images/buscomparer.png",
