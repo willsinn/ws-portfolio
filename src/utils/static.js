@@ -1,21 +1,14 @@
 export const stackList = () => {
   const arr = [
-    { name: "JavaScript(ES6)" },
+    { name: "JavaScript (ES6)" },
     { name: "Ruby" },
     { name: "ReactJS" },
     { name: "Ruby on Rails" },
     { name: "Redux" },
     { name: "React Redux" },
     { name: "React Router" },
-    { name: "useState Hook" },
-    { name: "useEffect Hook" },
-    { name: "AWS-EC2" },
-    { name: "AWS-Route53" },
-    { name: "AWS-CloudFront" },
-    { name: "AWS-S3" },
+    { name: "React Hooks" },
     { name: "HTML & CSS" },
-    { name: "Nginx" },
-    { name: "Phusion Passenger" },
   ];
   return arr;
 };
@@ -41,7 +34,8 @@ export const projectList = () => {
     },
     {
       title: "Swimmy Otter",
-      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
+      link: "swimmyotter.tk",
+      linkAlt: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/swimmyotter.png",
       desc:
         "An otter themed game where you dodge incoming logs and pick up power ups to survive. High scores are recorded and ranked on an app leaderboard.",
