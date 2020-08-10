@@ -3,6 +3,16 @@ import Wello from "../images/mywellotask.png";
 import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
 import Otter from "../images/swimmyotter.png";
+import w1 from "../images/w1.png";
+import w2 from "../images/w2.png";
+import w3 from "../images/w3.png";
+import w4 from "../images/w4.png";
+import w5 from "../images/w5.png";
+import w6 from "../images/w6.png";
+import w7 from "../images/w7.png";
+import w8 from "../images/w8.png";
+import w9 from "../images/w9.png";
+import w10 from "../images/w10.png";
 
 const Project = ({ project }) => {
   const phoneStyles = { height: "390px", width: "260px" };
