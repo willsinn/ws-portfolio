@@ -13,18 +13,20 @@ import w7 from "../images/w7.png";
 import w8 from "../images/w8.png";
 import w9 from "../images/w9.png";
 import w10 from "../images/w10.png";
+const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
 
 const Project = ({ project }) => {
   const [active, setActive] = useState("");
   const [hover, setHover] = useState(false);
   const [showing, setShowing] = useState();
+  const [slides, setSlides] = useState([]);
   const phoneStyles = { height: "390px", width: "260px" };
-  const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
 
   const handleHover = (e) => {
     setHover(true);
+
     setShowing(renderProjectImg(project.title));
-    // setActive(project.title);
+    setActive(project.title);
     renderTogglingImages(e);
   };
   const renderTogglingImages = (e) => {
@@ -32,26 +34,30 @@ const Project = ({ project }) => {
       setActive(project.title);
       let idx = 0;
       setTimeout(function next() {
-        const s = welloStory[idx];
-        if (idx < welloStory.length) {
+        const s = slides[idx];
+        if (idx < slides.length) {
           setShowing(s);
           idx++;
         } else {
           setShowing(renderProjectImg(project.title));
           idx = 0;
         }
-        setTimeout(next, 2250);
-      }, 1500);
+        setTimeout(next, 1750);
+      }, 1750);
     }
   };
-  console.log(active);
-  const handleLeave = (e) => {
-    setActive("");
+  const handleLeave = () => {
+    setShowing(renderProjectImg(project.title));
     setHover(false);
+    setActive("");
   };
   const renderProjectImg = (type) => {
     switch (type) {
       case "Wello":
+        if (slides.length === 0) {
+          setSlides(welloStory);
+        }
+
         return Wello;
       case "Bus Comparer":
         return Bus;
@@ -74,12 +80,10 @@ const Project = ({ project }) => {
   };
   const imgSrc =
     hover && showing !== 0 ? showing : renderProjectImg(project.title);
-  console.log(imgSrc);
   return (
     <li
       className="project-item"
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
-      // onMouseLeave={(e) => handleLeave(e)}
     >
       <div className="project-info col-1">
         <div className="prj-title row">{project.title}</div>
@@ -117,6 +121,7 @@ const Project = ({ project }) => {
         rel="noopener noreferrer"
         className="img-wrap"
         onMouseEnter={(e) => handleHover(e)}
+        onMouseOut={handleLeave}
       >
         <div className="dampener" />
         <img
