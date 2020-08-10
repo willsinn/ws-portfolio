@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Wello from "../images/mywellotask.png";
 import Bus from "../images/buscomparer.png";
 import Zombie from "../images/zombiediner.png";
@@ -13,19 +13,39 @@ import w7 from "../images/w7.png";
 import w8 from "../images/w8.png";
 import w9 from "../images/w9.png";
 import w10 from "../images/w10.png";
+const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
 
 const Project = ({ project }) => {
+  const [active, setActive] = useState("");
+  const [showing, setShowing] = useState();
   const phoneStyles = { height: "390px", width: "260px" };
+  const handleHover = (e, title) => {
+    if (e && active !== title) {
+      setActive(title);
+      let idx = 0;
+      setTimeout(function next() {
+        const s = welloStory[idx];
+        setShowing(s);
+        if (idx < welloStory.length) {
+          idx++;
+        } else {
+          idx = 0;
+          renderProjectImg(title);
+        }
+        setTimeout(next, 2000);
+      }, 2000);
+    }
+  };
   const renderProjectImg = (type) => {
     switch (type) {
       case "Wello":
-        return Wello;
+        return setShowing(Wello);
       case "Bus Comparer":
-        return Bus;
+        return setShowing(Bus);
       case "Zombie Diner":
-        return Zombie;
+        return setShowing(Zombie);
       case "Swimmy Otter":
-        return Otter;
+        return setShowing(Otter);
       default:
         return;
     }
@@ -39,6 +59,7 @@ const Project = ({ project }) => {
       ));
     }
   };
+
   return (
     <li
       className="project-item"
@@ -80,9 +101,12 @@ const Project = ({ project }) => {
         rel="noopener noreferrer"
         className="img-wrap"
       >
-        <div className="dampener" />
+        <div
+          className="dampener"
+          onMouseEnter={(e) => handleHover(e, project.title)}
+        />
         <img
-          src={renderProjectImg(project.title)}
+          src={showing}
           alt={project.link}
           className="project-img"
           style={project.appType === "mobile" ? phoneStyles : null}
