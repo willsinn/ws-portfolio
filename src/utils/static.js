@@ -52,7 +52,7 @@ export const projectList = () => {
     {
       title: "Swimmy Otter",
       link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
-      img: "../images/buscomparer.png",
+      img: "../images/swimmyotter.png",
       desc:
         "An otter themed game where you dodge incoming logs and pick up power ups to survive. High scores are recorded and ranked on an app leaderboard.",
       appType: "game",
