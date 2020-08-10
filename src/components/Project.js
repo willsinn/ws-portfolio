@@ -24,9 +24,8 @@ const Project = ({ project }) => {
 
   const handleHover = (e) => {
     setHover(true);
-
     setShowing(renderProjectImg(project.title));
-    setActive(project.title);
+    // setActive(project.title);
     renderTogglingImages(e);
   };
   const renderTogglingImages = (e) => {
