@@ -1,31 +1,14 @@
 export const stackList = () => {
   const arr = [
-    { name: "JavaScript(ES6)" },
+    { name: "JavaScript (ES6)" },
     { name: "Ruby" },
     { name: "ReactJS" },
     { name: "Ruby on Rails" },
     { name: "Redux" },
     { name: "React Redux" },
     { name: "React Router" },
-    { name: "NodeJS" },
-    { name: "React useState-Hook" },
-    { name: "React useEffect-Hook" },
-    { name: "SQL" },
-    { name: "POSTGRESql" },
-    { name: "MySQL" },
-    { name: "Sqlite" },
-    { name: "AWS-EC2" },
-    { name: "AWS-Amplify" },
-    { name: "AWS-Lambda" },
-    { name: "AWS-Route53" },
-    { name: "AWS-CloudFront" },
-    { name: "AWS-S3" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "Nginx" },
-    { name: "Apache" },
-    { name: "Phusion Passenger" },
-    { name: "EaselJS" },
+    { name: "React Hooks" },
+    { name: "HTML & CSS" },
   ];
   return arr;
 };
@@ -45,18 +28,28 @@ export const projectList = () => {
         "React-Hooks",
         "React-Redux",
         "Rails",
-        "AWS-EC2",
+        "AwS EC2",
+        "Nginx",
+        "Phusion Passenger",
       ],
       git: "https://github.com/willsinn/frontend-wello",
     },
     {
       title: "Swimmy Otter",
-      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
+      link: "http://swimmyotter.tk",
+      linkAlt: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/swimmyotter.png",
       desc:
         "An otter themed game where you dodge incoming logs and pick up power ups to survive. High scores are recorded and ranked on an app leaderboard.",
       appType: "game",
-      stack: ["Javascript", "EaselJS", "Rails"],
+      stack: [
+        "Javascript",
+        "EaselJS",
+        "Rails",
+        "AwS EC2",
+        "Nginx",
+        "Phusion Passenger",
+      ],
       git: "https://github.com/willsinn/swimmyotter-frontend",
     },
     {
@@ -66,7 +59,7 @@ export const projectList = () => {
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
       appType: "web",
-      stack: ["React", "React-Router", "Rails", "Heroku"],
+      stack: ["React", "React-Router", "Rails", "Heroku", "JwT"],
       git: "https://github.com/willsinn/frontend-bus-comparer",
     },
     {
@@ -76,7 +69,7 @@ export const projectList = () => {
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",
       appType: "mobile",
-      stack: ["React", "Redux", "React Redux", "Ruby on Rails", "Heroku"],
+      stack: ["React", "Redux", "React Redux", "Rails", "Heroku"],
       git: "https://github.com/willsinn/zombie-diner-front-end",
     },
   ];
