@@ -13,39 +13,52 @@ import w7 from "../images/w7.png";
 import w8 from "../images/w8.png";
 import w9 from "../images/w9.png";
 import w10 from "../images/w10.png";
-const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
 
 const Project = ({ project }) => {
   const [active, setActive] = useState("");
+  const [hover, setHover] = useState(false);
   const [showing, setShowing] = useState();
   const phoneStyles = { height: "390px", width: "260px" };
-  const handleHover = (e, title) => {
-    if (e && active !== title) {
-      setActive(title);
+  const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
+
+  const handleHover = (e) => {
+    setHover(true);
+    setShowing(renderProjectImg(project.title));
+    // setActive(project.title);
+    renderTogglingImages(e);
+  };
+  const renderTogglingImages = (e) => {
+    if (e) {
+      setActive(project.title);
       let idx = 0;
       setTimeout(function next() {
         const s = welloStory[idx];
-        setShowing(s);
         if (idx < welloStory.length) {
+          setShowing(s);
           idx++;
         } else {
+          setShowing(renderProjectImg(project.title));
           idx = 0;
-          renderProjectImg(title);
         }
-        setTimeout(next, 2000);
-      }, 2000);
+        setTimeout(next, 2250);
+      }, 1500);
     }
+  };
+  console.log(active);
+  const handleLeave = (e) => {
+    setActive("");
+    setHover(false);
   };
   const renderProjectImg = (type) => {
     switch (type) {
       case "Wello":
-        return setShowing(Wello);
+        return Wello;
       case "Bus Comparer":
-        return setShowing(Bus);
+        return Bus;
       case "Zombie Diner":
-        return setShowing(Zombie);
+        return Zombie;
       case "Swimmy Otter":
-        return setShowing(Otter);
+        return Otter;
       default:
         return;
     }
@@ -59,11 +72,14 @@ const Project = ({ project }) => {
       ));
     }
   };
-
+  const imgSrc =
+    hover && showing !== 0 ? showing : renderProjectImg(project.title);
+  console.log(imgSrc);
   return (
     <li
       className="project-item"
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
+      // onMouseLeave={(e) => handleLeave(e)}
     >
       <div className="project-info col-1">
         <div className="prj-title row">{project.title}</div>
@@ -100,13 +116,11 @@ const Project = ({ project }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="img-wrap"
+        onMouseEnter={(e) => handleHover(e)}
       >
-        <div
-          className="dampener"
-          onMouseEnter={(e) => handleHover(e, project.title)}
-        />
+        <div className="dampener" />
         <img
-          src={showing}
+          src={imgSrc}
           alt={project.link}
           className="project-img"
           style={project.appType === "mobile" ? phoneStyles : null}
