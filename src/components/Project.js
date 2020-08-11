@@ -112,13 +112,13 @@ const Project = ({ project }) => {
       className="project-item"
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
     >
-      <div
-        className="project-info col-1"
-        onMouseEnter={(e) => handleHover(e)}
-        onMouseLeave={handleLeave}
-      >
+      <div className="project-info col-1">
         <div className="prj-title row">{project.title}</div>
-        <div className="overlay-container">
+        <div
+          className="overlay-container"
+          onMouseEnter={(e) => handleHover(e)}
+          onMouseLeave={handleLeave}
+        >
           <div className="project-refs">
             <div className="icon" style={{ marginRight: "4px" }}>
               <a href={project.git} target="_blank" rel="noopener noreferrer">
