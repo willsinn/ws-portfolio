@@ -43,14 +43,16 @@ const Project = ({ project }) => {
   const phoneStyles = { height: "390px", width: "260px" };
 
   const handleHover = (e) => {
-    setHover(true);
     setShowing(renderProjectImg(project.title));
-    // setActive(project.title);
+    setHover(true);
     renderTogglingImages(e);
+
+    // setActive(project.title);
   };
   const renderTogglingImages = (e) => {
     if (e) {
       setActive(project.title);
+
       let idx = 0;
       setTimeout(function next() {
         const s = slides[idx];
@@ -61,8 +63,8 @@ const Project = ({ project }) => {
           setShowing(renderProjectImg(project.title));
           idx = 0;
         }
-        setTimeout(next, 1750);
-      }, 1750);
+        setTimeout(() => next(setTimeout(() => {}, 1000)), 1000);
+      }, 1000);
     }
   };
   const handleLeave = () => {
@@ -114,13 +116,14 @@ const Project = ({ project }) => {
     >
       <div className="project-info col-1">
         <div className="prj-title row">{project.title}</div>
-        <div
-          className="overlay-container"
-          onMouseEnter={(e) => handleHover(e)}
-          onMouseLeave={handleLeave}
-        >
+        <div className="overlay-container">
           <div className="project-refs">
-            <div className="icon" style={{ marginRight: "4px" }}>
+            <div
+              className="icon"
+              style={{ marginRight: "4px" }}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleLeave}
+            >
               <a href={project.git} target="_blank" rel="noopener noreferrer">
                 <div className="p-i btn-hover-bg">
                   <i
@@ -130,7 +133,11 @@ const Project = ({ project }) => {
                 </div>
               </a>
             </div>
-            <div className="icon">
+            <div
+              className="icon"
+              onMouseEnter={handleHover}
+              onMouseLeave={handleLeave}
+            >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div className="p-i btn-hover-bg">
                   <i
@@ -151,10 +158,12 @@ const Project = ({ project }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="img-wrap"
-        onMouseEnter={(e) => handleHover(e)}
-        onMouseLeave={handleLeave}
       >
-        <div className="dampener" />
+        <div
+          className="dampener"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
+        />
         <img
           src={imgSrc}
           alt={project.link}
