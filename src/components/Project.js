@@ -112,7 +112,11 @@ const Project = ({ project }) => {
       className="project-item"
       style={project.appType === "mobile" ? { width: "66.66%" } : {}}
     >
-      <div className="project-info col-1">
+      <div
+        className="project-info col-1"
+        onMouseEnter={(e) => handleHover(e)}
+        onMouseLeave={handleLeave}
+      >
         <div className="prj-title row">{project.title}</div>
         <div className="overlay-container">
           <div className="project-refs">
