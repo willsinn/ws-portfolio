@@ -22,7 +22,10 @@ const AboutPage = () => {
           <div className="profile-wrap">
             <div className="about-cont">
               <div className="profile-cont">
-                <div className="dampener" style={{ height: "100%" }} />
+                <div
+                  className="dampener"
+                  style={{ maxHeight: "100%", minWidth: "247.5px" }}
+                />
                 <div className="profile-img" />
               </div>
             </div>
