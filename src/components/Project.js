@@ -13,7 +13,27 @@ import w7 from "../images/w7.png";
 import w8 from "../images/w8.png";
 import w9 from "../images/w9.png";
 import w10 from "../images/w10.png";
+
+import b1 from "../images/b1.png";
+import b2 from "../images/b2.png";
+import b3 from "../images/b3.png";
+import b4 from "../images/b4.png";
+import b5 from "../images/b5.png";
+
+import z1 from "../images/z1.png";
+import z2 from "../images/z2.png";
+import z3 from "../images/z3.png";
+import z4 from "../images/z4.png";
+import z5 from "../images/z5.png";
+
+import o1 from "../images/o1.png";
+import o2 from "../images/o2.png";
+import o3 from "../images/o3.png";
+
 const welloStory = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
+const otterStory = [o1, o2, o3];
+const busStory = [b1, b2, b3, b4, b5];
+const zombieStory = [z1, z2, z3, z4, z5];
 
 const Project = ({ project }) => {
   const [active, setActive] = useState("");
@@ -56,13 +76,21 @@ const Project = ({ project }) => {
         if (slides.length === 0) {
           setSlides(welloStory);
         }
-
         return Wello;
       case "Bus Comparer":
+        if (slides.length === 0) {
+          setSlides(busStory);
+        }
         return Bus;
       case "Zombie Diner":
+        if (slides.length === 0) {
+          setSlides(zombieStory);
+        }
         return Zombie;
       case "Swimmy Otter":
+        if (slides.length === 0) {
+          setSlides(otterStory);
+        }
         return Otter;
       default:
         return;
@@ -120,7 +148,7 @@ const Project = ({ project }) => {
         rel="noopener noreferrer"
         className="img-wrap"
         onMouseEnter={(e) => handleHover(e)}
-        onMouseOut={handleLeave}
+        onMouseLeave={handleLeave}
       >
         <div className="dampener" />
         <img
