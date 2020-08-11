@@ -163,7 +163,7 @@ const Project = ({ project }) => {
           className="dampener"
           onMouseEnter={handleHover}
           onMouseLeave={handleLeave}
-          style={project.appType === "mobile" ? { width: "247.5" } : {}}
+          style={project.appType === "mobile" ? { minWidth: "247.5px" } : null}
         />
         <img
           src={imgSrc}
