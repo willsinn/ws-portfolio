@@ -36,9 +36,9 @@ const busStory = [b1, b2, b3, b4, b5];
 const zombieStory = [z1, z2, z3, z4, z5];
 
 const Project = ({ project }) => {
-  const [active, setActive] = useState("");
+  const [quit, setQuit] = useState(false);
   const [hover, setHover] = useState(false);
-  const [showing, setShowing] = useState();
+  const [showing, setShowing] = useState(null);
   const [slides, setSlides] = useState([]);
   const phoneStyles = { height: "390px", width: "260px" };
 
@@ -46,31 +46,31 @@ const Project = ({ project }) => {
     setShowing(renderProjectImg(project.title));
     setHover(true);
     renderTogglingImages(e);
-
-    // setActive(project.title);
   };
   const renderTogglingImages = (e) => {
     if (e) {
-      setActive(project.title);
-
       let idx = 0;
       setTimeout(function next() {
         const s = slides[idx];
+        // console.log(quit);
+        if (quit) return;
+
         if (idx < slides.length) {
           setShowing(s);
+
           idx++;
         } else {
           setShowing(renderProjectImg(project.title));
           idx = 0;
         }
-        setTimeout(() => next(setTimeout(() => {}, 1000)), 1000);
+        setTimeout(next, 1000);
       }, 1000);
     }
   };
   const handleLeave = () => {
     setShowing(renderProjectImg(project.title));
     setHover(false);
-    setActive("");
+    setQuit(true);
   };
   const renderProjectImg = (type) => {
     switch (type) {
@@ -107,8 +107,7 @@ const Project = ({ project }) => {
       ));
     }
   };
-  const imgSrc =
-    hover && showing !== 0 ? showing : renderProjectImg(project.title);
+  const imgSrc = hover ? showing : renderProjectImg(project.title);
   return (
     <li
       className="project-item"
