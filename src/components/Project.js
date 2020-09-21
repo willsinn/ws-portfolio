@@ -52,7 +52,6 @@ const Project = ({ project }) => {
       let idx = 0;
       setTimeout(function next() {
         const s = slides[idx];
-        // console.log(quit);
         if (quit) return;
 
         if (idx < slides.length) {
