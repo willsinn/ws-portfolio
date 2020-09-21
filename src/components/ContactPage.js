@@ -11,10 +11,17 @@ const ContactPage = () => {
       <section className="main">
         <div className="main-content">
           <div className="row section-header">
-            <h3 className="section-title-label">03.</h3>
-            <h3>Expanding your network? Let's</h3>
+            <h2
+              className="row name section-title-label"
+              style={{ fontSize: "68px" }}
+            >
+              ⌬
+            </h2>
+            <h2 className="row name" style={{ marginLeft: "3.5%" }}>
+              Get Connected
+            </h2>
           </div>
-          <h2 className="row name">Get Connected</h2>
+
           <div className="row">
             <p>{connectOutro}</p>
           </div>
