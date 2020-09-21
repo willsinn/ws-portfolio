@@ -1,25 +1,42 @@
 import React from "react";
-import Contact from "./Contact";
-import { contactMethods } from "../utils/static.js";
+import SkillList from "./SkillList";
+import { abtMission } from "../utils/desc.js";
 import { landingIntro } from "../utils/desc.js";
 
 const LandingPage = () => {
-  const ct = contactMethods().filter((c) => c.method === "email");
-
   return (
-    <div className="landing">
-      <section className="main">
+    <div
+      className="landing"
+      style={{ flexDirection: "row", alignItems: "center" }}
+    >
+      <section className="main" style={{ width: "60%" }}>
         <div>
           <div className="name">William Sinn</div>
           <div className="row">
             <p>{landingIntro}</p>
           </div>
-          <div className="connect-btn">
-            <Contact
-              key={`landing-${ct[0].method}-1`}
-              contact={ct[0]}
-              content={"Say Hello"}
-            />
+        </div>
+      </section>
+      <section className="main" style={{ padding: "0", width: "40%" }}>
+        <div className="col-1">
+          <div className="profile-wrap">
+            <div className="about-cont">
+              <div className="profile-cont">
+                <div
+                  className="dampener"
+                  style={{ maxHeight: "100%", minWidth: "247.5px" }}
+                />
+                <div className="profile-img" />
+              </div>
+            </div>
+          </div>
+          <div className="col-1">
+            <div className="about-section">
+              <div className="content-cont col-1">
+                <p className="summary-text">{}</p>
+                <p className="summary-text">{abtMission}</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

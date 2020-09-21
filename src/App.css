@@ -189,7 +189,7 @@ li {
 .active-link {
   text-decoration: none;
   color: var(--white);
-  font-size: 11.5px;
+  font-size: 12.75px;
   font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 19px;
@@ -221,7 +221,7 @@ li {
   font-size: 68px;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
-  margin: 4px 0 0 40px;
+  margin-left: 12.5%;
   color: var(--white);
   width: fit-content;
 }
@@ -457,7 +457,6 @@ li {
   display: flex;
   width: fit-content;
   width: 100%;
-  justify-content: center;
   margin-top: 16px;
 }
 .skill-list {
@@ -595,7 +594,7 @@ li {
   top: 8px;
 }
 .nav-num {
-  font-size: 10.5px;
+  font-size: 11.75px;
   letter-spacing: 0.0475em;
   color: var(--titles-red);
   margin-right: 4px;

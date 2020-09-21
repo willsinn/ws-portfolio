@@ -1,6 +1,7 @@
 import React from "react";
 import { projectList } from "../utils/static";
 import Project from "./Project";
+import SkillList from "./SkillList";
 
 const ProjectList = () => {
   const projects = projectList();
