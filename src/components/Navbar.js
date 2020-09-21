@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "./Contact";
 import { resumeUrl, contactMethods } from "../utils/static.js";
 
 const navItems = ["landing", "work", "contact"];

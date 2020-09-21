@@ -45,7 +45,7 @@ body {
 .work,
 .contact {
   width: 100%;
-  min-height: 90vh;
+  min-height: 75vh;
   height: 100%;
   display: flex;
   -webkit-box-pack: center;
@@ -66,6 +66,12 @@ body {
 }
 .project-item:nth-child(even) .project-info ul li {
   margin: 0 0 0 16px;
+}
+.project-item:nth-child(even) {
+  padding-right: 50%;
+}
+.project-item:nth-child(odd) {
+  padding-left: 50%;
 }
 .project-stack {
   padding: 0;
