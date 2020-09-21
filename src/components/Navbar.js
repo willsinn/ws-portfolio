@@ -1,9 +1,12 @@
 import React from "react";
-import { resumeUrl } from "../utils/static.js";
+import Contact from "./Contact";
+import { resumeUrl, contactMethods } from "../utils/static.js";
 
 const navItems = ["about", "work", "contact"];
 
 const Navbar = () => {
+  const ct = contactMethods().filter((c) => c.method === "email");
+
   const renderNavItems = () => {
     let counter = 0;
     return navItems.map((item) => {

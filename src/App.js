@@ -1,5 +1,4 @@
 import React from "react";
-import AboutPage from "./components/AboutPage";
 import WorkPage from "./components/WorkPage";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
@@ -15,7 +14,6 @@ const App = () => {
       <div className="app-content">
         <Navbar />
         <LandingPage />
-        <AboutPage />
         <WorkPage />
         <ContactPage />
       </div>
