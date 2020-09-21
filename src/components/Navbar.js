@@ -2,7 +2,7 @@ import React from "react";
 import Contact from "./Contact";
 import { resumeUrl, contactMethods } from "../utils/static.js";
 
-const navItems = ["about", "work", "contact"];
+const navItems = ["landing", "work", "contact"];
 
 const Navbar = () => {
   const ct = contactMethods().filter((c) => c.method === "email");
@@ -13,7 +13,7 @@ const Navbar = () => {
       counter++;
       return (
         <div className="navbar-btn" key={`item-${counter - 1}`}>
-          <span className="nav-num">0{counter}.</span>
+          <span className="nav-num">⌬</span>
           <span
             className="active-link"
             onClick={(e) => scrollToTarget(e, item)}

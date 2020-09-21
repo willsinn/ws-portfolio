@@ -1,5 +1,4 @@
 import React from "react";
-import SkillList from "./SkillList";
 import { abtMission } from "../utils/desc.js";
 import { landingIntro } from "../utils/desc.js";
 

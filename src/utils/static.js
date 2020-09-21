@@ -17,7 +17,7 @@ export const projectList = () => {
   const arr = [
     {
       title: "Wello",
-      link: "http://ec2-52-86-173-242.compute-1.amazonaws.com",
+      link: "http://ec2-54-92-207-170.compute-1.amazonaws.com",
       img: "../images/mywellotask.png",
       desc:
         "A web app to help you manage, track and organize tasks and goals, using labels, checklists, lists and boards.",
@@ -36,7 +36,7 @@ export const projectList = () => {
     },
     {
       title: "Swimmy Otter",
-      link: "http://swimmyotter.tk",
+      link: "http://swimmyotter.ml",
       linkAlt: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/swimmyotter.png",
       desc:
@@ -54,7 +54,7 @@ export const projectList = () => {
     },
     {
       title: "Bus Comparer",
-      link: "https://buscomparer.herokuapp.com",
+      link: "http://buscomparer.tk",
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
@@ -64,7 +64,7 @@ export const projectList = () => {
     },
     {
       title: "Zombie Diner",
-      link: "https://zombie-diner.herokuapp.com",
+      link: "http://zombiediner.tk",
       img: "../images/zombiediner.png",
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",

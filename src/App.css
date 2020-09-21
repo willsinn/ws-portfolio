@@ -45,7 +45,7 @@ body {
 .work,
 .contact {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   height: 100%;
   display: flex;
   -webkit-box-pack: center;
@@ -180,6 +180,9 @@ li {
 }
 .navbar-btn {
   padding: 13px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-btn:hover {
 }
@@ -189,7 +192,7 @@ li {
 .active-link {
   text-decoration: none;
   color: var(--white);
-  font-size: 12.75px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 19px;
@@ -208,7 +211,7 @@ li {
   height: 100%;
   width: 100%;
   justify-content: center;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 .col-1 {
   display: flex;
@@ -246,10 +249,13 @@ li {
   position: relative;
 }
 .profile-img {
-  background-color: #fff;
+  background-image: url("./images/profile-img.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
   height: 300px;
-  width: 300px;
+  width: 280px;
 }
 .slogan-cont {
   width: 60%;
@@ -293,7 +299,8 @@ li {
 }
 .tech-skills-cont {
   min-width: 400px;
-  padding: 75px 0;
+  width: 50%;
+  /* padding: 75px 0; */
 }
 .skill-item {
   height: 24px;
@@ -462,7 +469,7 @@ li {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px 0 0 0;
+  margin: 8px 0 0 0;
   padding: 0;
 }
 .fa.fa-envelope {
@@ -594,10 +601,10 @@ li {
   top: 8px;
 }
 .nav-num {
-  font-size: 11.75px;
+  font-size: 14px;
   letter-spacing: 0.0475em;
   color: var(--titles-red);
-  margin-right: 4px;
+  margin: 0 3px 4px 0;
 }
 .clipboard {
   height: 30px;
@@ -765,4 +772,11 @@ textarea.clip-text {
 }
 .email.navbar-btn:hover {
   background-color: rgb(184, 62, 53, 15%);
+}
+.skill-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--off-white);
 }
