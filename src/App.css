@@ -246,10 +246,13 @@ li {
   position: relative;
 }
 .profile-img {
-  background-color: #fff;
+  background-image: url("./images/profile-img.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
   height: 300px;
-  width: 300px;
+  width: 280px;
 }
 .slogan-cont {
   width: 60%;
