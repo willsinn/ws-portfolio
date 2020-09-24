@@ -99,4 +99,4 @@ export const contactMethods = () => {
 };
 
 export const resumeUrl =
-  "https://drive.google.com/file/d/1cU-UFIfJc9B6u0QrtgSKimOqO6T46OBM/view";
+  "https://drive.google.com/file/d/1TXB7ZnWdrOU6snUhrCl5PaVgF3hEbwuG/view?usp=sharing";
