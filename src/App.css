@@ -277,10 +277,15 @@ li {
   padding: 0;
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 .project-item:nth-child(even) {
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 30%;
+}
+.project-item:nth-child(odd) {
+  margin-left: 30%;
 }
 .project-item:nth-child(even) .project-info .prj-title {
   justify-content: flex-end;
