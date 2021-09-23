@@ -54,7 +54,7 @@ export const projectList = () => {
     },
     {
       title: "Bus Comparer",
-      link: "http://buscomparer.tk",
+      link: "https://buscomparer.herokuapp.com/",
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
@@ -64,7 +64,7 @@ export const projectList = () => {
     },
     {
       title: "Zombie Diner",
-      link: "http://zombiediner.tk",
+      link: "https://zombie-diner.herokuapp.com/",
       img: "../images/zombiediner.png",
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",
