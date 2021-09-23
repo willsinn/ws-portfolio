@@ -36,7 +36,7 @@ export const projectList = () => {
     },
     {
       title: "Swimmy Otter",
-      link: "http://swimmyotter.ml",
+      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       linkAlt: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/swimmyotter.png",
       desc:
@@ -54,7 +54,7 @@ export const projectList = () => {
     },
     {
       title: "Bus Comparer",
-      link: "http://buscomparer.tk",
+      link: "https://buscomparer.herokuapp.com/",
       img: "../images/buscomparer.png",
       desc:
         "A web app to help you compare coach bus ticket avaliability and prices. This includes saving favorites as well as direct purchase links.",
@@ -64,7 +64,7 @@ export const projectList = () => {
     },
     {
       title: "Zombie Diner",
-      link: "http://zombiediner.tk",
+      link: "https://zombie-diner.herokuapp.com/",
       img: "../images/zombiediner.png",
       desc:
         "A phone app where you match recipes to complete all orders before the time runs out.",
@@ -99,4 +99,4 @@ export const contactMethods = () => {
 };
 
 export const resumeUrl =
-  "https://drive.google.com/file/d/1OcV9U9desW7hvhUsa7TQ1WuiDfJ3rL65/view?usp=sharing";
+  "https://drive.google.com/file/d/196Tb34sNpMSxpr3irSMW7t6-uvb4y5i7/view?usp=sharing";
