@@ -36,7 +36,7 @@ export const projectList = () => {
     },
     {
       title: "Swimmy Otter",
-      link: "http://swimmyotter.ml",
+      link: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       linkAlt: "http://ec2-54-83-167-110.compute-1.amazonaws.com",
       img: "../images/swimmyotter.png",
       desc:
